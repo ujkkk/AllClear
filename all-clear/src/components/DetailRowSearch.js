@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+//02 세부사항- 강의명 검색하는 행
 const DetailRowSearch = ({ rowTitle }) => {
 
     return (
