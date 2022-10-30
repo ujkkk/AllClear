@@ -1,10 +1,10 @@
 import React from "react";
-import Detail from "../components/detail";
+import Search from "../components/search";
 export default function Page1() {
     return (
       <React.Fragment>
-        <div id="required-selection">required-selection</div>
-        <Detail></Detail>
+        <Search/>
+        <div>detail</div>
         <div id="subjects-list">subjects-list</div>
       </React.Fragment>
     );
