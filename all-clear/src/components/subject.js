@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../css/subjects.css"
 
 //03. 교과목리스트 component
@@ -13,9 +13,9 @@ const Subject = ({ data }) => {
             </div>
             <div className="professor">
                 {
-                    data.professor.join("교수님 | ")
+                    data.professor.join(" | ")
                 }
-                교수님
+                
                 </div>
         </div>
     )

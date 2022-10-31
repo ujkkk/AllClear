@@ -12,11 +12,9 @@ html,body,#root{
 body {
   margin: 0;
   font-family: 'IM_Hyemin-Bold';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  border-bottom: "solid 1px";
+  padding-bottom: "1rem";
 }
