@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DetailRowComponent from "./DetailRowObject";
+import DetailRowComponent from "./detailRowObject";
 
 //02 새부사항 테이블의 한 줄
 const DetailRow = ({ rowTitle, rowData = [] }) => {

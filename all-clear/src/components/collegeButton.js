@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/search.css"
-import ButtonLabel from "./button-label";
+import ButtonLabel from "./buttonLabel";
 
 const CollegeButton=({searchData, changeMajorItem})=>{
    const [color,setColor]=useState(-1);

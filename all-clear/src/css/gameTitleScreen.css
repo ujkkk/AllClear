@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.game-title-screen-wrap {
+    font-family: "IM_Hyemin-Bold";
+    color:white;
+    height:100%;
+    background: url(../static/gameTitleBg.png) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding-top:4%;
+}
+
+header #game-title{
+    font-size: 4.5rem;
+}
+
+#game-setting-section {
+    margin:0 auto;
+    border-radius:46px;
+    background: #7CABD7;
+    border: 5px solid #FFFFFF;
+    width:45%;
+    height:48%;
+    padding: 0 auto;
+}
+
+#game-title-screen-nav { 
+    margin-top:30px;
+    padding: 0 auto;
+}
+
+#game-title-screen-nav button{ 
+    display:inline-block;
+    margin-right:2%;
+    background: #E8E8E8;
+    border-radius: 12px;
+    width:15%;
+    font-size: 30px;
+}

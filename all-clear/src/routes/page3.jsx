@@ -1,7 +1,9 @@
+import React from "react";
+import GameTitleScreen from "../components/game/gameTitleScreen";
+
 export default function Page3() {
+    const GAME_TITLE = "수강신청해부기"
     return (
-        <main style={{ padding: "1rem 0" }}>
-            <h2>Page3</h2>
-        </main>
+       <GameTitleScreen title = {GAME_TITLE}/>
     );
 }

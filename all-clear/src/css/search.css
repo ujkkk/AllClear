@@ -12,12 +12,14 @@ label{
     margin-right: 10px;
     margin-top: 10px;
 }
-table{
+#search{
     width: 45%;
 }
 th, td{
     height: 70px;
     text-align: center;
+    border: 1px gray solid;
+    
 }
 th{
     background: #4470C7;
