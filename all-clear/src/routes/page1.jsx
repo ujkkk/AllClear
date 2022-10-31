@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../components/search";
 
-import Detail from "../components/detail";
+import Detail from "../components/Detail";
 export default function Page1() {
 
   const DETAIL_SEARCH = "02. 세부검색";
