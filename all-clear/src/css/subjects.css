@@ -1,9 +1,9 @@
 
-.subjects-list-container {
+.subjects_warp {
     width: 1500px;
 }
 
-.subjects-list-container hr {
+.subjects_warp hr {
     margin-top: 6px;
     margin-bottom: 6px;
     margin-left: 20px;
