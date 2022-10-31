@@ -1,10 +1,13 @@
 import React from "react";
-import Detail from "../components/Detail";
+import Search from "../components/search";
+
+import Detail from "../components/detail";
 export default function Page1() {
 
   const DETAIL_SEARCH = "02. 세부검색";
     return (
       <React.Fragment>
+        <Search/>
         <div id="required-selection">required-selection</div>
         <Detail title={DETAIL_SEARCH}></Detail>
         <div id="subjects-list">subjects-list</div>
