@@ -2,8 +2,8 @@
 import React, {useState, useEffect} from "react";
 import "../css/detail.css"
 import detailData from "../data/detail.json";
-import DetailRow from "./DetailRow";
-import DetailRowSearch from "./DetailRowSearch";
+import DetailRow from "./detailRow";
+import DetailRowSearch from "./detailRowSearch";
 
 //02. 세부사항 component
 const Detail =({title}) =>{

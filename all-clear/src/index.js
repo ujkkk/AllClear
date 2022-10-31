@@ -11,7 +11,7 @@ import App from "./App";
 import Page1 from "./routes/page1";
 import Page2 from "./routes/page2";
 import Page3 from "./routes/page3";
-import StandBy from "./routes/stand-by";
+import StandBy from "./routes/standBy";
 
 const rootElement = document.getElementById("root");
 render(

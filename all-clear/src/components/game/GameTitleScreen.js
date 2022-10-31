@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
-import "../../css/game-title-screen.css";
-import gameTitleBGM from "../../static/game-title-bgm.mp3"
-import gameStartBGM from "../../static/game-start-bgm.mp3";
+import "../../css/gameTitleScreen.css";
+import gameTitleBGM from "../../static/gameTitleBgm.mp3"
+import gameStartBGM from "../../static/gameStartBgm.mp3";
 
 
 const GameTitleScreen =({title}) =>{
@@ -42,7 +42,7 @@ const GameTitleScreen =({title}) =>{
                     gameTitleAudio = null;
                     gameStartAudio.play();
                     setTimeout(function(){
-                        navigate("/stand-by")
+                        navigate("/standBy")
                 },7700)}}>게임 시작</button>
                 </nav>
         </div>
