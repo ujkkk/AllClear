@@ -1,5 +1,7 @@
 import React from "react";
+
 import SubjectList from "../components/SubjectList";
+import Search from "../components/search";
 import Detail from "../components/Detail";
 
 export default function Page1() {
