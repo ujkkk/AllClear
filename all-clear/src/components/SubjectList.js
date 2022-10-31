@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/subjects.css"
 import subjectsData from "../data/subjectList.json";
-import Subject from "./Subject";
+import Subject from "./subject";
 
 //03. 교과목리스트 component
 const SubjectList = () => {
