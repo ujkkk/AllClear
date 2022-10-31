@@ -1,0 +1,17 @@
+.standBy-wrap{
+    font-family:"Nanum Gothic";
+    float:left;
+    margin-left:20px;
+    margin-top:15px;
+}
+
+#div-comment {
+    width:435px;
+    height:100px;
+    margin: 0 auto;
+    padding:0px;
+}
+
+#start-btn {
+    margin: 20px 15px 0px;
+}
