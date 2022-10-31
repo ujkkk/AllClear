@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../css/search.css"
-import CollegeButton from "./college-button";
-import MajorButton from "./major-button";
-import TrackButton from "./track-button";
+import CollegeButton from "./collegeButton";
+import MajorButton from "./majorButton";
+import TrackButton from "./trackButton";
 import searchData from "../data/search.json"
 
 const SearchTable=()=>{
@@ -16,7 +16,7 @@ const SearchTable=()=>{
     const changeTrackItem=(props)=>{
         setTrack(props);
     }
-    return (<table cellPadding="5" cellSpacing="0" border="1" align="center">
+    return (<table id="search" cellPadding="5" cellSpacing="0" border="1" align="center">
             <colgroup>
                     <col width={"15%"}></col>
                     <col width={"85%"}></col>

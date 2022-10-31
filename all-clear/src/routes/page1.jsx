@@ -1,8 +1,8 @@
 import React from "react";
 
 import SubjectList from "../components/subjectList";
+import Detail from "../components/detail";
 import Search from "../components/search";
-import Detail from "../components/Detail";
 
 export default function Page1() {
 
