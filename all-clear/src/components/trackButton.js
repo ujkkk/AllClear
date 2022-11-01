@@ -2,13 +2,21 @@ import React,{useEffect, useState} from "react";
 import "../css/search.css"
 import ButtonLabel from "./buttonLabel";
 
-const TrackButton=({trackItem, setTracks})=>{
+const TrackButton=({tracks, trackItem, setTracks})=>{
     const [color,setColor]=useState(-1);
 
     const temp=(prop)=>(null)
   
     const setSubjectTracks=(prop)=>{
-        setTracks(trackItem.filter(item=>prop===item))
+        if(prop==="전체"){
+            setTracks(["전체"]);
+            return;
+        }
+        if(tracks.includes(prop))
+            setTracks(tracks.filter(item=>prop!==item))
+        else{
+            setTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
+        }
     }
    
     useEffect(()=>{
@@ -20,7 +28,7 @@ const TrackButton=({trackItem, setTracks})=>{
     {  
         trackItem.map((data,i)=>
             <ButtonLabel key={i}
-            color={i===color}
+            color={tracks.filter(item=>item===data).join()===data}
             index={i}
             item={i}
             content={data}
