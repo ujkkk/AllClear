@@ -13,13 +13,16 @@ label{
     margin-top: 10px;
 }
 
-th, td{
-    /* height: 70px; */
+td{
     text-align: center;
     border: 1px gray solid;
+    font-size:18px;
     
 }
 th{
     background: #4470C7;
     color:white;
+    text-align: center;
+    border: 1px gray solid;
+    font-size:22px;
 }

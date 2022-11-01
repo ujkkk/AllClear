@@ -8,15 +8,16 @@ import Banners from "../components/banners";
 export default function Page1() {
 
   const DETAIL_SEARCH = "02. 세부검색";
-  const [tracks, setTracks] = useState(["모바일소프트웨어", "웹공학", ""]);
+  const [tracks, setTracks] = useState(["전체"]);
   const [grade, setGrade] = useState([2, 3]);
   const [codes, setCode] = useState(["전필", "전선"]);
   const [search, setSearch] = useState("");
+  console.log(tracks);
   return (
     <>
       <Banners />
       <div id="page-container">
-        <Search />
+        <Search tracks={tracks} setTracks={setTracks} setSearch={setSearch} />
         <Detail title={DETAIL_SEARCH}></Detail>
         <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
       </div>

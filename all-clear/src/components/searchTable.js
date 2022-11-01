@@ -5,11 +5,12 @@ import MajorButton from "./majorButton";
 import TrackButton from "./trackButton";
 import searchData from "../data/search.json"
 
-const SearchTable=()=>{
+const SearchTable=({tracks, setTracks,setSearch})=>{
     const [majorItem,setMajor]=useState([]);
     const changeMajorItem=(props)=>{
         setMajor(props);
         setTrack([]); //다른 단과대를 누를 때를 대비
+        setTracks(["전체"]);
     }
 
     const [trackItem,setTrack]=useState([]);
@@ -31,13 +32,13 @@ const SearchTable=()=>{
             <tr>
                 <th>학부</th>
                 <td>
-                    <MajorButton majorItem={majorItem} changeTrackItem={changeTrackItem}/>
+                    <MajorButton majorItem={majorItem} changeTrackItem={changeTrackItem} setSearch={setSearch}/>
                 </td>
             </tr>
             <tr>
                 <th>트랙</th>
                 <td>
-                    <TrackButton trackItem={trackItem}/>
+                    <TrackButton tracks={tracks} trackItem={trackItem} setTracks={setTracks}/>
                 </td>
             </tr>
         </table>)
