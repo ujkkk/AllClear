@@ -1,10 +1,20 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import "../css/search.css"
 import ButtonLabel from "./buttonLabel";
 
-const TrackButton=({trackItem})=>{
+const TrackButton=({trackItem, setTracks})=>{
     const [color,setColor]=useState(-1);
-    const temp=()=>(null)
+
+    const temp=(prop)=>(null)
+  
+    const setSubjectTracks=(prop)=>{
+        setTracks(trackItem.filter(item=>prop===item))
+    }
+   
+    useEffect(()=>{
+        if(color===-1)
+            setColor(0);
+   },[color])
     return(
     <>
     {  
@@ -12,10 +22,11 @@ const TrackButton=({trackItem})=>{
             <ButtonLabel key={i}
             color={i===color}
             index={i}
-            item={null}
+            item={i}
             content={data}
             changeItem={temp}
-            onSelect={setColor}/>
+            onSelect={setColor}
+            setData={setSubjectTracks}/>
         )
     }
     </>);

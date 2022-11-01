@@ -5,7 +5,7 @@ import MajorButton from "./majorButton";
 import TrackButton from "./trackButton";
 import searchData from "../data/search.json"
 
-const SearchTable=()=>{
+const SearchTable=({setTracks,setSearch})=>{
     const [majorItem,setMajor]=useState([]);
     const changeMajorItem=(props)=>{
         setMajor(props);
@@ -30,13 +30,13 @@ const SearchTable=()=>{
             <tr>
                 <th>학부</th>
                 <td>
-                    <MajorButton majorItem={majorItem} changeTrackItem={changeTrackItem}/>
+                    <MajorButton majorItem={majorItem} changeTrackItem={changeTrackItem} setSearch={setSearch}/>
                 </td>
             </tr>
             <tr>
                 <th>트랙</th>
                 <td>
-                    <TrackButton trackItem={trackItem}/>
+                    <TrackButton trackItem={trackItem} setTracks={setTracks}/>
                 </td>
             </tr>
         </table>)
