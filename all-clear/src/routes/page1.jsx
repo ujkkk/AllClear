@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SubjectList from "../components/subjectList";
 import Detail from "../components/detail";
 import Search from "../components/search";
+import Banners from "../components/banners";
 
 export default function Page1() {
 
@@ -13,9 +14,12 @@ export default function Page1() {
   const [search, setSearch] = useState("");
   return (
     <>
-      <Search />
-      <Detail title={DETAIL_SEARCH}></Detail>
-      <SubjectList tracks={tracks} grade={grade} codes={codes} search={search}></SubjectList>
+      <Banners />
+      <div id="page-container">
+        <Search />
+        <Detail title={DETAIL_SEARCH}></Detail>
+        <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
+      </div>
     </>
   );
 }

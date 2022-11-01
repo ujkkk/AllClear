@@ -4,7 +4,7 @@ import SearchTable from "./searchTable";
 
 const Search=()=>(
     <div className="search_warp">
-        <h2>01. 필수 검색 옵션</h2>
+        <h4>01. 필수 검색 옵션</h4>
         <SearchTable/>
     </div>
 );

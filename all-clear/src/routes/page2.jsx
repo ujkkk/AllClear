@@ -1,7 +1,14 @@
+import React, { useState } from "react";
+import Banners from "../components/banners";
+import StarRating from "../components/StarRating";
+
 export default function Page2() {
   return (
-    <main style={{ padding: "1rem 0" }}>
-      <h2>Page2</h2>
-    </main>
+    <>
+    <Banners />
+    <div id="page-container">
+    <StarRating totalStars={5}/>
+    </div>
+    </>
   );
 }
