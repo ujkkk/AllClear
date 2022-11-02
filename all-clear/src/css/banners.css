@@ -12,10 +12,10 @@
     margin-top: 20px;
 }
 
-table {
+#page-container table {
     width: 1000px;
 }
-table td, table th {
+#page-container table td,#page-container table th {
     height: 70px;
 }
 

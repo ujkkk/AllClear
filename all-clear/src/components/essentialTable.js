@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/search.css"
+import "../css/essential.css"
 import CollegeButton from "./collegeButton";
 import MajorButton from "./majorButton";
 import TrackButton from "./trackButton";
@@ -39,7 +39,7 @@ const EssentialTable=({tracks, setTracks})=>{
             <tr>
                 <th>단과대</th>
                 <td>
-                    <CollegeButton searchData={searchData} changeMajorItem={changeMajorItem}/>
+                    <CollegeButton essentialData={searchData} changeMajorItem={changeMajorItem}/>
                 </td>
             </tr>
             <tr>
