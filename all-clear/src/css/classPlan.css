@@ -3,9 +3,38 @@
     font-weight: bold;
     font-size: 100%;
     margin-right: 10px;
+    margin-left: 10px;
 
 }
 .print-body{
     display: inline;
     font-size: 80%;
+}
+
+table .context{
+    margin-top: 20px;
+}
+.class-plan-wrap{
+    margin-left: 15px;
+    font-size: 17px;
+
+}
+.class-plan-wrap table {
+    border-left: none;
+    border-right: none;
+}
+.class-plan-wrap table h4{
+    margin-top: 25px;
+}
+.class-plan-wrap table tr{ 
+   
+    border-top: none;  
+    border-bottom: none;
+    
+}
+.class-plan-wrap table td{ 
+    
+    border-right: none;
+    border-left: none;
+
 }

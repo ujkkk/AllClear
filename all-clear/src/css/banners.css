@@ -15,9 +15,11 @@
 #page-container table {
     width: 1000px;
 }
+/*
 #page-container table td,#page-container table th {
+table td, table th {
     height: 70px;
-}
+} */
 
 #page-container {
     width: 1300px;
