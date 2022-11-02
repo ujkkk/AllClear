@@ -12,7 +12,7 @@ export default function Page1() {
   const [grade, setGrade] = useState([]);
   const [codes, setCode] = useState(["전필", "전선"]);
   const [search, setSearch] = useState("");
-  console.log(grade);
+
   return (
     <>
       <Banners />

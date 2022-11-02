@@ -15,9 +15,9 @@
 table {
     width: 1000px;
 }
-table td, table th {
+/* table td, table th {
     height: 70px;
-}
+} */
 
 #page-container {
     width: 1300px;
