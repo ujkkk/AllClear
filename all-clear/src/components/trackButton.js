@@ -4,6 +4,7 @@ import TrackLabel from "./trackLabel";
 
 const TrackButton=({tracks, trackItem, setTracks})=>{
 
+    //tracks 배열이 0일 때 다시 전체 상황으로
     useEffect(()=>{
         if(tracks.length===0){
             setTracks(trackItem.map(data=>data));
@@ -25,7 +26,6 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
             setTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
         }
     }
-   
 
     return(
     <>
