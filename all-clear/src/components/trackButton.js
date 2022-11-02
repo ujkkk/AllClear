@@ -3,7 +3,6 @@ import "../css/search.css"
 import TrackLabel from "./trackLabel";
 
 const TrackButton=({tracks, trackItem, setTracks})=>{
-    const [color,setColor]=useState(-1);
 
     useEffect(()=>{
         if(tracks.length===0){
@@ -27,10 +26,7 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
         }
     }
    
-    useEffect(()=>{
-        if(color===-1)
-            setColor(0);
-   },[color])
+
     return(
     <>
     {  
@@ -40,7 +36,6 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
             index={i}
             item={i}
             content={data}
-            onSelect={setColor}
             setData={setSubjectTracks}/>
         )
     }
