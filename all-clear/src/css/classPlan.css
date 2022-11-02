@@ -1,0 +1,11 @@
+.print-head{
+    display: inline;
+    font-weight: bold;
+    font-size: 100%;
+    margin-right: 10px;
+
+}
+.print-body{
+    display: inline;
+    font-size: 80%;
+}
