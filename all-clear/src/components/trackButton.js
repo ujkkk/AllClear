@@ -1,14 +1,16 @@
 import React,{useEffect, useState} from "react";
 import "../css/search.css"
-import ButtonLabel from "./buttonLabel";
+import TrackLabel from "./trackLabel";
 
 const TrackButton=({tracks, trackItem, setTracks})=>{
     const [color,setColor]=useState(-1);
 
-    const temp=(prop)=>(null)
+
+    useEffect(()=>setSubjectTracks("전체"),[])
+
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){
-            setTracks(["전체"]);
+            setTracks(trackItem.map(data=>data));
             return;
         }
         if(tracks.includes(prop))
@@ -26,12 +28,11 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
     <>
     {  
         trackItem.map((data,i)=>
-            <ButtonLabel key={i}
+            <TrackLabel key={i}
             color={tracks.filter(item=>item===data).join()===data}
             index={i}
             item={i}
             content={data}
-            changeItem={temp}
             onSelect={setColor}
             setData={setSubjectTracks}/>
         )

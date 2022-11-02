@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../css/search.css"
 
 
-const ButtonLabel=({color,index,item, content,changeItem,onSelect,setData})=>{
+const ButtonLabel=({color,index,item, content,changeItem,onSelect})=>{
    const styleColor=color?"#0071FF":"gray";
    useEffect(()=>{
         onSelect(-1);
@@ -12,7 +12,7 @@ const ButtonLabel=({color,index,item, content,changeItem,onSelect,setData})=>{
    },[onSelect])
    return(
     <label key={index} style={{border:"2px solid "+styleColor}}>{
-            <div key={index} onClick={()=>{onSelect(index);setData(content);changeItem(item);}}>{content}</div>
+            <div key={index} onClick={()=>{onSelect(index);changeItem(item);}}>{content}</div>
     }</label>
     );
 }

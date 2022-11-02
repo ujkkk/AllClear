@@ -3,7 +3,7 @@ import "../css/search.css"
 import ButtonLabel from "./buttonLabel";
 
 
-const MajorButton=({majorItem, changeTrackItem, setSearch})=>{
+const MajorButton=({majorItem, changeTrackItem})=>{
     const [color,setColor]=useState(-1);
     return(
     <>{
@@ -15,7 +15,7 @@ const MajorButton=({majorItem, changeTrackItem, setSearch})=>{
         content={data.id}
         changeItem={changeTrackItem}
         onSelect={setColor}
-        setData={setSearch}/>
+       />
     )
     }
     </>);

@@ -4,7 +4,6 @@ import ButtonLabel from "./buttonLabel";
 
 const CollegeButton=({searchData, changeMajorItem})=>{
    const [color,setColor]=useState(-1);
-   const temp=()=>(null)
     return(
    <>
     {
@@ -15,8 +14,7 @@ const CollegeButton=({searchData, changeMajorItem})=>{
             item={searchData[data]}
             content={data}
             changeItem={changeMajorItem}
-            onSelect={setColor}
-            setData={temp}/>
+            onSelect={setColor}/>
          
             
         )
