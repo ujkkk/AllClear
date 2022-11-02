@@ -1,0 +1,21 @@
+
+#page-container h3 {
+    transform: translateX(150px);
+}
+
+#page-container table {
+    width: 1000px;
+}
+
+#page-container table td,#page-container table th {
+    height: 70px;
+}
+
+#page-container {
+    width: 1200px;
+    display: inline-block;
+    position : absolute;
+	transform: translateX(160px);
+    font-size: 16px;
+    margin-top: 30px;
+}

@@ -4,6 +4,7 @@ import SubjectList from "../components/subjectList";
 import Detail from "../components/detail";
 import Essential from "../components/essential";
 import Banners from "../components/banners";
+import "../css/planComponent.css";
 
 export default function Page1() {
 
@@ -17,6 +18,7 @@ export default function Page1() {
     <>
       <Banners />
       <div id="page-container">
+        <h3>개설 교과목 검색</h3>
         <Essential tracks={tracks} setTracks={setTracks}/>
         <Detail title={DETAIL_SEARCH} grade={grade} codes={codes} search={search} 
                   setGrade={setGrade} setCode={setCode} setSearch={setSearch}></Detail>

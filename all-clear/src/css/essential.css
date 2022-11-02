@@ -1,9 +1,9 @@
-.search_warp{
-    padding: 40px 0;
+.essential-warp{
+    padding: 35px 0;
     padding-left: 150px;
 }
 
-.search_warp label{
+.essential-warp label{
     display: inline-block;
     padding : 6px 11px;
     text-align: center;
@@ -13,12 +13,12 @@
     margin-top: 10px;
 }
 
-.search_warp td{
+.essential-warp td{
     /* text-align: center; */
     border: 1px gray solid;
     padding-left: 35px;
 }
-.search_warp th{
+.essential-warp th{
     background: #4470C7;
     color:white;
     text-align: center;
