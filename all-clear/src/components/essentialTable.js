@@ -10,14 +10,13 @@ const EssentialTable=({tracks, setTracks})=>{
     const changeMajorItem=(props)=>{
         setMajor(props);
         setTrack([]); //다른 단과대를 누를 때를 대비
-        setTracks([]);
+        setTracks([""]);
     }
 
     const [trackItem,setTrack]=useState([]);
     const changeTrackItem=(props)=>{
         setTrack(props);
-        console.log(trackItem.map(data=>data));
-        setTracks(trackItem.map(data=>data));
+        setTracks(props);
     }
     return (
     <table id="search" cellPadding="5" cellSpacing="0" border="1" >
@@ -25,6 +24,7 @@ const EssentialTable=({tracks, setTracks})=>{
                     <col width={"15%"}></col>
                     <col width={"85%"}></col>
             </colgroup>
+            <tbody>
             <tr>
                 <th>단과대</th>
                 <td>
@@ -43,6 +43,7 @@ const EssentialTable=({tracks, setTracks})=>{
                     <TrackButton tracks={tracks} trackItem={trackItem} setTracks={setTracks}/>
                 </td>
             </tr>
+            </tbody>
         </table>)
 }
 export default EssentialTable;

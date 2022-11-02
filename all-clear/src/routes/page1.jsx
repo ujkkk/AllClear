@@ -8,7 +8,7 @@ import Banners from "../components/banners";
 export default function Page1() {
 
   const DETAIL_SEARCH = "02. 세부검색";
-  const [tracks, setTracks] = useState([]);
+  const [tracks, setTracks] = useState([""]);
   const [grade, setGrade] = useState([2, 3]);
   const [codes, setCode] = useState(["전필", "전선"]);
   const [search, setSearch] = useState("");

@@ -5,12 +5,19 @@ import TrackLabel from "./trackLabel";
 const TrackButton=({tracks, trackItem, setTracks})=>{
     const [color,setColor]=useState(-1);
 
-
-    useEffect(()=>setSubjectTracks("전체"),[])
+    useEffect(()=>{
+        if(tracks.length===0){
+            setTracks(trackItem.map(data=>data));
+        }
+    },[tracks]);
 
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){
             setTracks(trackItem.map(data=>data));
+            return;
+        }
+        if(tracks.includes("전체")&&tracks.includes(prop)){
+            setTracks(tracks.filter(item=>prop===item))
             return;
         }
         if(tracks.includes(prop))
