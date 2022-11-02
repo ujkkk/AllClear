@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/subjects.css"
+import "../../css/subjects.css"
 import { Link } from "react-router-dom";
 //03. 교과목리스트 component
 const Subject = ({ data }) => {

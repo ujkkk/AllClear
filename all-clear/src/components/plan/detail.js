@@ -1,7 +1,7 @@
 
 import React from "react";
-import "../css/detail.css"
-import detailData from "../data/detail.json";
+import "../../css/detail.css"
+import detailData from "../../data/detail.json";
 import DetailRow from "./detailRow";
 import DetailRowSearch from "./detailRowSearch";
 

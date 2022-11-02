@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/essential.css"
+import "../../css/essential.css"
 import ButtonLabel from "./buttonLabel";
 
 const CollegeButton = ({ essentialData, changeMajorItem }) => {

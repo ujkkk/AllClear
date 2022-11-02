@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import SubjectList from "../components/subjectList";
-import Detail from "../components/detail";
-import Essential from "../components/essential";
+import SubjectList from "../components/plan/subjectList";
+import Detail from "../components/plan/detail";
+import Essential from "../components/plan/essential";
 import Banners from "../components/banners";
 import "../css/planComponent.css";
 

@@ -9,6 +9,7 @@
 
 #page-container table td,#page-container table th {
     height: 70px;
+    text-align: center;
 }
 
 #page-container {

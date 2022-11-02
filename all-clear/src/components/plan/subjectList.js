@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/subjects.css"
-import subjectsData from "../data/subjectList.json";
+import "../../css/subjects.css"
+import subjectsData from "../../data/subjectList.json";
 import Subject from "./subject";
 
 //03. 교과목리스트 component

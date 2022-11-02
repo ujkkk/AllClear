@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "../css/essential.css"
+import "../../css/essential.css"
 import CollegeButton from "./collegeButton";
 import MajorButton from "./majorButton";
 import TrackButton from "./trackButton";
-import searchData from "../data/search.json"
+import searchData from "../../data/search.json"
 
 //세부 검색 옵션 테이블 컴포넌트
 const EssentialTable=({tracks, setTracks})=>{

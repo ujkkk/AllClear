@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../css/essential.css"
+import "../../css/essential.css"
 
 
 const ButtonLabel=({color,index,item, content,changeItem,onSelect})=>{
