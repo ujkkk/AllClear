@@ -6,7 +6,6 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
     const [color,setColor]=useState(-1);
 
     const temp=(prop)=>(null)
-  
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){
             setTracks(["전체"]);
