@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import "../../css/gameTitleScreen.css";
-import gameTitleBGM from "../../static/gameTitleBgm.mp3"
+import gameTitleBGM from "../../static/gameTitleBgm.mp3";
 import gameStartBGM from "../../static/gameStartBgm.mp3";
 
 

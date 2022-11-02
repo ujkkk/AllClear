@@ -17,7 +17,8 @@ const SearchTable=({tracks, setTracks,setSearch})=>{
     const changeTrackItem=(props)=>{
         setTrack(props);
     }
-    return (<table id="search" cellPadding="5" cellSpacing="0" border="1" align="center">
+    return (
+    <table id="search" cellPadding="5" cellSpacing="0" border="1" >
             <colgroup>
                     <col width={"15%"}></col>
                     <col width={"85%"}></col>

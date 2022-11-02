@@ -1,23 +1,19 @@
 .search_warp{
-    width: 1500px;
-    padding: 50px 0;
+    padding: 40px 0;
+    padding-left: 150px;
 }
 
 label{
     display: inline-block;
     padding : 6px 11px;
     text-align: center;
-    font-size : 18px;
     border-radius: 40px;
     cursor: pointer;
     margin-right: 10px;
     margin-top: 10px;
 }
-#search{
-    width: 1000px;
-}
+
 td{
-    height: 70px;
     text-align: center;
     border: 1px gray solid;
     font-size:18px;
@@ -26,7 +22,6 @@ td{
 th{
     background: #4470C7;
     color:white;
-    height: 70px;
     text-align: center;
     border: 1px gray solid;
     font-size:22px;

@@ -1,13 +1,17 @@
 
 .subjects_warp {
-    width: 1500px;
+    padding-left: 150px;
+}
+
+.subjects_warp h4 {
+    padding-top: 40px;
 }
 
 .subjects_warp hr {
     margin-top: 6px;
     margin-bottom: 6px;
-    margin-left: 20px;
-    width: 1500px;
+    margin-left: -20px;
+    width: 1200px;
     border: 0;
     height: 2px;
     background: rgba(171, 171, 171, 0.523);
@@ -15,8 +19,12 @@
 
 .selected-grade {
     /* font-size: 22px; */
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 40px;
+}
+
+.selected-grade:nth-child(1) {
+    margin-top: 10px;
 }
 
 .subject {
@@ -26,7 +34,7 @@
     border: 2px solid rgba(77, 77, 77, 0.507);
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .subject-name {

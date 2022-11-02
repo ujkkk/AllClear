@@ -1,0 +1,52 @@
+#banners {
+    display: inline-block;
+    background-color: #4470C7;
+    width: 160px;
+    height: 1500px;
+    position: absolute;
+    left: 0px; 
+    text-align: center;
+}
+
+#banners nav {
+    margin-top: 20px;
+}
+
+table {
+    width: 1000px;
+}
+table td, table th {
+    height: 70px;
+}
+
+#page-container {
+    width: 1300px;
+    display: inline-block;
+    position : absolute;
+	transform: translateX(170px);
+    font-size: 16px;
+}
+
+#bugi-icon {
+    padding-top: 50px;
+    /* transform: translateX(50px); */
+    width: 60px;
+}
+
+.option-icon {
+    width: 30px;
+    /* transform: translateX(50px); */
+}
+
+.option {
+    display: inline-block;
+    color: white;
+    font-weight: lighter;
+    height: 50px;
+    width: 160px;
+    text-align: center;
+}
+
+.option:nth-child(1) {
+    margin-top: 100px;
+}
