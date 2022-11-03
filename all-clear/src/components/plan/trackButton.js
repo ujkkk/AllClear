@@ -8,7 +8,10 @@ const TrackButton=({tracks, trackItem, setTracks})=>{
     if(tracks.length===0){
         setTracks(trackItem.map(data=>data));
     }
-    },[tracks]);
+    if((tracks.length)===(trackItem.length-1)){
+        setTracks(trackItem.map(data=>data));
+    }
+    },[tracks,trackItem,setTracks]);
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){
             setTracks(trackItem.map(data=>data));

@@ -7,7 +7,7 @@ export default function DetailPlan() {
     useEffect(() => {
         const subjectId = params.id;
         console.log(subjectId);
-      }, []);
+      }, [params.id]);
 
     return (
        <ClassPlan />
