@@ -12,21 +12,6 @@
     margin-top: 20px;
 }
 
-table {
-    width: 1000px;
-}
-table td, table th {
-    height: 70px;
-}
-
-#page-container {
-    width: 1300px;
-    display: inline-block;
-    position : absolute;
-	transform: translateX(170px);
-    font-size: 16px;
-}
-
 #bugi-icon {
     padding-top: 50px;
     /* transform: translateX(50px); */

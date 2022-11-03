@@ -1,17 +1,17 @@
 
-.subjects_warp {
+.subjects-warp {
     padding-left: 150px;
 }
 
-.subjects_warp h4 {
+.subjects-warp h4 {
     padding-top: 40px;
 }
 
-.subjects_warp hr {
+.subjects-warp hr {
     margin-top: 6px;
     margin-bottom: 6px;
-    margin-left: -20px;
-    width: 1200px;
+    margin-left: -35px;
+    width: 1100px;
     border: 0;
     height: 2px;
     background: rgba(171, 171, 171, 0.523);
@@ -29,7 +29,7 @@
 
 .subject {
     display: inline-block;
-    width: 250px;
+    width: 235px;
     height: 110px;
     border: 2px solid rgba(77, 77, 77, 0.507);
     border-radius: 10px;

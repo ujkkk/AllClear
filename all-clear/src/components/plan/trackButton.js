@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "../css/search.css"
+import "../../css/essential.css"
 import TrackLabel from "./trackLabel";
 
 const TrackButton=({tracks, trackItem, setTracks})=>{

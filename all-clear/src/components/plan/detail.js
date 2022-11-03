@@ -1,7 +1,7 @@
 
 import React from "react";
-import "../css/detail.css"
-import detailData from "../data/detail.json";
+import "../../css/detail.css"
+import detailData from "../../data/detail.json";
 import DetailRow from "./detailRow";
 import DetailRowSearch from "./detailRowSearch";
 
@@ -10,7 +10,7 @@ const Detail =({title, grade, codes, search,setGrade,setCode,setSearch}) =>{
 
     
     return (
-        <div className="datail_warp">
+        <div className="datail-warp">
             <h4>{title}</h4>
             <table cellPadding={5} cellSpacing={0} border={1} width={"50%"}>
                 <colgroup>

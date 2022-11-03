@@ -1,0 +1,22 @@
+{
+    "section1": [
+        {
+            "div-class":"alert alert-danger",
+            "font-color":"",
+            "value":""
+        },
+        {
+            "div-calss":"alert alert-warning",
+            "font-color":"",
+            "value":""
+
+        }
+    ],
+    "section2" : [
+
+    ],
+    "section3": [
+
+
+    ]
+}

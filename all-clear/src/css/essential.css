@@ -1,28 +1,26 @@
-.search_warp{
-    padding: 40px 0;
+.essential-warp{
+    padding: 35px 0;
     padding-left: 150px;
 }
 
-label{
+.essential-warp label{
     display: inline-block;
     padding : 6px 11px;
     text-align: center;
     border-radius: 40px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 10px;
 }
 
-td{
-    text-align: center;
+.essential-warp td{
+    /* text-align: center; */
     border: 1px gray solid;
-    font-size:18px;
-    
+    padding-left: 35px;
 }
-th{
+.essential-warp th{
     background: #4470C7;
     color:white;
     text-align: center;
     border: 1px gray solid;
-    font-size:22px;
-}
+} 

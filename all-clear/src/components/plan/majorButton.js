@@ -1,5 +1,5 @@
 import React,{ useState }  from "react";
-import "../css/search.css"
+import "../../css/essential.css"
 import ButtonLabel from "./buttonLabel";
 
 
