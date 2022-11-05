@@ -15,6 +15,7 @@ import Page2 from "./routes/page2";
 import Page3 from "./routes/page3";
 import StandBy from "./routes/standBy";
 import DetailPlan from "./routes/datailPlan";
+import GamePage from "./routes/gamePage";
 
 const rootElement = document.getElementById("root");
 render(
@@ -27,6 +28,7 @@ render(
       <Route path="standBy" element={<StandBy />} style={{display: 'inline-block'}}/>
 
       <Route path="datailPlan/:id" element={<DetailPlan/>} />
+      <Route path="gamePage" element={<GamePage/>}/>
     </Routes>
   </BrowserRouter>,
   rootElement

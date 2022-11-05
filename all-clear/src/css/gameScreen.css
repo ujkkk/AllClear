@@ -1,0 +1,17 @@
+#sugang-td {
+    color: white;
+    font-size: 14px;
+    padding: 6px 30px;
+    background-color: #009dff;
+    text-align: left;
+    height : 50px;
+}
+#header-css td {
+    height : 50px;
+    text-align: left;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
