@@ -1,7 +1,7 @@
 import React from "react";
 
 const TrackLabel=({color,index,content,setData})=>{
-    const styleColor=color?"#0071FF":"gray";
+    const styleColor=color?"#4470C7":"gray";
    
     return(
      <label key={index} style={{border:"2px solid "+styleColor}}>{

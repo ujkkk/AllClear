@@ -5,12 +5,12 @@ import TrackLabel from "./trackLabel";
 const TrackButton=({tracks, trackItem, setTracks})=>{
     //tracks 배열이 0일 때 다시 전체 상황으로
     useEffect(()=>{
-    if(tracks.length===0){
-        setTracks(trackItem.map(data=>data));
-    }
-    if((tracks.length)===(trackItem.length-1)){
-        setTracks(trackItem.map(data=>data));
-    }
+        if(tracks.length===0){
+            setTracks(trackItem.map(data=>data));
+        }
+        if((tracks.length)===(trackItem.length-1)){
+            setTracks(trackItem.map(data=>data));
+        }
     },[tracks,trackItem,setTracks]);
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){

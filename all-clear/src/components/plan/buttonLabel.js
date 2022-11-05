@@ -3,7 +3,7 @@ import "../../css/essential.css"
 
 
 const ButtonLabel=({color,index,item, content,changeItem,onSelect})=>{
-   const styleColor=color?"#0071FF":"gray";
+   const styleColor=color?"#4470C7":"gray";
    useEffect(()=>{
         onSelect(-1);
         return ()=>{
