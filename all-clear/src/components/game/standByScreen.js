@@ -24,7 +24,7 @@ const StanByScreen = ({ title }) => {
                     let index = Math.floor(Math.random() * 100) // 1~100
                     index = setRandomTime(index); // 확률에 따라 수정
                     setTimeout(function () {
-                        navigate("/page3")
+                        navigate("/gamepage")
                     }, randomTimeData[index])
                 }}>수강신청 Go ~~</Button>
                 <img style={{ float: "right", width: "210px", height: "98px", margin: 0 }} src={commentImg}></img>
