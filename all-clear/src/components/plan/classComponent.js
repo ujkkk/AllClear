@@ -1,18 +1,17 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+import "../../css/classPlan.css"
 
-//테이블 버튼 요소
-const ClassComponent = ({type}) =>{
+//03. 교과목리스트 component
+const ClassComponent = ({type}) => {
 
-    consol.log(data);
     return (
         //누르면 클래스 이름을 바꿔서 다른 css 적용
         <>
-        <h3>classComponent</h3>
+        {/* <h3>classComponent</h3> */}
         <label className="class-component-label"
             style={{border:"2px solid gray"}}>{type}</label>
         </>
     )
-
 }
 
 export default ClassComponent;

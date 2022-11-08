@@ -5,32 +5,28 @@ import subjectsData from "../../data/subjectList.json"
 import DivisionData from "../../data/classDivision.json"
 import ClassComponent from "./classComponent";
 const ClassPlan = ({ id, professor }) => {
-
-
-   
     var subject_name;
     subjectsData.map(subject => {
         if (subject.subject_id = id) {
             subject_name = subject.name
         }
-
     })
-
-
 
     return (
         <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>
             {
+                
                 DivisionData.map(object => {
-                    if (object.subject_id == id)
-                        if (object.professor === professor) {
+                    if (object.subject_id == id) {
+                        //if (object.professor === professor) {
                             var classes = [...object.class]
-                            console.log(classes);
-                            classes.map(component => {
+                            console.log("cl: "+classes);
+                            return classes.map((component, i) => {
                                 console.log(component);
-                                (<ClassComponent type={component.type} />)
+                                return <ClassComponent key={i} type={component.type} />
                             })
-                        }
+                        //}
+                    }
                 })
             }
             <table border={1} style={{ width: "100%" }}>
@@ -161,7 +157,7 @@ const ClassPlan = ({ id, professor }) => {
                 </tbody>
             </table>
 
-            <table border={1}>
+            <table className="class-plan" border={1}>
                 <thead>
                     <tr>
                         <th>주차</th>
