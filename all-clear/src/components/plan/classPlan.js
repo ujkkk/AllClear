@@ -6,15 +6,17 @@ import DivisionData from "../../data/classDivision.json"
 import ClassComponent from "./classComponent";
 const ClassPlan = ({ id, professor }) => {
 
-
+    const [name, setName] = useState("")
    
-    var subject_name;
-    subjectsData.map(subject => {
-        if (subject.subject_id = id) {
-            subject_name = subject.name
-        }
-
-    })
+   
+    useEffect(() => {
+        subjectsData.map(subject => {
+            if (subject.subject_id == id) {
+                setName(subject.name)
+            }
+    
+        })
+    }, [])
 
 
 
@@ -26,11 +28,12 @@ const ClassPlan = ({ id, professor }) => {
                         if (object.professor === professor) {
                             var classes = [...object.class]
                             console.log(classes);
-                            classes.map(component => {
+                            return classes.map(component => {
                                 console.log(component);
-                                (<ClassComponent type={component.type} />)
+                                return (<ClassComponent type={component.type} />)
                             })
                         }
+                        return
                 })
             }
             <table border={1} style={{ width: "100%" }}>
@@ -41,7 +44,7 @@ const ClassPlan = ({ id, professor }) => {
                     <tr >
                         <td colSpan={1}>
                             <div className="print-head">과목명</div>
-                            <div className="print-body">{subject_name}</div>
+                            <div className="print-body">{name}</div>
                         </td>
                         <td colSpan={3}>
                             <div className="print-head">이수구분</div>
