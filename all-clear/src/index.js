@@ -27,7 +27,7 @@ render(
       <Route path="page3" element={<Page3 />} />
       <Route path="standBy" element={<StandBy />} style={{display: 'inline-block'}}/>
 
-      <Route path="datailPlan/:id" element={<DetailPlan/>} />
+      <Route path="datailPlan/:id/:professor" element={<DetailPlan/>} />
       <Route path="gamePage" element={<GamePage/>}/>
     </Routes>
   </BrowserRouter>,

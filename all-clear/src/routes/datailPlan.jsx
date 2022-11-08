@@ -1,15 +1,15 @@
 import React ,{ useEffect }from "react";
 import { useParams } from 'react-router-dom';
-import ClassPlan from "../components/classPlan";
+import ClassPlan from "../components/plan/classPlan";
 export default function DetailPlan() {
     const params = useParams();
-    const subjectId = params.subject_id;
+    const subjectId = params.id;
+    const professor = params.professor;
     useEffect(() => {
-        const subjectId = params.id;
         console.log(subjectId);
       }, [params.id]);
 
     return (
-       <ClassPlan />
+       <ClassPlan id={subjectId} professor={professor}/>
     );
 }
