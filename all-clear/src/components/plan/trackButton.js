@@ -2,29 +2,29 @@ import React,{useEffect} from "react";
 import "../../css/essential.css"
 import TrackLabel from "./trackLabel";
 
-const TrackButton=({tracks, trackItem, setTracks})=>{
+const TrackButton=({tracks, trackItem, changeTracks})=>{
     //tracks 배열이 0일 때 다시 전체 상황으로
     useEffect(()=>{
         if(tracks.length===0){
-            setTracks(trackItem.map(data=>data));
+            changeTracks(trackItem.map(data=>data));
         }
         if((tracks.length)===(trackItem.length-1)){
-            setTracks(trackItem.map(data=>data));
+            changeTracks(trackItem.map(data=>data));
         }
-    },[tracks,trackItem,setTracks]);
+    },[tracks,trackItem,changeTracks]);
     const setSubjectTracks=(prop)=>{
         if(prop==="전체"){
-            setTracks(trackItem.map(data=>data));
+            changeTracks(trackItem.map(data=>data));
             return;
         }
         if(tracks.includes("전체")&&tracks.includes(prop)){
-            setTracks(tracks.filter(item=>prop===item))
+            changeTracks(tracks.filter(item=>prop===item))
             return;
         }
         if(tracks.includes(prop))
-            setTracks(tracks.filter(item=>prop!==item))
+            changeTracks(tracks.filter(item=>prop!==item))
         else{
-            setTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
+            changeTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
         }
     }
 

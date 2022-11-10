@@ -4,7 +4,7 @@ import TableLabel from "./tableLabel";
 import EssentialTable from "./essentialTable";
 import EssentialLiberalTable from "./essentialLiberalTable";
 //01. 필수 검색 옵션 컴포넌트
-const Essential=({tracks, setTracks})=>{
+const Essential=({tracks, changeTracks})=>{
     const [option,setOption]=useState(1);
     const marginValue=["50px","5px"];
     const optionContent=["교양","전공"];
@@ -17,7 +17,7 @@ const Essential=({tracks, setTracks})=>{
             ))
             }
             {
-                option===1?<EssentialTable tracks={tracks} setTracks={setTracks}/>: <EssentialLiberalTable/>
+                option===1?<EssentialTable tracks={tracks} changeTracks={changeTracks}/>: <EssentialLiberalTable/>
             }
            
         </div>

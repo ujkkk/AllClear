@@ -23,12 +23,7 @@ const EssentialLiberalTable=({tracks, setTracks})=>{
                     
                 </td>
             </tr>
-            <tr>
-                <th>뭐들가지</th>
-                <td>
-                   
-                </td>
-            </tr>
+           
             </tbody>
         </table>)
 }
