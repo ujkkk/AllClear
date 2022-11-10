@@ -14,6 +14,7 @@ export default function Page1() {
   const [codes, setCode] = useState(["전필", "전선"]);
   const [search, setSearch] = useState("");
   const changeTracks=arr=>setTracks(arr);
+  const changeGrade=arr=>setGrade(arr);
   return (
     <>
       <Banners />
@@ -21,7 +22,7 @@ export default function Page1() {
         <h3>개설 교과목 검색</h3>
         <Essential tracks={tracks} changeTracks={changeTracks}/>
         <Detail title={DETAIL_SEARCH} grade={grade} codes={codes} search={search} 
-                  setGrade={setGrade} setCode={setCode} setSearch={setSearch}></Detail>
+                  changeGrade={changeGrade} setCode={setCode} setSearch={setSearch}></Detail>
         <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
       </div>
     </>

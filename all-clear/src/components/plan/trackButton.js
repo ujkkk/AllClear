@@ -17,15 +17,14 @@ const TrackButton=({tracks, trackItem, changeTracks})=>{
             changeTracks(trackItem.map(data=>data));
             return;
         }
-        if(tracks.includes("전체")&&tracks.includes(prop)){
+        if((tracks.indexOf("전체")!==-1)&&(tracks.indexOf(prop)!==-1)){
             changeTracks(tracks.filter(item=>prop===item))
             return;
         }
-        if(tracks.includes(prop))
-            changeTracks(tracks.filter(item=>prop!==item))
-        else{
-            changeTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
-        }
+        (tracks.indexOf(prop)!==-1)?
+        changeTracks(tracks.filter(item=>prop!==item))
+        :changeTracks([...tracks.filter(item=>item!=="전체"),trackItem.filter(item=>prop===item).join()]);
+        
     }
 
     return(

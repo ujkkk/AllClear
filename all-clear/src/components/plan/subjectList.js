@@ -23,7 +23,7 @@ const SubjectList = ({tracks, grade, codes, search}) => {
                                 gradeCheck = grade;
                                 return (
                                     <>
-                                        <h5 className="selected-grade">{grade}학년</h5>
+                                        <h5 className="selected-grade">{grade}</h5>
                                         <hr />
                                         <Subject key={idx} data={subject}></Subject>
                                     </>
