@@ -2,16 +2,30 @@
     color: white;
     font-size: 14px;
     padding: 6px 30px;
-    background-color: #009dff;
+    font-family: "Nanum Gothic";
+    font-weight : bold;
+    background : repeating-linear-gradient(#0F8EEC, #0B8FFA, #1087E0, #107EDE);
     text-align: left;
     height : 50px;
-}
-#header-css td {
-    height : 50px;
-    text-align: left;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
 }
 
+#sugang-middle-td{
+    background: repeating-linear-gradient(#0475DC, #006CCD, #0068D8);
+    font-weight : bold;
+    font-size : 14px;
+    color: white;
+    font-family: "Nanum Gothic";
+}
+
+#btncss {
+    background-color: #15A5B0;
+    font-size : 18px;
+    color : white;
+    font-family: "Nanum Gothic";
+    border : none;
+    padding : 10px;
+}
+
+#input-text-css {
+    font-size : 18px;
+}

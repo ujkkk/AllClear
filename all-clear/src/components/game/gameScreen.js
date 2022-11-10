@@ -3,28 +3,80 @@ import React, {useState, useEffect} from "react";
 import "../../css/gameScreen.css";
 import sugangimg from "../../static/sugang.png"
 
-
-// 수강신청 게임 tables
-const GameScreen =() =>{
-    return(
+// 수강신청게임 화면 찐
+const GameScreen = () => {
+    return (
         <>
-        <div style = {{height : "45px", marginTop : "60px", width : "1800px", marginLeft : "30px"}}>
-            <table id = "header-css" style={{width : "1800px"}}>
+        <div style = {{height : "45px", marginTop : "60px", width : "1840px", marginLeft : "30px"}}>
+            <table  style={{width : "900px", float : "left"}}>
                 <td>
                     <img src = {sugangimg}/>
                 </td>  
             </table> 
+            <table>
+                <td>
+                   timer area 
+                </td>
+            </table>
         </div>
-                                                
         <hr></hr>
-        <div style={{width : "1800px", height : "50px"}}>
-            <table style={{marginLeft: "30px", width : "1840px"}}>
-                <thead>
-                    <tr>
-                        <td id="sugang-td" style={{width : "250px"}}>
-                            ■2022-2 수강신청 개설강좌
+        <div style={{marginTop : "4px" ,marginRight : "30px", width : "900px", height : "800px", float : "right", overflow : "scroll", overflowX : "hidden"}}>
+            <table style={{width : "900px"}}>
+                <tbody>
+                    <tr id = "sugang-td">
+                        <td style={{paddingLeft : "30px", width : "400px"}}>
+                            <span style={{color:"#85CFF0", fontSize:"8px"}}>■ </span>2022-2 수강신청 신청내역
                         </td>
-                        <td id="sugang-td" style={{width : "300px"}}>
+                        <td>
+                            <input type={"type"} className={"input-code"} size ={"6"} placeholder = {"과목코드"} style = {{textAlign : "center", fontSize : "18px", padding : "6px"}}/>
+                            <input type={"type"} className={"input-class"} size ={"6"} placeholder = {"분반"} style = {{fontSize : "18px", padding : "6px"}} />
+                            <button id = "btncss" type={"button"} className={"search"}>
+                                <span>바로신청</span>    
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style={{marginTop : "3px", width : "900px"}}>
+                <tbody>
+                    <tr id = "sugang-middle-td" style={{height : "40px"}}>
+                        <td style={{paddingLeft : "30px", weight : "300px"}}>
+                            번호 - [과목코드] 교과목명
+                        </td>
+                        <td style= {{paddingLeft : "60px", weight : "300px"}}>
+                            분반 | 이수 | 학점 | 담당교수 | 선택트랙
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <td>
+                    신청한 과목 list
+                </td>
+            </table>
+            <table>
+                <td>
+                    총 신청한 과목 수
+                </td>
+            </table>
+            <table border="2" style={{width : "882px", borderColor : "#0475DC"}}>
+                <tbody>
+                    <tr>
+                        <td style={{weight : "900px", height : "700px", backgroundColor : "white", overflow : "scroll", overflowX : "hidden"}}>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style = {{marginRight : "40px", width : "900px", height : "750px", float : "right"}}>
+            <table style = {{width: "900px"}}>
+                <tbody>
+                    <tr id = "sugang-td">
+                        <td style = {{paddingLeft : "30px"}}>
+                            <span style={{color:"#85CFF0", fontSize:"8px"}}>■ </span>2022-2 수강신청 개설강좌
+                        </td>
+                        <td style = {{textAlign: "center"}}>
                             트랙선택:
                             <select name="track" id="TrackSelect">
                                 <option value="">트랙를 선택해 주세요</option>
@@ -34,8 +86,8 @@ const GameScreen =() =>{
                                 <option value="web">웹</option>
                             </select>
                         </td>
-                        <td id="sugang-td" style={{width : "360px"}}>
-                            <select name="mytrack" id="SelectMyTrack">
+                        <td style={{textAlign : "right", paddingRight : "30px"}}>
+                        <select name="mytrack" id="SelectMyTrack">
                                 <option value="">전공(트랙)</option>
                                 <option value="mobile">모바일</option>
                                 <option value="web">웹</option>
@@ -46,55 +98,31 @@ const GameScreen =() =>{
                                 <option value="web">[0002]웹</option>
                             </select>
                         </td>
-                        <td style={{backgroundColor : "white", width : "50px"}}>
-
-                        </td>
-                        <td id = "sugang-td">
-                        ■2022-2 수강신청 신청내역
-                        </td>
                     </tr>
-                </thead>
+                    </tbody>
             </table>
-        </div>
-        <div style={{marginLeft:"30px", width : "1800px", height : "20px"}}>
-            <table style={{width : "1840px"}}>
+            <table style={{width : "900px", marginTop : "5px"}}>
                 <tbody>
-                    <tr>
-                        <td style={{fontSize : "14px", width : "400px", textAlign : "left", paddingLeft : "32px"}}>
+                    <tr id = "sugang-middle-td" style = {{height : "40px"}}>
+                        <td style = {{width : "300px",  paddingLeft : "30px"}}>
                             [과목코드] 교과목명
                         </td>
-                        <td style = {{textAlign: "center", width : "531px", fontSize : "14px"}}>
+                        <td style={{width : "500px", textAlign : "left"}}>
                             분반 | 이수 | 학점 | 주야 | 학년 | 담당교수 | 비고
                         </td>
-                        <td style={{backgroundColor : "white", width : "50px"}}>
-
-                        </td>
-                        <td style={{width : "400px", fontSize : "14px", textAlign : "left", paddingLeft : "30px"}}>
-                            번호 - [과목코드] 교과목명 
-                        </td>
-                        <td style={{fontSize : "14px", textAlign : "left", width : "500px"}}>
-                            분반 | 이수 | 학점 | 담당교수 | 선택트랙
+                    </tr>
+                </tbody>
+            </table>    
+            <table border="2" style={{width : "900px", borderColor : "#0475DC"}}>
+                <tbody>
+                    <tr>
+                        <td style={{weight : "900px", height : "660px", backgroundColor : "white", overflow : "scroll", overflowX : "hidden"}}>
+                            
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div>
-            <table style={{marginLeft : "30px" ,width : "1840px", height : "650px"}}>
-                <tbody>
-                <td style={{width : "910px", overflow : "scroll"}}>
-
-                </td>
-                <td style={{width : "50px"}}>
-
-                </td>
-                <td style={{overflow : "scroll"}}>
-
-                </td>
-                </tbody>
-            </table>
-        </div>
-        
         
         </>
     )
