@@ -16,14 +16,15 @@ export default function Page1() {
   const changeTracks=arr=>setTracks(arr);
   const changeGrade=arr=>setGrade(arr);
   const changeCode=arr=>setCode(arr);
+  const changeSearch=props=>setSearch(props)
   return (
     <>
       <Banners />
       <div id="page-container">
         <h3>개설 교과목 검색</h3>
         <Essential tracks={tracks} changeTracks={changeTracks} changeGrade={changeGrade} changeCode={changeCode}/>
-        <Detail title={DETAIL_SEARCH} grade={grade} codes={codes} search={search} 
-                  changeGrade={changeGrade} changeCode={changeCode} setSearch={setSearch}></Detail>
+        <Detail title={DETAIL_SEARCH} grade={grade} codes={codes}
+                  changeGrade={changeGrade} changeCode={changeCode} changeSearch={changeSearch}></Detail>
         <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
       </div>
     </>
