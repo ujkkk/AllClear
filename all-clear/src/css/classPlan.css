@@ -38,3 +38,18 @@ table .context{
     border-left: none;
 
 }
+.class-component-label {
+    display: block;
+    padding: 6px 15px;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.class-plan {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}

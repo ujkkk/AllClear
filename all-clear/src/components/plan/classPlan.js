@@ -1,48 +1,78 @@
 
-import React, {useState, useEffect} from "react";
-import "../css/classPlan.css"
+import React, { useState, useEffect } from "react";
+import "../../css/classPlan.css"
+import subjectsData from "../../data/subjectList.json"
+import DivisionData from "../../data/classDivision.json"
+import ClassComponent from "./classComponent";
+const ClassPlan = ({ id, professor }) => {
 
 
-const ClassPlan =({id}) =>{
+    const [name, setName] = useState("")
+   
+   
+    useEffect(() => {
+        subjectsData.map(subject => {
+            if (subject.subject_id == id) {
+                setName(subject.name)
+            }
+    
+        })
+    }, [])
 
     return (
-        <div className="class-plan-wrap" style={{width:"770px", position:"absolute"}}>
-            <table border={1}   style={{ width:"100%"}}>
-                <tbody  width={"100%"}>
-                        <tr>
-                            <td colSpan={4}><h4 >수업정보</h4></td>
-                        </tr> 
-                        <tr >
-                            <td colSpan={1}>
-                                <div className="print-head">과목명</div>
-                                <div className="print-body">알고리즘</div>
-                            </td>
-                            <td colSpan={3}>
-                                <div className="print-head">이수구분</div>
-                                <div className="print-body">전공선택</div>
-                            </td>
-                        </tr>  
-                        <tr >
-                            <td colSpan={1}>
-                                <div className="print-head">수업시간 및 강의실</div>
-                                <div className="print-body">목 1시~2시/공학관 201</div>
-                            </td>
-                            <td colSpan={3}>
-                                <div className="print-head">수강대상</div>
-                                <div className="print-body">2학년</div>
-                            </td>
-                        </tr>  
-                    <tr ><td colSpan={4}><h4>교수정보</h4></td></tr>  
+        <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>
+            {
+                
+                DivisionData.map(object => {
+                    if (object.subject_id == id) {
+                        //if (object.professor === professor) {
+                            var classes = [...object.class]
+                            console.log("cl: "+classes);
+                            return classes.map((component, i) => {
+                                console.log(component);
+                                return <ClassComponent key={i} type={component.type} />
+                            })
+                        //}
+                    }
+
+                })
+            }
+            <table border={1} style={{ width: "100%" }}>
+                <tbody width={"100%"}>
+                    <tr>
+                        <td colSpan={4}><h4 >수업정보</h4></td>
+                    </tr>
+                    <tr >
+                        <td colSpan={1}>
+                            <div className="print-head">과목명</div>
+                            <div className="print-body">{name}</div>
+                        </td>
+                        <td colSpan={3}>
+                            <div className="print-head">이수구분</div>
+                            <div className="print-body">전공선택</div>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colSpan={1}>
+                            <div className="print-head">수업시간 및 강의실</div>
+                            <div className="print-body">목 1시~2시/공학관 201</div>
+                        </td>
+                        <td colSpan={3}>
+                            <div className="print-head">수강대상</div>
+                            <div className="print-body">2학년</div>
+                        </td>
+                    </tr>
+                    <tr ><td colSpan={4}><h4>교수정보</h4></td></tr>
                     <tr >
                         <td colSpan={1}>
                             <div className="print-head">성명</div>
-                            <div className="print-body">김광섭</div>
+                            <div className="print-body">{professor}</div>
                         </td>
                         <td colSpan={3}>
                             <div className="print-head">소속</div>
                             <div className="print-body">컴퓨터 공학부</div>
                         </td>
-                    </tr>  
+                    </tr>
                     <tr >
                         <td colSpan={1}>
                             <div className="print-head">면담가능장소</div>
@@ -52,8 +82,8 @@ const ClassPlan =({id}) =>{
                             <div className="print-head">면담가능시간</div>
                             <div className="print-body">이메일로 문의</div>
                         </td>
-                    </tr>         
-                    <tr ><td colSpan={4}><h4>수업방법</h4></td></tr>  
+                    </tr>
+                    <tr ><td colSpan={4}><h4>수업방법</h4></td></tr>
                     <tr>
                         <td colSpan={1}>
                             <div className="print-head">1.</div>
@@ -78,7 +108,7 @@ const ClassPlan =({id}) =>{
                             <div className="print-head">중간고사</div>
                             <div className="print-body">35%</div>
                         </td>
-                    </tr>    
+                    </tr>
                     <tr >
                         <td colSpan={2}>
                             <div className="print-head">기말고사</div>
@@ -88,7 +118,7 @@ const ClassPlan =({id}) =>{
                             <div className="print-head">과제</div>
                             <div className="print-body">20%</div>
                         </td>
-                    </tr>           
+                    </tr>
                     <tr >
                         <td colSpan={2}>
                             <div className="print-head">발표</div>
@@ -98,44 +128,44 @@ const ClassPlan =({id}) =>{
                             <div className="print-head">태도</div>
                             <div className="print-body">0%</div>
                         </td>
-                    </tr>  
+                    </tr>
 
                     <tr>
                         <td colSpan={4}><h4>수업계획</h4></td>
-                    </tr>   
+                    </tr>
                     <tr >
                         <td colSpan={4}>
                             <div className="print-head">교과목개요</div>
                             <div className="print-body">소프트웨어 개발 시 사용할 수 있는 고급 자료구조와 관련된 알고리즘에 대해 학습하고 이러한 이론을 C 프로그래밍 형태로 실습한다. 또한 다양한 정렬 및 탐색 알고리즘에 대해 학습한다.</div>
                         </td>
-                    </tr>  
+                    </tr>
                     <tr >
                         <td colSpan={4}>
                             <div className="print-head">수업목표</div>
                             <div className="print-body">자료구조에 대한 기본적인 내용을 학습하고 우선순위큐, 그래프, 정렬, 탐색, 해싱과 관련된 자료구조 및 알고리즘에 대한 응용 문제를 이해한다</div>
                         </td>
-                    </tr>  
+                    </tr>
                     <tr >
                         <td colSpan={4}>
                             <div className="print-head">선수과목</div>
                             <div className="print-body">C프로그래밍 언어</div>
                         </td>
-                    </tr>  
+                    </tr>
                     <tr >
                         <td colSpan={4}>
                             <div className="print-head">주교재</div>
                             <div className="print-body">C언어로 쉽게 풀어쓴 자료구조</div>
                         </td>
-                    </tr>  
-    
+                    </tr>
+
                     <tr>
                         <td colSpan={4}><h4>주차별 수업계획</h4></td>
-                    </tr>   
+                    </tr>
 
                 </tbody>
             </table>
 
-            <table  border={1}>
+            <table className="class-plan" border={1}>
                 <thead>
                     <tr>
                         <th>주차</th>
@@ -144,10 +174,10 @@ const ClassPlan =({id}) =>{
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">
+                        <th >
                             <div className="print-head">1주</div>
                         </th>
-                        <td>
+                        <td >
                             <div className="print-body">알고리즘 개요, 트리 복습 , 우선순위 큐 복습 연습문제</div>
                         </td>
                     </tr>

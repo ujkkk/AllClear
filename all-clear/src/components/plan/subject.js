@@ -11,7 +11,7 @@ const Subject = ({ data }) => {
         // <Link to={`/datailPlan/${data.subject_id}`} target='_blank' width='300' height='300' style={{color:"black"}}>
 
             <div className="subject" onClick={() => {
-                window.open(`/datailPlan/${data.subject_id}`, "detail_plan","width=780, height=720");
+                window.open(`/datailPlan/${data.subject_id}/${data.professor}`, "detail_plan","width=780, height=720");
             }}>
                 <div className="subject-name">{data.name}</div>
                 <div className="subject-keywords">
