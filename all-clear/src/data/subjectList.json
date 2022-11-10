@@ -5,7 +5,7 @@
         "keyword": ["JAVA", "프로젝트"],
         "professor": ["황기태"],
         "grade": "2학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전필"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}, {"track":"웹공학","code":"전공선택"}]
         
     },
     {
@@ -14,7 +14,7 @@
         "keyword": ["컴퓨터구조", "데이터"],
         "professor": ["황호영"],
         "grade": "2학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"모바일소프트웨어","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"모바일소프트웨어","code":"전공선택"}]
     },
     {
         "subject_id": 3,
@@ -22,7 +22,7 @@
         "keyword": ["C", "자료구조"],
         "professor": ["권영미"],
         "grade": "2학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공선택"}]
     },
 
     {
@@ -31,7 +31,7 @@
         "keyword": ["리액트", "프로젝트"],
         "professor": ["박승현"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"웹공학","code":"전필"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공필수"}]
     },
     {
         "subject_id": 5,
@@ -39,7 +39,7 @@
         "keyword": ["유니티", "프로젝트"],
         "professor": ["김진모", "조세홍"],
         "grade": "3학년",
-        "tracks" : [{"track":"디지털콘텐츠 가상현실","code":"전필"}, {"track":"모바일소프트웨어","code":"전선"}]
+        "tracks" : [{"track":"디지털콘텐츠 가상현실","code":"전공필수"}, {"track":"모바일소프트웨어","code":"전공선택"}]
     },
     {
         "subject_id": 6,
@@ -47,7 +47,7 @@
         "keyword": ["안드로이드", "프로젝트"],
         "professor": ["허준영"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전필"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}, {"track":"웹공학","code":"전공선택"}]
     },
     {
         "subject_id": 7,
@@ -55,7 +55,7 @@
         "keyword": ["디자인패턴", "JAVA"],
         "professor": ["정인상"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공선택"}]
     },
     {
         "subject_id": 8,
@@ -63,7 +63,7 @@
         "keyword": ["디자인패턴", "JAVA"],
         "professor": ["한기준"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공선택"}]
     },
     {
         "subject_id": 9,
@@ -71,7 +71,7 @@
         "keyword": ["DB", "MySQL"],
         "professor": ["김영웅"],
         "grade": "3학년",
-        "tracks" : [{"track":"빅데이터","code":"전필"}, {"track":"디지털콘텐츠 가상현실","code":"전선"}]
+        "tracks" : [{"track":"빅데이터","code":"전공필수"}, {"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
     },
     {
         "subject_id": 10,
@@ -79,6 +79,6 @@
         "keyword": ["운영체제", "리눅스"],
         "professor": ["장재영"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전선"}, {"track":"웹공학","code":"전선"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공선택"}]
     }
 ]

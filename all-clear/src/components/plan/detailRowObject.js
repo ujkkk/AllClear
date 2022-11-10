@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 //테이블 버튼 요소
 const DetailRowComponent = ({color,title, setData}) =>{
