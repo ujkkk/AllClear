@@ -4,7 +4,7 @@ import DetailRowComponent from "./detailRowObject";
 //02 새부사항 테이블의 학년 줄
 const DetailColComponent = ({ rowTitle, rowData = [],items, changeItems }) => {
     useEffect(()=>{
-        if(items.length===rowData.length-1){
+        if(items.length===0||items.length===rowData.length-1){
             changeItems(rowData.map(data=>data));
         }
     },[items,rowData,changeItems]);
