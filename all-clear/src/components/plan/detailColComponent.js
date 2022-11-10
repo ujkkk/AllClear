@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import DetailRowComponent from "./detailRowObject";
 
 //02 새부사항 테이블의 학년 줄
-const DetailColComponent = ({ rowTitle, rowData = [],items, changeItems }) => {
+const DetailColComponent = ({ rowTitle,colorOn, rowData = [],items, changeItems }) => {
     useEffect(()=>{
         if(items.length===0||items.length===rowData.length-1){
             changeItems(rowData.map(data=>data));
@@ -28,7 +28,7 @@ const DetailColComponent = ({ rowTitle, rowData = [],items, changeItems }) => {
             <th>{rowTitle}</th>
             <td className="my-detail-right">
                 {                  
-                    rowData.map((data, idx) => <DetailRowComponent color={items.filter(item=>item===data).join()===data} title={data} key={idx} setData={setItemData} />)
+                    rowData.map((data, idx) => <DetailRowComponent color={items.filter(item=>item===data).join()===data} colorOn={colorOn} title={data} key={idx} setData={setItemData} />)
                 }
             </td>
         </tr>
