@@ -5,12 +5,13 @@ import liberalData from "../../data/liberalArts.json";
 import TrackButton from "./trackButton";
 
 //세부 검색 옵션 테이블 컴포넌트
-const EssentialLiberalTable=({tracks, changeTracks})=>{
+const EssentialLiberalTable=({tracks,changeColorState, changeTracks})=>{
     
     const [fieldItem,setField]=useState([])
     //구분 선택시 호출
     const changeFieldItem=(props)=>{ //props는 구분 배열
         setField(props); 
+        changeColorState(true);
         changeTracks(props);
     }
     return (
