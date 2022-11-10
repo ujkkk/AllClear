@@ -17,8 +17,8 @@ const Essential=({tracks, changeTracks})=>{
             ))
             }
             {
-                option===1?<EssentialTable tracks={tracks} changeTracks={changeTracks}/>: <EssentialLiberalTable/>
-            }
+                option===1?<EssentialTable tracks={tracks} changeTracks={changeTracks}/>: <EssentialLiberalTable tracks={tracks} changeTracks={changeTracks}/>
+            } 
            
         </div>
     );

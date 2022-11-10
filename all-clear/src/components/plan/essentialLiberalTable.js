@@ -1,9 +1,18 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "../../css/essential.css"
-
+import CollegeButton from "./collegeButton";
+import liberalData from "../../data/liberalArts.json";
+import TrackButton from "./trackButton";
 
 //세부 검색 옵션 테이블 컴포넌트
-const EssentialLiberalTable=({tracks, setTracks})=>{
+const EssentialLiberalTable=({tracks, changeTracks})=>{
+    
+    const [fieldItem,setField]=useState([])
+    //구분 선택시 호출
+    const changeFieldItem=(props)=>{ //props는 구분 배열
+        setField(props); 
+        changeTracks(props);
+    }
     return (
     <table id="search" cellPadding="5" cellSpacing="0" border="1" >
             <colgroup>
@@ -12,15 +21,15 @@ const EssentialLiberalTable=({tracks, setTracks})=>{
             </colgroup>
             <tbody>
             <tr>
-                <th>교양</th>
+                <th>구분</th>
                 <td>
-                   
+                   <CollegeButton essentialData={liberalData} changeMajorItem={changeFieldItem}/>
                 </td>
             </tr>
             <tr>
-                <th>선택</th>
+                <th>분야</th>
                 <td>
-                    
+                    <TrackButton tracks={tracks} trackItem={fieldItem} changeTracks={changeTracks}/>
                 </td>
             </tr>
            
