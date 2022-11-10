@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import "../../css/classPlan.css"
 import subjectsData from "../../data/subjectList.json"
 import DivisionData from "../../data/classDivision.json"
-import ClassComponent from "./classComponent";
+import LikeBar from "./likeBar";
 const ClassPlan = ({ id, professor }) => {
 
 
     const [name, setName] = useState("")
-   
+
    
     useEffect(() => {
         subjectsData.map(subject => {
@@ -19,20 +19,15 @@ const ClassPlan = ({ id, professor }) => {
         })
     }, [])
 
+
     return (
         <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>
             {
                 
                 DivisionData.map(object => {
                     if (object.subject_id == id) {
-                        //if (object.professor === professor) {
-                            var classes = [...object.class]
-                            console.log("cl: "+classes);
-                            return classes.map((component, i) => {
-                                console.log(component);
-                                return <ClassComponent key={i} type={component.type} />
-                            })
-                        //}
+                            var classes = [...object.class];
+                            return <LikeBar classes={classes} />        
                     }
 
                 })
