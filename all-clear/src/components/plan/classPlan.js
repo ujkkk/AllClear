@@ -4,21 +4,19 @@ import "../../css/classPlan.css"
 import subjectsData from "../../data/subjectList.json"
 import DivisionData from "../../data/classDivision.json"
 import LikeBar from "./likeBar";
-const ClassPlan = ({ id, professor }) => {
+const ClassPlan = ({ id, professor, like }) => {
 
 
     const [name, setName] = useState("")
 
-   
+   console.log(`like : ${like}`);
     useEffect(() => {
         subjectsData.map(subject => {
             if (subject.subject_id == id) {
                 setName(subject.name)
             }
-    
         })
     }, [])
-
 
     return (
         <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>
@@ -27,7 +25,7 @@ const ClassPlan = ({ id, professor }) => {
                 DivisionData.map(object => {
                     if (object.subject_id == id) {
                             var classes = [...object.class];
-                            return <LikeBar classes={classes} />        
+                            return <LikeBar subject_id={id} classes={classes} />        
                     }
 
                 })

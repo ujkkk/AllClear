@@ -17,7 +17,9 @@ import StandBy from "./routes/standBy";
 import DetailPlan from "./routes/datailPlan";
 import GamePage from "./routes/gamePage";
 
+
 const rootElement = document.getElementById("root");
+
 render(
   <BrowserRouter>
     <Routes>
@@ -27,7 +29,7 @@ render(
       <Route path="page3" element={<Page3 />} />
       <Route path="standBy" element={<StandBy />} style={{display: 'inline-block'}}/>
 
-      <Route path="datailPlan/:id/:professor" element={<DetailPlan/>} />
+      <Route path="datailPlan/:id/:professor" element={<DetailPlan id={1}/>} />
       <Route path="gamePage" element={<GamePage/>}/>
     </Routes>
   </BrowserRouter>,

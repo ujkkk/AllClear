@@ -17,6 +17,24 @@
         ]
     },
     {
+        "subject_id": 1,
+        "name": "객체지향언어2",
+        "professor": "황기태",
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "C",
+                "start_time" : "13:00","end_time" : "14:30",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+
+    {
         "subject_id": 2,
         "name": "데이터통신",
         "professor": "황호영",
