@@ -1,4 +1,4 @@
-
+/*
 #page-container h3 {
     transform: translateX(150px);
 }
@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+#page-container table td {
+    text-align: left;
+}
+
 #page-container {
     width: 1200px;
     display: inline-block;
@@ -20,3 +24,4 @@
     font-size: 16px;
     margin-top: 30px;
 }
+*/

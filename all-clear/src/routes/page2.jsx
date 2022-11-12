@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import Banners from "../components/banners";
-import StarRating from "../components/StarRating";
+import LikeClassList from "../components/preset/likeClassList";
+import Schedule from "../components/preset/schedule";
+import SearchClassList from "../components/preset/searchClassList";
 
 export default function Page2() {
+  const [likeSub, setLikeSub] = useState([{subject_id: 1,type: "8"},{subject_id: 1, type: "C"}]);
   return (
     <>
     <Banners />
     <div id="page-container">
-    <StarRating totalStars={5}/>
-    </div>
+        <h3>시간표 Preset</h3>
+        <Schedule likeSub={likeSub}/>
+        <LikeClassList likeSub={likeSub}/>
+        <SearchClassList />
+      </div>
     </>
   );
 }

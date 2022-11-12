@@ -23,3 +23,13 @@
     text-align: center;
     border: 1px gray solid;
 } 
+
+.essential-warp h4 {
+    display: inline-block;
+    width: 50%;
+    transform: translateY(8px);
+}
+
+.float-right, .float-left {
+    transform: translateY(-5px);
+}
