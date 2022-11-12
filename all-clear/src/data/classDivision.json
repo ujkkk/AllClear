@@ -2,7 +2,7 @@
     {
         "subject_id": 1,
         "name": "객체지향언어2",
-        "professor": "황기태",
+        "professor": ["황기태"],
         "class" :  [ 
             {
                 "type": "8",
@@ -17,9 +17,27 @@
         ]
     },
     {
+        "subject_id": 1,
+        "name": "객체지향언어2",
+        "professor": "황기태",
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "C",
+                "start_time" : "13:00","end_time" : "14:30",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+
+    {
         "subject_id": 2,
         "name": "데이터통신",
-        "professor": "황호영",
+        "professor": ["황호영"],
         "class" :  [ 
             {
                 "type": "7",
@@ -51,7 +69,7 @@
     {
         "subject_id": 3,
         "name": "알고리즘",
-        "professor": "권영미",
+        "professor": ["권영미"],
         "class" :  [ 
             {
                 "type": "A",
@@ -69,7 +87,7 @@
     {
         "subject_id": 4,
         "name": "웹프레임워크",
-        "professor": "박승현",
+        "professor": ["박승현"],
         "class" :  [ 
             {
                 "type": "8",
@@ -86,7 +104,7 @@
     {
         "subject_id": 5,
         "name": "가상현실",
-        "professor": "김진모",
+        "professor": ["김진모"],
         "class" :  [ 
             {
                 "type": "8",
@@ -103,7 +121,7 @@
     {
         "subject_id": 6,
         "name": "고급모바일프로그래밍",
-        "professor": "허준영",
+        "professor": ["허준영"],
         "class" :  [ 
             {
                 "type": "8",
@@ -120,7 +138,7 @@
     {
         "subject_id": 7,
         "name": "설계패턴",
-        "professor": "정인상",
+        "professor": ["정인상"],
         "class" :  [ 
             {
                 "type": "8",
@@ -137,7 +155,7 @@
     {
         "subject_id": 8,
         "name": "설계패턴",
-        "professor": "한기준",
+        "professor": ["한기준"],
         "class" :  [ 
             {
                 "type": "8",
@@ -154,7 +172,7 @@
     {
         "subject_id": 9,
         "name": "데이터베이스설계",
-        "professor": "김영웅",
+        "professor": ["김영웅"],
         "class" :  [ 
             {
                 "type": "8",
@@ -171,7 +189,7 @@
     {
         "subject_id": 10,
         "name": "시스템프로그래밍",
-        "professor": "장재영",
+        "professor": ["장재영"],
         "class" :  [ 
             {
                 "type": "8",

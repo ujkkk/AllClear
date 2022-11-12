@@ -3,19 +3,18 @@ import React, { useState, useEffect } from "react";
 import "../../css/classPlan.css"
 import subjectsData from "../../data/subjectList.json"
 import DivisionData from "../../data/classDivision.json"
-import ClassComponent from "./classComponent";
-const ClassPlan = ({ id, professor }) => {
+import LikeBar from "./likeBar";
+const ClassPlan = ({ id, professor, like }) => {
 
 
     const [name, setName] = useState("")
-   
-   
+
+   console.log(`like : ${like}`);
     useEffect(() => {
         subjectsData.map(subject => {
             if (subject.subject_id == id) {
                 setName(subject.name)
             }
-    
         })
     }, [])
 
@@ -25,14 +24,8 @@ const ClassPlan = ({ id, professor }) => {
                 
                 DivisionData.map(object => {
                     if (object.subject_id == id) {
-                        //if (object.professor === professor) {
-                            var classes = [...object.class]
-                            console.log("cl: "+classes);
-                            return classes.map((component, i) => {
-                                console.log(component);
-                                return <ClassComponent key={i} type={component.type} />
-                            })
-                        //}
+                            var classes = [...object.class];
+                            return <LikeBar subject_id={id} classes={classes} />        
                     }
 
                 })

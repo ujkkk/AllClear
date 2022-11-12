@@ -14,6 +14,8 @@ export default function Page1() {
   const [grade, setGrade] = useState([]);
   const [codes, setCode] = useState([]);
   const [search, setSearch] = useState("");
+  const [likeClasses, setLikeClasses] = useState([""]);
+
   const changeTracks=arr=>setTracks(arr);
   const changeGrade=arr=>setGrade(arr);
   const changeCode=arr=>setCode(arr);
@@ -22,6 +24,9 @@ export default function Page1() {
   const resetDetailButton=()=>{
     changeGrade([]); changeCode([]); changeSearch("");
   }
+
+  const changeLikeClasses = (arr) => setLikeClasses(arr)
+
   return (
     <>
       <Banners />
@@ -30,7 +35,7 @@ export default function Page1() {
         <Essential tracks={tracks} resetDetail={resetDetailButton} changeTracks={changeTracks} changeColorState={changeColorState}/>
         <Detail title={DETAIL_SEARCH} grade={grade} codes={codes} colorOn={colorOn}
                   changeGrade={changeGrade} changeCode={changeCode} changeSearch={changeSearch}></Detail>
-        <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
+        <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} likeClasses={likeClasses} changeLikeClasses={changeLikeClasses}/>
       </div>
     </>
   );
