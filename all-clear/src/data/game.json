@@ -9,11 +9,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
     },
@@ -27,27 +22,8 @@
                 "type": "7",
                 "start_time" : "16:00","end_time" : "16:50",
                 "dayOfWeek":"금"
-            },
-            {
-                "type": "A",
-                "start_time" : "11:00","end_time" : "11:50",
-                "dayOfWeek":"금"
-            },
-            {
-                "type": "B",
-                "start_time" : "12:00","end_time" : "12:50",
-                "dayOfWeek":"금"
-            },
-            {
-                "type": "C",
-                "start_time" : "14:00","end_time" : "14:30",
-                "dayOfWeek":"금"
-            },
-            {
-                "type": "D",
-                "start_time" : "15:00","end_time" : "15:30",
-                "dayOfWeek":"금"
             }
+        
         ]
    },
     {
@@ -79,11 +55,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
   },
@@ -97,11 +68,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
     },
@@ -115,11 +81,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
     },
@@ -133,11 +94,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
     },
@@ -151,11 +107,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
       },
@@ -169,11 +120,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
       },
@@ -187,11 +133,6 @@
                 "type": "8",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
-            },
-            {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
             }
         ]
      }
