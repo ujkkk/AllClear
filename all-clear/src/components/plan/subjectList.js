@@ -18,7 +18,7 @@ const SubjectList = ({tracks, grade, codes, search}) => {
                                 (tracks.reduce((trackBool, track) => (subTrack.track == track) ? true : trackBool, false) &&
                                     codes.reduce((codeBool, code) => (subTrack.code == code) ? true : codeBool, false)) ? true : bool, false)
 
-                        if (trackCheck && grade == subject.grade && subject.name.includes(search)) {
+                        if (trackCheck && grade == subject.grade && subject.name.includes(search.trim())) {
                             if (gradeCheck != grade) {
                                 gradeCheck = grade;
                                 return (

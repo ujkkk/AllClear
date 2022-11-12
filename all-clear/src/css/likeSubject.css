@@ -1,0 +1,41 @@
+#lick-class-warp {
+    padding-left: 150px;
+
+}
+
+#lick-class-warp h4 {
+    padding-top: 40px;
+}
+
+.like-subject {
+    display: inline-block;
+    width: 235px;
+    height: 110px;
+    border: 2px solid rgba(77, 77, 77, 0.507);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.like-subject .subject-name {
+    display: inline-block;
+    font-size: 18px;
+    /* text-align: center; */
+    margin-left: 17px;
+    margin-top: 12px;
+    width: 220px;
+}
+
+.like-subject .subject-type {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.like-subject .subject-time {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 3px;
+}

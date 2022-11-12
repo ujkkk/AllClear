@@ -3,6 +3,10 @@
     padding-left: 150px;
 }
 
+.datail-warp h4 {
+    transform: translateY(-5px);
+}
+
 .datail-warp th {
     color: white;
     padding: 6px 30px;
