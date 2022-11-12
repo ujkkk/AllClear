@@ -6,7 +6,7 @@ import TrackButton from "./trackButton";
 import searchData from "../../data/search.json"
 
 //세부 검색 옵션 테이블 컴포넌트
-const EssentialTable=({tracks, changeColorState,changeTracks})=>{
+const EssentialTable=({tracks, resetDetail, changeColorState,changeTracks})=>{
     const [majorItem,setMajor]=useState([]); //선택할 학부를 담을 상태변수
     
     //단과대 선택 시 호출 
@@ -14,7 +14,7 @@ const EssentialTable=({tracks, changeColorState,changeTracks})=>{
         setMajor(props); 
         changeColorState(false);
         setTrack([]); //다른 단과대를 누를 때를 대비
-        changeTracks([""]); //다른 단과대를 누르면 subject에서 사용하는 트랙 배열을 초기화
+        resetDetail(); //다른 단과대를 누르면 subject에서 사용하는 트랙 배열을 초기화
     }
 
     const [trackItem,setTrack]=useState([]); //선택할 트랙을 담을 상태변수
@@ -23,6 +23,7 @@ const EssentialTable=({tracks, changeColorState,changeTracks})=>{
     const changeTrackItem=(props)=>{ //props는 트랙 배열
         setTrack(props);
         changeTracks(props);
+        resetDetail();
         changeColorState(true);
     }
     return (

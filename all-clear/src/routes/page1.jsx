@@ -19,12 +19,15 @@ export default function Page1() {
   const changeCode=arr=>setCode(arr);
   const changeColorState=(state)=>setColorOn(state);
   const changeSearch=props=>setSearch(props)
+  const resetDetailButton=()=>{
+    changeGrade([]); changeCode([]); changeSearch("");
+  }
   return (
     <>
       <Banners />
       <div id="page-container">
         <h3>개설 교과목 검색</h3>
-        <Essential tracks={tracks} changeTracks={changeTracks} changeColorState={changeColorState} changeGrade={changeGrade} changeCode={changeCode}/>
+        <Essential tracks={tracks} resetDetail={resetDetailButton} changeTracks={changeTracks} changeColorState={changeColorState}/>
         <Detail title={DETAIL_SEARCH} grade={grade} codes={codes} colorOn={colorOn}
                   changeGrade={changeGrade} changeCode={changeCode} changeSearch={changeSearch}></Detail>
         <SubjectList tracks={tracks} grade={grade} codes={codes} search={search} />
