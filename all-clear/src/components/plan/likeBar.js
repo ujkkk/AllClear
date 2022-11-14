@@ -13,10 +13,9 @@ const LikeBar=({changeLikeClasses, subject_id=0,classes=[]})=>{
 
     //하트 클릭에 따라 데이터 추가
     useEffect(() =>{
-        var newClasses = likes.map((like,i) => (like == true)? changeLikeClasses(subject_id,classes[i]): false)
+        var newClasses = likes.map((like,i) => (like == true)? changeLikeClasses(subject_id, classes[i].type): false)
         var obj = {subject_id, newClasses}
-     
-        
+          
     }, [likes])
 
     const toggleLike = (e, index) =>{
@@ -31,7 +30,8 @@ const LikeBar=({changeLikeClasses, subject_id=0,classes=[]})=>{
     // 누른 class 정보 필요
 
     return (
-        <div style={{backgroundColor: "#c9c9c9" }}> 
+        <div > 
+        <span>"</span>
        { classes.map((aClass, i) =>  
         <ClassComponent key={i} aClass={aClass} like ={likes[i]}  onSelect={(e) =>toggleLike(e,i,)} />)
        }

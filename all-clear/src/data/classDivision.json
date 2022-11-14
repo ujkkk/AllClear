@@ -20,7 +20,7 @@
     {
         "subject_id": 1,
         "name": "객체지향언어2",
-        "professor": "황기태",
+        "professor": ["황기태"],
         "class" :  [ 
             {
                 "type": "8",
@@ -31,11 +31,6 @@
                 "type": "C",
                 "start_time" : "13:00","end_time" : "14:30",
                 "dayOfWeek":"화"
-            },
-            {
-                "type": "A",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"목"
             }
         ]
     },
