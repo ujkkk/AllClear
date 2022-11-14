@@ -7,8 +7,9 @@
     padding-top:4%;
 }
 
-header #game-title{
-    font-size: 4.5rem;
+#setting-contents-section {
+    width:800px;
+    margin: 0 auto;
 }
 
 #game-setting-section {
@@ -16,21 +17,78 @@ header #game-title{
     border-radius:46px;
     background: #7CABD7;
     border: 5px solid #FFFFFF;
-    width:45%;
-    height:48%;
+    width:800px;
+    height:450px;
     padding: 0 auto;
 }
 
+header #game-title{
+    font-size: 4.5rem;
+    margin-bottom:45px;
+    line-height: 1.3;
+}
+
+
+#game-table-title {
+    width:100%;
+    height:55px;
+    background-color: #3975B5;
+    border-radius:46px 46px 0 0;
+    border-bottom: 5px solid #FFFFFF;
+    font-size: 35px;
+    text-align: center;
+    /* padding-top:7px; */
+}
+
+
 #game-title-screen-nav { 
-    margin-top:30px;
+    margin-top:35px;
     padding: 0 auto;
 }
 
 #game-title-screen-nav button{ 
     display:inline-block;
-    margin-right:2%;
+    margin-right:20px;
     background: #E8E8E8;
     border-radius: 12px;
-    width:15%;
+    width:300px;
     font-size: 30px;
 }
+
+#bell{
+    transform-origin: 50% 0%;
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes shake{
+      0%{
+          transform: rotate(0deg);
+      }
+      10%{
+          transform: rotate(45deg);
+      }
+      20%{
+          transform: rotate(-45deg);
+      }
+      30%{
+          transform: rotate(30deg);
+      }
+      40%{
+          transform: rotate(-30deg);
+      }
+      50%{
+          transform: rotate(10deg);
+      }
+      60%{
+          transform: rotate(-10deg);
+      }
+      70%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(0deg);
+      }
+  }
