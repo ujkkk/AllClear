@@ -5,6 +5,7 @@ import Detail from "../components/plan/detail";
 import Essential from "../components/plan/essential";
 import Banners from "../components/banners";
 import "../css/planComponent.css";
+import { useOutletContext } from "react-router-dom";
 
 export default function Page1() {
 
@@ -14,7 +15,6 @@ export default function Page1() {
   const [grade, setGrade] = useState([]);
   const [codes, setCode] = useState([]);
   const [search, setSearch] = useState("");
-  const [likeClasses, setLikeClasses] = useState([]);
 
   const changeTracks=arr=>setTracks(arr);
   const changeGrade=arr=>setGrade(arr);
@@ -24,6 +24,9 @@ export default function Page1() {
   const resetDetailButton=()=>{
     changeGrade([]); changeCode([]); changeSearch("");
   }
+const {likeClasses,changeLikeClasses}=useOutletContext();
+console.log(likeClasses);
+
 
   //중복이 아니면 요소를 추가
   const changeLikeClasses = (subject_id, type) => {

@@ -27,7 +27,7 @@ const GameTableRow = ({id, title, hiddenRow, setHiddenRow}) =>{
             return <td><DropdownList defaultValue={defaultOption} data={options} style = {{textAlign:"center"}}></DropdownList></td>     
         }
         if (index == 3){
-            return <td><input type ="text" style={{textAlign:"center",borderRadius:"10px"}}></input></td>     
+            return <td><input type ="text" style={{textAlign:"center",borderRadius:"10px",width:"350px"}}></input></td>     
         }
       
     }
