@@ -31,12 +31,8 @@
                 "type": "C",
                 "start_time" : "13:00","end_time" : "14:30",
                 "dayOfWeek":"화"
-            },
-            {
-                "type": "A",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"목"
             }
+        
         ]
     },
 
