@@ -8,7 +8,7 @@ import SearchClassList from "../components/preset/searchClassList";
 export default function Page2() {
   const [likeSub, setLikeSub] = useState([{subject_id: 1,type: "8"},{subject_id: 1, type: "C"}]);
   const {likeClasses,changeLikeClasses}=useOutletContext();
-console.log(likeClasses);
+
   return (
     <>
     <Banners />

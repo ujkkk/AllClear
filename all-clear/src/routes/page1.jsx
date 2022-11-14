@@ -25,20 +25,6 @@ export default function Page1() {
     changeGrade([]); changeCode([]); changeSearch("");
   }
 const {likeClasses,changeLikeClasses}=useOutletContext();
-console.log(likeClasses);
-
-
-  //중복이 아니면 요소를 추가
-  const changeLikeClasses = (subject_id, type) => {
-    var obj = {subject_id, type}
-    var newLikesArr= []
-    likeClasses.map(likeClass =>
-        likeClass.subject_id == obj.subject_id && likeClass.type === obj.type?
-        false: newLikesArr.push(likeClass)
-      )
-    setLikeClasses([...newLikesArr, obj])
-    console.log([...newLikesArr, obj])
-  }
 
   return (
     <>
