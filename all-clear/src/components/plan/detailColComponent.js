@@ -8,9 +8,7 @@ const DetailColComponent = ({ rowTitle,colorOn, rowData = [],items, changeItems 
             changeItems(rowData.map(data=>data));
         }
     },[items,rowData,changeItems]);
-    useEffect(()=>{
-        changeItems(rowData.map(data=>data));
-    },[colorOn])
+
     const setItemData=(prop)=>{
         if(prop=="전체"){
             changeItems(rowData.map(data=>data));
