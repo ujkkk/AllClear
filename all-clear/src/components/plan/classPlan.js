@@ -19,17 +19,7 @@ const ClassPlan = ({ id, professor, like }) => {
     }, [])
 
     return (
-        <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>
-            {
-                
-                DivisionData.map(object => {
-                    if (object.subject_id == id) {
-                            var classes = [...object.class];
-                            return <LikeBar subject_id={id} classes={classes} />        
-                    }
-
-                })
-            }
+        <div className="class-plan-wrap" style={{ width: "770px", position: "absolute" }}>  
             <table border={1} style={{ width: "100%" }}>
                 <tbody width={"100%"}>
                     <tr>

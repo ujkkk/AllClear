@@ -3,12 +3,12 @@ import "../../css/classPlan.css";
 import {AiTwotoneHeart, AiOutlineHeart} from 'react-icons/ai'
 //03. 교과목리스트 component
 const ClassComponent = ({aClass, onSelect, like}) => {
-    console.log(like)
+    //console.log(like)
     return (
         //누르면 클래스 이름을 바꿔서 다른 css 적용
         <>
         {/* <h3>classComponent</h3> */}
-        <label className="class-component-label"
+        <label className="class-component-label" onClick={()=>{window.open(`/datailPlan/${aClass.subject_id}/${aClass.professor}`, "detail_plan","width=780, height=720");}}
             style={{border:"2px solid gray"}}>
                 { like? <AiTwotoneHeart size="25px" color="red" onClick={(onSelect)}/>
                 :<AiOutlineHeart size="25px" onClick={onSelect}/>}

@@ -14,7 +14,7 @@ export default function Page1() {
   const [grade, setGrade] = useState([]);
   const [codes, setCode] = useState([]);
   const [search, setSearch] = useState("");
-  const [likeClasses, setLikeClasses] = useState([""]);
+  const [likeClasses, setLikeClasses] = useState([]);
 
   const changeTracks=arr=>setTracks(arr);
   const changeGrade=arr=>setGrade(arr);
@@ -25,8 +25,14 @@ export default function Page1() {
     changeGrade([]); changeCode([]); changeSearch("");
   }
 
-  const changeLikeClasses = (arr) => setLikeClasses(arr)
-
+  //중복이 아니면 요소를 추가
+  const changeLikeClasses = (subject_id, aClass) => {
+    var obj = {subject_id, aClass}
+    var newLikes = new Set([...likeClasses, obj])
+    var newLikesArr = [...newLikes]
+    console.log(newLikesArr)
+    setLikeClasses(newLikesArr)
+  }
   return (
     <>
       <Banners />
