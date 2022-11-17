@@ -6,24 +6,16 @@ import {useState} from "react";
 const PageSetting=()=>{ 
     const [likeClasses, setLikeClasses] = useState([]);
     console.log(likeClasses)
-    const changeLikeClasses = (subject_id, aClass, type) => {
-      var obj = {subject_id, aClass}
-      if(type === 'add'){
+    const changeLikeClasses = (subject_id, type, cmd) => {
+      var obj = {subject_id, type}
+      if(cmd === 'add'){
         var newLikes = new Set([...likeClasses, obj])
         var newLikesArr = [...newLikes]
-        console.log(newLikesArr)
         setLikeClasses(newLikesArr)
-        console.log('add')
-      }else if (type === 'remove'){
-     
-      var newLikes = likeClasses.filter(likeClass =>{
-        console.log(`${likeClass.subject_id != obj.subject_id} && ${likeClass.aClass !== obj.aClass}`)
-        console.log(likeClass.subject_id)
-        console.log(obj.subject_id)
-        return likeClass.subject_id != obj.subject_id && likeClass.aClass !== obj.aClass
-      })
+      }else if (cmd === 'remove'){
+        //넘어온 객체만 걸러서 새로운 데이터를 넣음
+        var newLikes = likeClasses.filter(likeClass => (likeClass.subject_id != obj.subject_id) ||(likeClass.type !== obj.type))
         setLikeClasses(newLikes)
-        console.log('remove')
       }
       
     }
