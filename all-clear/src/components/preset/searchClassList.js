@@ -8,7 +8,7 @@ import LikeClass from "./likeClass";
 
 
 //03. 과목검색 component
-const SearchClassList = () => {
+const SearchClassList = ({setPreset=f=>f}) => {
         //subject.name.includes(search.trim())
         const [className, setClassName] = useState("");
         const [text, setText] = useState();
@@ -29,8 +29,8 @@ const SearchClassList = () => {
                         {
                                 classData.map((data, idx) => {
                                         if (data.name.includes(className.trim())) {
-                                                return data.class.map((type)=>{
-                                                        return <LikeClass likeSub={{ subject_id: data.subject_id, type: type.type }} />
+                                                return data.class.map((type, i)=>{
+                                                        return <LikeClass key={i} likeSub={{ subject_id: data.subject_id, type: type.type }}  addClass={setPreset} />
                                         })
                                                 
                                         }
