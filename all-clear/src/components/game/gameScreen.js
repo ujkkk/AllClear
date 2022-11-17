@@ -3,12 +3,14 @@ import gameData from "../../data/game.json";
 import "../../css/gameScreen.css";
 import sugangimg from "../../static/sugang.png"
 import SubjectInfo from "./subjectInfo";
+import { useOutletContext } from "react-router-dom";
 
 // 수강신청게임 화면 
 const GameScreen = () => {
 
    // const [gameData, setGameData] = useState(gameData)
-    
+   const{gameSetInfo, chageGameSetInfo}
+    = useOutletContext();
     return (
         <>
         <div style = {{height : "45px", marginTop : "60px", width : "1200px", marginLeft : "30px"}}>

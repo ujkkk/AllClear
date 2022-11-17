@@ -19,6 +19,14 @@ const PageSetting=()=>{
       }
       
     }
-    return <Outlet context={{likeClasses,changeLikeClasses}}/>;
+    
+    const[gameSetInfo, setGameSetInfo] = useState({
+      useCart:false,
+      preset:0,
+      runTime:2.4,
+      name:""
+  });
+    const changeGameSetInfo=props=>setGameSetInfo(props)
+    return <Outlet context={{likeClasses,changeLikeClasses,gameSetInfo,changeGameSetInfo}}/>;
 }
 export default PageSetting;
