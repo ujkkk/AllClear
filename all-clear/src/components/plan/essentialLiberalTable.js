@@ -4,9 +4,9 @@ import CollegeButton from "./collegeButton";
 import liberalData from "../../data/liberalArts.json";
 import TrackButton from "./trackButton";
 
-//세부 검색 옵션 테이블 컴포넌트
+//교양 테이블
 
-const EssentialLiberalTable=({tracks,changeColorState, changeTracks})=>{
+const EssentialLiberalTable=({tracks,changeColorState, changeSwitch, changeTracks})=>{
     
     const [fieldItem,setField]=useState([])
     //구분 선택시 호출
@@ -14,6 +14,7 @@ const EssentialLiberalTable=({tracks,changeColorState, changeTracks})=>{
         setField(props); 
         changeColorState(true);
         changeTracks(props);
+        changeSwitch(false);
     }
     return (
         <table id="search" cellPadding="5" cellSpacing="0" border="1" >
