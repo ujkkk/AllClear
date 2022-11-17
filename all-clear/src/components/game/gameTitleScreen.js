@@ -10,8 +10,25 @@ import {BsBellFill} from "react-icons/bs"
 const GameTitleScreen =({title}) =>{
     const navigate = useNavigate()
     var gameTitleAudio = null
-    var gameStartAudio = new Audio(gameStartBGM)
+    var gameStartAudio = null
     const [hiddenRow, setHiddenRow] = useState(1);
+    useEffect(
+        () => {
+            if (gameTitleAudio == null){
+                gameTitleAudio  = new Audio(gameTitleBGM)
+                gameTitleAudio.play()
+            }
+            if (gameStartAudio == null){
+                gameStartAudio = new Audio(gameStartBGM)
+            }
+            return () => {
+                if (gameTitleAudio != null)
+                    gameTitleAudio.pause()
+                if (gameStartAudio != null)
+                    gameStartAudio.pause()
+            }
+        },
+        [] );
     return (
         <div class="game-title-screen-wrap" onClick= {()=>{
             // if (gameStartAudio == null){
@@ -43,12 +60,13 @@ const GameTitleScreen =({title}) =>{
                 </section>
                 <nav id = "game-title-screen-nav">
                     <button>게임 설명</button>
-                <button onClick ={()=>{
+                <button onClick ={()=>{ 
+                    gameTitleAudio.pause();
                     gameTitleAudio = null;
                     gameStartAudio.play();
-                    setTimeout(function(){
-                        navigate("/standBy")
-                },7700)}}>게임 시작</button>
+                    setTimeout(function(){ gameStartAudio.pause(); gameStartAudio = null; navigate("/standBy")},7700)
+                }}>
+                게임 시작</button>
                 </nav>
             </section>
         </div>
