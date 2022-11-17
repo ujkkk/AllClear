@@ -1,4 +1,32 @@
 
+.preset-subject {
+    display: inline-block;
+    width: 180px;
+    background-color:cadetblue;
+    position: fixed;
+}
+
+.preset-subject .subject-name {
+    display: inline-block;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    position : absolute;
+    top : 10%;
+    margin: 0px 0px 0px 0px;
+    /* margin-top: 10%; */
+}
+
+.preset-subject .subject-professor {
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    position : absolute;
+    text-align: right;
+    bottom : 20%;
+    right: 40%;
+}
+
 #schedule h4 {
     transform: translateX(150px);
     margin-top: 40px;

@@ -6,7 +6,7 @@ import TrackButton from "./trackButton";
 import searchData from "../../data/search.json"
 
 //세부 검색 옵션 테이블 컴포넌트
-const EssentialTable=({tracks, resetDetail, changeColorState,changeTracks})=>{
+const EssentialTable=({tracks, resetDetail, changeSwitch,changeColorState,changeTracks})=>{
     const [majorItem,setMajor]=useState([]); //선택할 학부를 담을 상태변수
     
     //단과대 선택 시 호출 
@@ -25,6 +25,7 @@ const EssentialTable=({tracks, resetDetail, changeColorState,changeTracks})=>{
         changeTracks(props);
         resetDetail();
         changeColorState(true);
+        changeSwitch(false);
     }
     return (
     <table id="search" cellPadding="5" cellSpacing="0" border="1" >
