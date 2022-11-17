@@ -10,7 +10,7 @@ export default function Page2() {
   const { likeClasses, changeLikeClasses } = useOutletContext();
   const [preset, setPreset] = useState({ preset1: [], preset2: [], preset3: [] });
   const [selectPreset, setSelectPreset] = useState([...preset.preset1]);
-  const [presetNum, setPresetNum] = useState(1);
+  const [presetNum, setPresetNum] = useState(0);
 
   const checkPresetTime = (check1, check2) => {
     let startTime1 = check1.start_time.replace(":", "")
@@ -29,9 +29,9 @@ export default function Page2() {
     let overlap = false
     let newPreset
 
-    if (presetNum === 2) newPreset = preset.preset1
+    if (presetNum === 0) newPreset = preset.preset1
     else if (presetNum === 1) newPreset = preset.preset2
-    else if (presetNum === 0) newPreset = preset.preset3
+    else if (presetNum === 2) newPreset = preset.preset3
 
     newPreset.map((pre) => {
       if (pre.subject_id === addClass.subject_id && pre.type === addClass.type) {
@@ -47,7 +47,7 @@ export default function Page2() {
       }
     })
     if (overlap == false) {
-      if (presetNum === 2) {
+      if (presetNum === 0) {
         setPreset({ preset1: [...preset.preset1, addClass], preset2: [...preset.preset2], preset3: [...preset.preset3] });
         setSelectPreset([...preset.preset1, addClass]);
       }
@@ -55,7 +55,7 @@ export default function Page2() {
         setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2, addClass], preset3: [...preset.preset3] });
         setSelectPreset([...preset.preset2, addClass]);
       }
-      else if (presetNum === 0) {
+      else if (presetNum === 2) {
         setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...preset.preset3, addClass] });
         setSelectPreset([...preset.preset3, addClass]);
       }
@@ -70,16 +70,16 @@ export default function Page2() {
   const presetDeleteClass = (subject_id, type) => {
     let newPreset
 
-    if (presetNum === 2) newPreset = preset.preset1
+    if (presetNum === 0) newPreset = preset.preset1
     else if (presetNum === 1) newPreset = preset.preset2
-    else if (presetNum === 0) newPreset = preset.preset3
+    else if (presetNum === 2) newPreset = preset.preset3
 
     newPreset = newPreset.filter((preset) => {
       //console.log(`${preset.subject_id} !== ${subject_id} ||| ${preset.type} !== ${type}`)
       return (preset.subject_id !== subject_id || preset.subject_id === subject_id && preset.type !== type)
     })
 
-    if (presetNum === 2) {
+    if (presetNum === 0) {
       setPreset({ preset1: [...newPreset], preset2: [...preset.preset2], preset3: [...preset.preset3] });
       setSelectPreset([...newPreset]);
     }
@@ -87,7 +87,7 @@ export default function Page2() {
       setPreset({ preset1: [...preset.preset1], preset2: [...newPreset], preset3: [...preset.preset3] });
       setSelectPreset([...newPreset]);
     }
-    else if (presetNum === 0) {
+    else if (presetNum === 2) {
       setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...newPreset] });
       setSelectPreset([...newPreset]);
     }
@@ -95,13 +95,13 @@ export default function Page2() {
   }
 
   useEffect(() => {
-    if (presetNum === 2) {
+    if (presetNum === 0) {
       setSelectPreset([...preset.preset1]);
     }
     else if (presetNum === 1) {
       setSelectPreset([...preset.preset2]);
     }
-    else if (presetNum === 0) {
+    else if (presetNum === 2) {
       setSelectPreset([...preset.preset3]);
     }
   }, [presetNum])

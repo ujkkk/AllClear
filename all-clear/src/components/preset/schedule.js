@@ -9,7 +9,7 @@ const Schedule = ({ presetClass, deleteClass = f => f, setPresetNum }) => {
     const colorList = ["#E1E7F5", "#B9DBEF", "#69B4DC", "#28659B", "#44878F", "#97D8CB", "#E6ECEC", "#A0C5CE", "#005F89", "#62CDD7"]
     let startTime = 9
 
-    const [option, setOption] = useState(1);
+    const [option, setOption] = useState(0);
     const marginValue = ["50px", "5px", "5px"];
     const optionContent = ["3", "2", "1"];
 
@@ -22,8 +22,8 @@ const Schedule = ({ presetClass, deleteClass = f => f, setPresetNum }) => {
         <div id="schedule">
             <h4>01. 시간표</h4>
             {optionContent.map((data, i) => (
-                <TableLabel key={i} color={i === option ? true : false} index={i} content={data} marginValue={marginValue[i]} onSelect={optionChange} />
-            ))}
+                <TableLabel key={2-i} color={2-i === option ? true : false} index={2-i} content={data} marginValue={marginValue[i]} onSelect={optionChange} />
+            ))}            
             <table>
                 <tr id="week">
                     <td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td>
