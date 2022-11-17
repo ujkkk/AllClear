@@ -10,10 +10,11 @@
     display: inline-block;
     height: 40%;
     width: 100%;
-    text-align: center;
     position : absolute;
     top : 10%;
+    left: 10%;
     margin: 0px 0px 0px 0px;
+    font-size: 18px;
     /* margin-top: 10%; */
 }
 
@@ -22,9 +23,23 @@
     height: 20%;
     width: 100%;
     position : absolute;
-    text-align: right;
     bottom : 20%;
-    right: 40%;
+    left: 10%;
+    font-size: 15px;
+}
+
+.preset-subject .delete-subject {
+    display: inline-block;
+    position : absolute;
+    right: 5%;
+    top: 10%;
+    border: white solid 0px;
+}
+
+#schedule .float-right {
+    width: 40px;
+    text-align: center;
+    transform: translateY(-40px);
 }
 
 #schedule h4 {

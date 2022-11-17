@@ -46,7 +46,7 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
                                 )
                             }
                             else
-                                return <Subject  key={idx} data={subject}  onLike={onLike} ></Subject>
+                                return <Subject key={idx} data={subject}  onLike={onLike} ></Subject>
                         }
                     })
                 ))

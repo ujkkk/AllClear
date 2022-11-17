@@ -98,7 +98,7 @@
         "subject_id": 5,
         "code": "V023005",
         "name": "가상현실",
-        "professor": ["김진모"],
+        "professor": ["김진모","조세홍"],
         "class" :  [ 
             {
                 "type": "8",
