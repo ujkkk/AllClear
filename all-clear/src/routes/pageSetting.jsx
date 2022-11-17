@@ -3,12 +3,27 @@ import {useState} from "react";
 
 const PageSetting=()=>{
     const [likeClasses, setLikeClasses] = useState([]);
-    const changeLikeClasses = (subject_id, aClass) => {
+    console.log(likeClasses)
+    const changeLikeClasses = (subject_id, aClass, type) => {
       var obj = {subject_id, aClass}
-      var newLikes = new Set([...likeClasses, obj])
-      var newLikesArr = [...newLikes]
-      console.log(newLikesArr)
-      setLikeClasses(newLikesArr)
+      if(type === 'add'){
+        var newLikes = new Set([...likeClasses, obj])
+        var newLikesArr = [...newLikes]
+        console.log(newLikesArr)
+        setLikeClasses(newLikesArr)
+        console.log('add')
+      }else if (type === 'remove'){
+     
+      var newLikes = likeClasses.filter(likeClass =>{
+        console.log(`${likeClass.subject_id != obj.subject_id} && ${likeClass.aClass !== obj.aClass}`)
+        console.log(likeClass.subject_id)
+        console.log(obj.subject_id)
+        return likeClass.subject_id != obj.subject_id && likeClass.aClass !== obj.aClass
+      })
+        setLikeClasses(newLikes)
+        console.log('remove')
+      }
+      
     }
     return <Outlet context={{likeClasses,changeLikeClasses}}/>;
 }
