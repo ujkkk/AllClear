@@ -1,21 +1,24 @@
-import React, { useState } from "react";
-import "../../css/presetBtn.css"
+import React, { useEffect, useState } from "react";
+import "../../css/gameTableElement.css"
 const PresetRowElement = ({ total = 3, onSelect = f=>f}) =>{ 
-    const [select, setSelect] = useState([true,false,false])//useState(false);
-    const createArray = length => [...Array(length)];
+    
+    const[selectNum,setSelect] =useState(1);
+    
     const clickPreset = (i) => {
-        console.log("isSelect: "+!select)
-        let isSelect = !select[i]
-        let other = !isSelect;
-        setSelect(select.map((data,idx)=> i == idx ? isSelect : other))
-        //(i) => onSelect
+        setSelect(i+1)
     }
+
+    const createArray = length => [...Array(length)];
+   
+    useEffect(()=>{
+        setSelect(1)
+    },[])
 
     return (
         createArray(total).map((n,i) =>
             <label>
-                <div className = "preset-btn" style = {{ backgroundColor: select[i]? "blue" : "gray"}}>{i+1}</div>   
-                <input onChange = {()=>clickPreset(i)} type="radio" value = {i+1} name={"preset"} style={{display:"none"}}></input>
+                <div  onClick = {()=>clickPreset(i)}className = "preset-btn" style = {{ backgroundColor:  selectNum == i+1? "blue" : "gray"}}>{i+1}</div>   
+                <input onClick = {()=>onSelect({preset:i+1})} type="radio" value = {i+1} name={"preset"} style={{display:"none"}}></input>
             </label>
         )   
     )

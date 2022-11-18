@@ -4,15 +4,23 @@ import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
 import sugangimg from "../../static/sugang.png"
 import SubjectInfo from "./subjectInfo";
+
 import "../../css/gameSchedule.css"
 import ScheduleRow from "../preset/scheduleRow";
 import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
+import { useOutletContext } from "react-router-dom";
+
 
 // 수강신청게임 화면 
 const GameScreen = () => {
 
+
     //const [gameData, setGameData] = useState(gameData)
     const navigate = useNavigate()
+   const {preset}=useOutletContext();
+   console.log(preset);
+   const{gameSetInfo, chageGameSetInfo}
+    = useOutletContext();
     return (
         <>
         <div style = {{height : "45px", marginTop : "60px", width : "1200px", marginLeft : "30px"}}>

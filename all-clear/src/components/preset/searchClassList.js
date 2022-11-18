@@ -6,14 +6,14 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import LikeClass from "./likeClass";
 
-
 //03. 과목검색 component
-const SearchClassList = () => {
+const SearchClassList = ({ setPreset = f => f }) => {
+
         //subject.name.includes(search.trim())
         const [className, setClassName] = useState("");
         const [text, setText] = useState();
         const clickButton = () => {
-                console.log("text: "+text)
+                console.log("text: " + text)
                 setClassName(text);
         }
 
@@ -21,7 +21,8 @@ const SearchClassList = () => {
         return (
                 <div id="search-class-warp">
                         <h4>03. 과목 검색</h4>
-                        <InputGroup onChange={(e)=>setText(e.target.value)} className="mb-3" style={{ width: "40%", marginTop: "20px", left: "3%" }}>
+                        
+                        <InputGroup onChange={(e) => setText(e.target.value)} className="mb-3" style={{ width: "40%", marginTop: "20px", left: "3%" }}>
                                 <Form.Control />
                                 <Button variant="outline-primary" id="button-addon2" onClick={clickButton}>search</Button>
                         </InputGroup>
@@ -29,10 +30,10 @@ const SearchClassList = () => {
                         {
                                 classData.map((data, idx) => {
                                         if (data.name.includes(className.trim())) {
-                                                return data.class.map((type)=>{
-                                                        return <LikeClass likeSub={{ subject_id: data.subject_id, type: type.type }} />
-                                        })
-                                                
+                                                return data.class.map((type, i) => {
+                                                        return <LikeClass key={i} likeSub={{ subject_id: data.subject_id, type: type.type }} addClass={setPreset} likeType={false} />
+                                                })
+
                                         }
                                 })
                         }

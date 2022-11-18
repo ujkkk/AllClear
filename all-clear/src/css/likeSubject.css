@@ -18,24 +18,30 @@
     cursor: pointer;
 }
 
+.preset-like-button {
+    display: inline-block;
+    position: relative;
+    left: 190px;
+    top: 0px
+}
+
 .like-subject .subject-name {
     display: inline-block;
     font-size: 18px;
     /* text-align: center; */
     margin-left: 17px;
     margin-top: 12px;
-    width: 220px;
 }
 
 .like-subject .subject-type {
     display: inline-block;
     font-size: 15px;
-    margin-left: 15px;
+    margin-left: -7px;
     margin-top: 3px;
 }
 
 .like-subject .subject-time {
     font-size: 15px;
-    margin-left: 15px;
+    margin-left: 16px;
     margin-top: 3px;
 }

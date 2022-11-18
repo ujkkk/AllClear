@@ -14,27 +14,15 @@
                 "type": "C",
                 "start_time" : "13:00","end_time" : "14:30",
                 "dayOfWeek":"화"
-            }
-        ]
-    },
-    {
-        "subject_id": 1,
-        "name": "객체지향언어2",
-        "professor": ["황기태"],
-        "class" :  [ 
-            {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
             },
             {
-                "type": "C",
+                "type": "B",
                 "start_time" : "13:00","end_time" : "14:30",
                 "dayOfWeek":"화"
             }
-        
         ]
     },
+
 
     {
         "subject_id": 2,
@@ -110,7 +98,7 @@
         "subject_id": 5,
         "code": "V023005",
         "name": "가상현실",
-        "professor": ["김진모"],
+        "professor": ["김진모","조세홍"],
         "class" :  [ 
             {
                 "type": "8",

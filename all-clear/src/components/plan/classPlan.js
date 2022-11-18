@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from "react";
 import "../../css/classPlan.css"
 import subjectsData from "../../data/subjectList.json"
-import DivisionData from "../../data/classDivision.json"
-import LikeBar from "./likeBar";
 const ClassPlan = ({ id, professor, like }) => {
 
 

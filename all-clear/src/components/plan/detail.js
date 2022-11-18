@@ -6,7 +6,7 @@ import DetailColComponent from "./detailColComponent";
 import DetailRowSearch from "./detailRowSearch";
 
 //02. 세부사항 component
-const Detail =({title, grade, codes, colorOn,changeGrade,changeCode,changeSearch}) =>{
+const Detail =({title, grade, codes, colorOn,gradeSwitch,majorSwitch,changeGrade,changeCode,changeSearch,changeGradeSwitch,changeMajorSwitch}) =>{
 
     
     return (
@@ -18,8 +18,8 @@ const Detail =({title, grade, codes, colorOn,changeGrade,changeCode,changeSearch
                     <col width={"85%"}></col>
                 </colgroup>
                 <tbody>
-                    <DetailColComponent rowTitle="학년" rowData={detailData.grade} colorOn={colorOn} items={grade} changeItems={changeGrade}/> 
-                    <DetailColComponent rowTitle="구분" rowData={detailData.major_sortation} colorOn={colorOn} items={codes} changeItems={changeCode}/> 
+                    <DetailColComponent rowTitle="학년" rowData={detailData.grade} colorOn={colorOn} buttonSwitch={gradeSwitch} changeSwitch={changeGradeSwitch} items={grade} changeItems={changeGrade}/> 
+                    <DetailColComponent rowTitle="구분" rowData={detailData.major_sortation} colorOn={colorOn} buttonSwitch={majorSwitch} changeSwitch={changeMajorSwitch} items={codes} changeItems={changeCode}/> 
                     <DetailRowSearch rowTitle="강의명" changeSearch={changeSearch}/>                                   
                 </tbody>
             </table>
