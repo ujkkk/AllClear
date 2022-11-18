@@ -1,12 +1,16 @@
 [
     {
         "subject_id": 1,
-        "code": "V020007",
+        "code": "[V020007]",
         "name": "객체지향언어2",
         "professor": "황기태",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -14,12 +18,16 @@
     },
     {
         "subject_id": 2,
-        "code": "V020008",
+        "code": "[V020008]",
         "name": "데이터통신",
         "professor": "황호영",
         "class" :  [ 
             {
                 "type": "7",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "16:00","end_time" : "16:50",
                 "dayOfWeek":"금"
             }
@@ -28,18 +36,17 @@
    },
     {
         "subject_id": 3,
-        "code": "V020010",
+        "code": "[V020010]",
         "name": "알고리즘",
         "professor": "권영미",
         "class" :  [ 
             {
                 "type": "A",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "10:00","end_time" : "10:50",
-                "dayOfWeek":"금"
-            },
-            {
-                "type": "B",
-                "start_time" : "11:00","end_time" : "11:50",
                 "dayOfWeek":"금"
             }
         ]
@@ -47,12 +54,16 @@
 
     {
         "subject_id": 4,
-        "code": "V024005",
+        "code": "[V024005]",
         "name": "웹프레임워크",
         "professor": "박승현",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전필",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -60,12 +71,16 @@
   },
     {
         "subject_id": 5,
-        "code": "V023005",
+        "code": "[V023005]",
         "name": "가상현실",
         "professor": "김진모",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전필",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -73,12 +88,16 @@
     },
     {
         "subject_id": 6,
-        "code": "V021006",
+        "code": "[V021006]",
         "name": "고급모바일프로그래밍",
         "professor": "허준영",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전필",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -86,12 +105,16 @@
     },
     {
         "subject_id": 7,
-        "code": "V020018",
+        "code": "[V020018]",
         "name": "설계패턴",
         "professor": "정인상",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -99,12 +122,16 @@
     },
     {
         "subject_id": 8,
-        "code": "V020018",
+        "code": "[V020018]",
         "name": "설계패턴",
         "professor": "한기준",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -112,12 +139,16 @@
       },
     {
         "subject_id": 9,
-        "code": "V022004",
+        "code": "[V022004]",
         "name": "데이터베이스설계",
         "professor": "김영웅",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전필",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -126,11 +157,15 @@
     {
         "subject_id": 10,
         "name": "시스템프로그래밍",
-        "code": "V020016",
+        "code": "[V020016]",
         "professor": "장재영",
         "class" :  [ 
             {
                 "type": "8",
+                "major_type" : "전선",
+                "credit" : "3학점",
+                "dayAndNight" : "주간",
+                "year" : "3학년",
                 "start_time" : "14:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }

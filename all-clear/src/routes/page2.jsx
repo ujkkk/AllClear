@@ -7,8 +7,7 @@ import Schedule from "../components/preset/schedule";
 import SearchClassList from "../components/preset/searchClassList";
 
 export default function Page2() {
-  const { likeClasses, changeLikeClasses } = useOutletContext();
-  const [preset, setPreset] = useState({ preset1: [], preset2: [], preset3: [] });
+  const { likeClasses, changeLikeClasses,preset, changePreset} = useOutletContext();
   const [selectPreset, setSelectPreset] = useState([...preset.preset1]);
   const [presetNum, setPresetNum] = useState(0);
 
@@ -48,15 +47,15 @@ export default function Page2() {
     })
     if (overlap == false) {
       if (presetNum === 0) {
-        setPreset({ preset1: [...preset.preset1, addClass], preset2: [...preset.preset2], preset3: [...preset.preset3] });
+        changePreset({ preset1: [...preset.preset1, addClass], preset2: [...preset.preset2], preset3: [...preset.preset3] });
         setSelectPreset([...preset.preset1, addClass]);
       }
       else if (presetNum === 1) {
-        setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2, addClass], preset3: [...preset.preset3] });
+        changePreset({ preset1: [...preset.preset1], preset2: [...preset.preset2, addClass], preset3: [...preset.preset3] });
         setSelectPreset([...preset.preset2, addClass]);
       }
       else if (presetNum === 2) {
-        setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...preset.preset3, addClass] });
+        changePreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...preset.preset3, addClass] });
         setSelectPreset([...preset.preset3, addClass]);
       }
 
@@ -80,15 +79,15 @@ export default function Page2() {
     })
 
     if (presetNum === 0) {
-      setPreset({ preset1: [...newPreset], preset2: [...preset.preset2], preset3: [...preset.preset3] });
+      changePreset({ preset1: [...newPreset], preset2: [...preset.preset2], preset3: [...preset.preset3] });
       setSelectPreset([...newPreset]);
     }
     else if (presetNum === 1) {
-      setPreset({ preset1: [...preset.preset1], preset2: [...newPreset], preset3: [...preset.preset3] });
+      changePreset({ preset1: [...preset.preset1], preset2: [...newPreset], preset3: [...preset.preset3] });
       setSelectPreset([...newPreset]);
     }
     else if (presetNum === 2) {
-      setPreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...newPreset] });
+      changePreset({ preset1: [...preset.preset1], preset2: [...preset.preset2], preset3: [...newPreset] });
       setSelectPreset([...newPreset]);
     }
     console.log(preset);
@@ -111,9 +110,10 @@ export default function Page2() {
       <Banners />
       <div id="page-container">
         <h3>시간표 Preset</h3>
-        <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} />
+
+        <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} x={250} y={173} width={180} height={25} />
         <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>
-        <SearchClassList setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>
+        <SearchClassList setPreset={presetAddClass}  changeLikeClasses={changeLikeClasses}/>
       </div>
     </>
   );

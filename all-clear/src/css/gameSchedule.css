@@ -1,0 +1,34 @@
+
+#game-schedule h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#game-schedule table {
+    width: 1000px;
+    font-size: 16px;
+}
+
+#game-schedule table tr td:first-child {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#game-schedule table td {
+    display: inline-block;
+    width: 110px;
+    height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.334);   
+    line-height: 50px;
+    text-align: center;
+}
+
+#game-schedule #week td {
+    font-size: 20px;
+}
+
+#game-schedule #schedule table td:first-child {
+    width: 90px;
+    
+}
