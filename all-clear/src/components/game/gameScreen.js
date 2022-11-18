@@ -9,6 +9,8 @@ import { useOutletContext } from "react-router-dom";
 const GameScreen = () => {
 
    // const [gameData, setGameData] = useState(gameData)
+   const {preset}=useOutletContext();
+   console.log(preset);
    const{gameSetInfo, chageGameSetInfo}
     = useOutletContext();
     return (

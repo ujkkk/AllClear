@@ -26,7 +26,9 @@ const PageSetting=()=>{
       runTime:2.4,
       name:""
   });
-    const changeGameSetInfo=props=>setGameSetInfo(props)
-    return <Outlet context={{likeClasses,changeLikeClasses,gameSetInfo,changeGameSetInfo}}/>;
+    const changeGameSetInfo=props=>setGameSetInfo(props);
+    const [preset, setPreset] = useState({ preset1: [], preset2: [], preset3: [] });
+    const changePreset=props=>setPreset(props);
+    return <Outlet context={{likeClasses,changeLikeClasses,gameSetInfo,changeGameSetInfo,preset,changePreset}}/>;
 }
 export default PageSetting;
