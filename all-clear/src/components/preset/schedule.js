@@ -29,7 +29,7 @@ const Schedule = ({ presetClass, deleteClass = f => f, setPresetNum , x, y, widt
                     <td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td>
                 </tr>
                 {[...Array(9)].map((e, i) => {
-                    return ((i + 9 > 12) ? <ScheduleRow key={i} clock={i + 9 - 12} /> : <ScheduleRow key={i} clock={i + 9} />)
+                    return ((i + 9 > 12) ? <ScheduleRow key={i} clock={i + 9 - 12} tdNum={5} /> : <ScheduleRow key={i} clock={i + 9} tdNum={5} />)
                 }
                 )}
             </table>
