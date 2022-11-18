@@ -9,12 +9,14 @@ const PageSetting=()=>{
     const changeLikeClasses = (subject_id, type, cmd) => {
       var obj = {subject_id, type}
       if(cmd === 'add'){
-        var newLikes = new Set([...likeClasses, obj])
+        //var newLikes = new Set([...likeClasses, obj])
+        var newLikes = likeClasses.filter(likeClass => (likeClass.subject_id != obj.subject_id) || (likeClass.type !== obj.type))
+
         var newLikesArr = [...newLikes]
-        setLikeClasses(newLikesArr)
+        setLikeClasses([...newLikes,obj])
       }else if (cmd === 'remove'){
         //넘어온 객체만 걸러서 새로운 데이터를 넣음
-        var newLikes = likeClasses.filter(likeClass => (likeClass.subject_id != obj.subject_id) ||(likeClass.type !== obj.type))
+        var newLikes = likeClasses.filter(likeClass => (likeClass.subject_id != obj.subject_id) || (likeClass.type !== obj.type))
         setLikeClasses(newLikes)
       }
       

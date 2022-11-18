@@ -112,8 +112,8 @@ export default function Page2() {
       <div id="page-container">
         <h3>시간표 Preset</h3>
         <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} />
-        <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} />
-        <SearchClassList setPreset={presetAddClass} />
+        <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>
+        <SearchClassList setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>
       </div>
     </>
   );
