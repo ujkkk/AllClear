@@ -26,15 +26,15 @@
     text-align: center;
 }
 
-#week td {
+#schedule #week td {
     font-size: 20px;
 }
 
-#week td:first-child {
+#schedule #week td:first-child {
     border-radius: 20px 0px 0px 0px;
 }
 
-#week td:last-child {
+#schedule #week td:last-child {
     border-radius: 0px 20px 0px 0px;
 }
 

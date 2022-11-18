@@ -1,14 +1,18 @@
 import React, {useState, useEffect} from "react";
 import gameData from "../../data/game.json";
 import "../../css/gameScreen.css";
+import { useNavigate } from "react-router-dom";
 import sugangimg from "../../static/sugang.png"
 import SubjectInfo from "./subjectInfo";
+import "../../css/gameSchedule.css"
+import ScheduleRow from "../preset/scheduleRow";
+import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 
 // 수강신청게임 화면 
 const GameScreen = () => {
 
-   // const [gameData, setGameData] = useState(gameData)
-    
+    //const [gameData, setGameData] = useState(gameData)
+    const navigate = useNavigate()
     return (
         <>
         <div style = {{height : "45px", marginTop : "60px", width : "1200px", marginLeft : "30px"}}>
@@ -17,14 +21,16 @@ const GameScreen = () => {
                     <img src = {sugangimg}/>
                 </td>  
             </table> 
-            <table border="2" style={{width : "50px", float : "left"}}>
+            <table border="2" style={{width : "100px", float : "left"}}>
                 <td>
-                   timer
+                   time = 
                 </td>   
             </table>
             <table  style={{float : "right", width : "200px"}}>
-                <button type={"button"} className={"home"}>
-                    <span>시작화면으로</span>    
+                <button onClick={()=>{
+                    navigate("/page3")
+                }}>
+                    홈으로  
                 </button>
             </table>
         </div>
@@ -84,7 +90,9 @@ const GameScreen = () => {
                     <tbody>
                         <td style={{overflow : "scroll", overflowX : "hidden", width:"800px", height:"660px"}}>
                             <div style={{ width:"800px", height:"660px"}}>
-                                {gameData.map(subject => <SubjectInfo  subject={subject} />)}
+
+                                {gameData.map((subject) => <SubjectInfo  subject={subject}/>)}
+
                             </div>
                             
                          
@@ -125,7 +133,7 @@ const GameScreen = () => {
                 <table style={{width : "800px", backgroundColor : "white", fontFamily : "Nanum Gothic"}}>
                     <td style={{width : "800px"}}>
                         신청한 과목 list
-                    </td>
+                    </td>  
                 </table>
                 <table border="1" style={{width : "800px",backgroundColor : "white", height : "60px",fontFamily : "Nanum Gothic" }}>
                     <td style={{width : "800px"}}>
@@ -136,24 +144,27 @@ const GameScreen = () => {
                     <thead>
                         <tr>
                             <th style={{width: "55px"}}></th>
-                            <th >월</th>
-                            <th >화</th>
-                            <th >수</th>
-                            <th >목</th>
-                            <th >금</th>
-                            <th >토</th>
+                         
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
-                            <td>오전 8시</td>
-                            <td>오전 8시</td>
+                            <div id = "game-schedule" style={{fontFamily : "Nanum-Gothic"}}>
+                            {<table>
+                                <tr id="week" style={{fontWeight : "bold"}}>
+                                    <td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td>
+                                </tr>
+                                    {[...Array(9)].map((e, i)=>{ 
+                                        return ((i+9>12) ? <ScheduleRow key={i} clock={`오후${i+9-12}`} />:<ScheduleRow  key={i} clock={`오전${i+9}`} />)
+                                    }
+                                     )}
+                             </table>}
                             
                            
-                            <td style={{weight : "800px", height : "800px", backgroundColor : "white"}}>
-                                
-                            </td>
+                            
+                            </div>
+                           
                         </tr>
                     </tbody>
                 </table>
@@ -167,3 +178,5 @@ const GameScreen = () => {
 }
 
 export default GameScreen;
+
+// 한성이가 프리셋 바로 줌, 나는 프리셋 번호 얻어서 프리셋 객체에서 해당 번호만 가져오면 됨
