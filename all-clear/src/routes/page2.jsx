@@ -5,11 +5,27 @@ import Banners from "../components/banners";
 import LikeClassList from "../components/preset/likeClassList";
 import Schedule from "../components/preset/schedule";
 import SearchClassList from "../components/preset/searchClassList";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "../css/preset.css";
 
 export default function Page2() {
   const { likeClasses, changeLikeClasses,preset, changePreset} = useOutletContext();
   const [selectPreset, setSelectPreset] = useState([...preset.preset1]);
   const [presetNum, setPresetNum] = useState(0);
+
+  const notify = (text) => {
+    toast.warn(text, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+    });
+  }
 
   const checkPresetTime = (check1, check2) => {
     let startTime1 = check1.start_time.replace(":", "")
@@ -35,17 +51,19 @@ export default function Page2() {
     newPreset.map((pre) => {
       if (pre.subject_id === addClass.subject_id && pre.type === addClass.type) {
         overlap = true
-        alert("해당 과목이 preset에 존재합니다")
+        notify(" 프레셋에 존재합니다")
+        //alert("해당 과목이 preset에 존재합니다")
         return
       }
-      else if (pre.dayOfWeek == addClass.dayOfWeek && !checkPresetTime(pre, addClass)) {
+      else if (pre.dayOfWeek === addClass.dayOfWeek && !checkPresetTime(pre, addClass)) {
         overlap = true
-        alert("해당 과목 시간에 과목이 preset에 존재합니다")
+        notify("겹치는 시간이 존재합니다")
+        //alert("해당 과목 시간에 과목이 preset에 존재합니다")
         return
 
       }
     })
-    if (overlap == false) {
+    if (overlap === false) {
       if (presetNum === 0) {
         changePreset({ preset1: [...preset.preset1, addClass], preset2: [...preset.preset2], preset3: [...preset.preset3] });
         setSelectPreset([...preset.preset1, addClass]);
@@ -110,6 +128,7 @@ export default function Page2() {
       <Banners />
       <div id="page-container">
         <h3>시간표 Preset</h3>
+        <ToastContainer />
         <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} x={250} y={173} width={180} height={25} />
         <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} />
         <SearchClassList setPreset={presetAddClass} />

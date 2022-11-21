@@ -1,10 +1,35 @@
-#lick-class-warp {
+#like-class-warp {
     padding-left: 150px;
 
 }
 
-#lick-class-warp h4 {
+#like-class-warp h4 {
     padding-top: 40px;
+}
+
+#like-class-warp #like-class-component {
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#like-class-component::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤바의 너비 */
+}
+
+#like-class-component::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #217af4;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+}
+
+#like-class-component::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
 }
 
 .like-subject {

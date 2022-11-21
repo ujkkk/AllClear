@@ -27,6 +27,7 @@ const SearchClassList = ({ setPreset = f => f }) => {
                                 <Button variant="outline-primary" id="button-addon2" onClick={clickButton}>search</Button>
                         </InputGroup>
                         <br />
+                        <div id="search-class-component">
                         {
                                 classData.map((data, idx) => {
                                         if (data.name.includes(className.trim())) {
@@ -37,6 +38,7 @@ const SearchClassList = ({ setPreset = f => f }) => {
                                         }
                                 })
                         }
+                        </div>
                 </div>
         )
 }
