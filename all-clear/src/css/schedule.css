@@ -3,7 +3,7 @@
     display: inline-block;
     width: 180px;
     background-color:cadetblue;
-    position: fixed;
+    position: absolute;
 }
 
 .preset-subject .subject-name {

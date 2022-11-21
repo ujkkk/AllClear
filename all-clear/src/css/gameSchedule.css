@@ -1,3 +1,6 @@
+#game-schedule{
+    font-family: "Nanum-Gothic" ;
+}
 
 #game-schedule h4 {
     margin-top: 40px;
@@ -5,19 +8,19 @@
 }
 
 #game-schedule table {
-    width: 1000px;
+    width: 1300px;
     font-size: 16px;
 }
 
 #game-schedule table tr td:first-child {
     background: #ffffff;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #game-schedule table td {
     display: inline-block;
-    width: 110px;
+    width: 190px;
     height: 50px;
     border: 1px solid rgba(128, 128, 128, 0.334);   
     line-height: 50px;
@@ -25,10 +28,41 @@
 }
 
 #game-schedule #week td {
-    font-size: 20px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
 }
 
-#game-schedule #schedule table td:first-child {
-    width: 90px;
+#game-schedule table td:first-child {
+    width: 40px;
     
 }
+
+#game-schedule .game-subject {
+    width: 190px;
+    display: inline-block;
+    background-color:cadetblue;
+    position: absolute;
+}
+
+.game-subject {
+    display: inline-block;
+    width: 180px;
+    background-color:cadetblue;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+.game-subject::-webkit-scrollbar{
+    display:none;
+  }
+
+.game-subject .subject-name {
+
+    margin: 0px 0px 0px 0px;
+    font-size: 13px;
+    /* margin-top: 10%; */
+}
+

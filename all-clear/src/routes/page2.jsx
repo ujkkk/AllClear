@@ -8,6 +8,7 @@ import SearchClassList from "../components/preset/searchClassList";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../css/preset.css";
+import Preset from "../components/preset/preset";
 
 export default function Page2() {
   const { likeClasses, changeLikeClasses, preset, changePreset } = useOutletContext();
@@ -131,7 +132,7 @@ export default function Page2() {
         <div id="preset-alart" >
           <ToastContainer />
         </div>
-        <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} x={250} y={173} width={180} height={25} />
+        <Preset presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} />
         <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
         <SearchClassList setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
       </div>
