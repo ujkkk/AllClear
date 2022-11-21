@@ -41,7 +41,7 @@ export default function Page1() {
   const { likeClasses, changeLikeClasses } = useOutletContext();
   return (
     <>
-      <Banners height={"1500px"} />
+      <Banners height={"1350px"} />
       <div id="page-container">
         <h3>개설 교과목 검색</h3>
         <Essential tracks={tracks} resetDetail={resetDetailButton} changeTracks={changeTracks} changeSwitch={changeSwitch} changeColorState={changeColorState} />
