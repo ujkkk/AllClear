@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import GameTableElement from "./gameTableElement";
 import PresetRowElement from "./presetRowElement";
 import "react-widgets/styles.css";
@@ -13,7 +13,7 @@ const GameTableRow = ({id, title, hiddenRow, setHiddenRow, setGameSetInfo}) =>{
 
     const setTableElement = (index) => { 
         if (index ==  0) { return <td colspan={"2"}>
-            <GameTableElement value = "있음" setHiddenRow = {()=>setHiddenRow(8)} editGameSetInfo = {()=>setGameSetInfo({useCart:true})}></GameTableElement>
+            <GameTableElement value = "있음" setHiddenRow = {()=>setHiddenRow(8)} editGameSetInfo = {()=>setGameSetInfo({useCart:true, preset:1})}></GameTableElement>
             <GameTableElement value = "없음" setHiddenRow = {()=>setHiddenRow(1)} editGameSetInfo = {()=>setGameSetInfo({useCart:false, preset:0})}></GameTableElement>
         </td> }
         if (index == 1){
@@ -33,7 +33,8 @@ const GameTableRow = ({id, title, hiddenRow, setHiddenRow, setGameSetInfo}) =>{
     }
 
     return (
-        <tr id = {id} style = {{display: id !== hiddenRow ? "" : "none"}}>
+        id !== hiddenRow && // 조건부 랜더링
+        <tr id = {id}>
             <th>{title}</th> {setTableElement(id)}       
         </tr>
     )

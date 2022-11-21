@@ -4,7 +4,7 @@ import classData from "../../data/classDivision.json";
 import { AiTwotoneHeart, AiOutlineHeart } from 'react-icons/ai'
 
 //03. 관심과목
-const LikeClass = ({ likeSub, addClass = f => f , likeType}) => {
+const LikeClass = ({ likeSub, addClass = f => f , likeType, onSelect}) => {
 
     const newLikeSub = classData.filter((data) => (
         likeSub.subject_id === data.subject_id
@@ -23,8 +23,8 @@ const LikeClass = ({ likeSub, addClass = f => f , likeType}) => {
         })}>
             <div className="subject-name" >{newLikeSub[0].name}</div>
             <div className="preset-like-button">
-                {likeType ? <AiTwotoneHeart size="25px" color="red" onClick={(likeType)=>{likeType = !likeType}} />
-                    : <AiOutlineHeart size="25px" onClick={(likeType)=>{likeType = !likeType}} />}
+                {likeType ? <AiTwotoneHeart size="25px" color="red"  onClick={(onSelect)} />
+                    : <AiOutlineHeart size="25px"  onClick={(onSelect)} />}
             </div>
             <div className="subject-type">{classType[0].type}{"반 | "}
                 {

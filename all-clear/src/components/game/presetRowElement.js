@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../css/gameTableElement.css"
-const PresetRowElement = ({ total = 3, onSelect = f=>f}) =>{ 
+const PresetRowElement = ({ total = 3, onSelect = f=>f }) =>{ 
     
     const[selectNum,setSelect] =useState(1);
     
@@ -12,6 +12,7 @@ const PresetRowElement = ({ total = 3, onSelect = f=>f}) =>{
    
     useEffect(()=>{
         setSelect(1)
+        return ()=>{console.log("preset clean-up (display:none이 아닌 조건부 랜더링의 결과)")}
     },[])
 
     return (

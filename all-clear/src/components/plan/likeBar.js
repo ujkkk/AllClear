@@ -1,7 +1,7 @@
 import React, { useEffect, useReducer, useState } from "react";
 import ClassComponent from "./classComponent";
 
-const LikeBar=({changeLikeClasses, subject_id=0,classes=[]})=>{
+const LikeBar=({changeLikeClasses, subject_id=0, name="", classes=[]})=>{
     
 
     const [likes, setLikes] = useState(Array.from({length : 10}, ()=>false));
@@ -26,11 +26,12 @@ const LikeBar=({changeLikeClasses, subject_id=0,classes=[]})=>{
        setLikes(newLikes);
     }
     return (
-        <div > 
-        <span>"</span>
-       { classes.map((aClass, i) =>  
-        <ClassComponent key={i} aClass={aClass} like ={likes[i]}  onSelect={(e) =>toggleLike(e,i,)} />)
-       }
+        <div id ="likeDiv" > 
+            <div id="likeDiv-inner">
+            { classes.map((aClass, i) =>  
+                <ClassComponent key={i} subject_id={subject_id} name={name} aClass={aClass} like ={likes[i]}  onSelect={(e) =>toggleLike(e,i,)} />)
+            }
+            </div>
         </div>
     );
 }

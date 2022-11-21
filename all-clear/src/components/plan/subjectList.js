@@ -11,6 +11,7 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
 
     const [classes, setClasses] = useState([])
     const [selectedId, setSelectedId] = useState(1)
+    const [selectdProfessor, setSelectedProfessor] = useState("")
     //like bar의 class 정보 바꾸는  함수
     const onLike = (subject)=>{
             DivisionData.map(object => {
@@ -18,6 +19,7 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
                 if (object.subject_id == subject.subject_id) {
                     setClasses([...object.class]);  
                     setSelectedId(subject.subject_id)   
+                    setSelectedProfessor(subject.professor)
                 }
 
             })
@@ -41,17 +43,24 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
                                         <h5 className="selected-grade">{grade}</h5>
                                         <hr />
                                         <Subject key={idx} data={subject} onLike={onLike}></Subject>
-                                         
+                                        
                                     </>
                                 )
                             }
-                            else
-                                return <Subject key={idx} data={subject}  onLike={onLike} ></Subject>
+                            else{
+                                return(
+                                    <>     
+                                        <Subject key={idx} data={subject}  onLike={onLike} ></Subject>
+                                    </>
+                                )
+                               
+                            }
+                               
                         }
                     })
                 ))
             }
-            <LikeBar changeLikeClasses={changeLikeClasses} subject_id={selectedId} classes={classes} />   
+            <LikeBar changeLikeClasses={changeLikeClasses} subject_id={selectedId} name={selectdProfessor} classes={classes} />   
         </div>
     )
 }
