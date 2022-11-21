@@ -1,6 +1,7 @@
 [
     {
         "subject_id": 1,
+        "code": "V020007",
         "name": "객체지향언어2",
         "keyword": ["JAVA", "프로젝트"],
         "professor": ["황기태"],
@@ -11,6 +12,7 @@
     },
     {
         "subject_id": 2,
+        "code": "V020007",
         "name": "객체지향언어2",
         "keyword": ["JAVA"],
         "professor": ["안영아"],
@@ -20,6 +22,7 @@
     },
     {
         "subject_id": 3,
+        "code": "V020007",
         "name": "객체지향언어2",
         "keyword": ["JAVA","프로젝트"],
         "professor": ["이찬수"],
@@ -29,6 +32,7 @@
     },
     {
         "subject_id": 4,
+        "code": "V020007",
         "name": "객체지향언어2",
         "keyword": ["JAVA"],
         "professor": ["김진환"],
@@ -38,6 +42,7 @@
     },
     {
         "subject_id": 5,
+        "code": "V020007",
         "name": "객체지향언어2",
         "keyword": ["JAVA"],
         "professor": ["유상미"],
@@ -47,6 +52,7 @@
     },
     {
         "subject_id": 6,
+        "code": "V020008",
         "name": "데이터통신",
         "keyword": ["프로토콜 계층", "컴퓨터구조"],
         "professor": ["황호영"],
@@ -56,6 +62,7 @@
     },
     {
         "subject_id": 7,
+        "code": "V020008",
         "name": "데이터통신",
         "keyword": ["프로토콜 계층", "컴퓨터구조"],
         "professor": ["서성현"],
@@ -65,6 +72,7 @@
     },
     {
         "subject_id": 8,
+        "code": "V020010",
         "name": "알고리즘",
         "keyword": ["C", "자료구조"],
         "professor": ["권영미"],
@@ -74,6 +82,7 @@
     },
     {
         "subject_id": 9,
+        "code": "V020010",
         "name": "알고리즘",
         "keyword": ["C", "자료구조"],
         "professor": ["김광섭"],
@@ -83,6 +92,7 @@
     },
     {
         "subject_id": 10,
+        "code": "V020010",
         "name": "알고리즘",
         "keyword": ["C", "자료구조"],
         "professor": ["강희중"],
@@ -92,6 +102,7 @@
     },
     {
         "subject_id": 11,
+        "code": "V020010",
         "name": "알고리즘",
         "keyword": ["C", "자료구조"],
         "professor": ["유상미"],
@@ -102,6 +113,7 @@
 
     {
         "subject_id": 12,
+        "code": "V024005",
         "name": "웹프레임워크1",
         "keyword": ["리액트", "프로젝트"],
         "professor": ["박승현"],
@@ -110,6 +122,7 @@
     },
     {
         "subject_id": 13,
+        "code": "V023005",
         "name": "가상현실",
         "keyword": ["유니티", "프로젝트"],
         "professor": ["김진모", "조세홍"],
@@ -118,6 +131,7 @@
     },
     {
         "subject_id": 14,
+        "code": "V021006",
         "name": "고급모바일프로그래밍",
         "keyword": ["안드로이드", "프로젝트"],
         "professor": ["허준영"],
@@ -126,6 +140,7 @@
     },
     {
         "subject_id": 15,
+        "code": "V020018",
         "name": "설계패턴",
         "keyword": ["디자인패턴", "JAVA"],
         "professor": ["정인상"],
@@ -135,6 +150,7 @@
     },
     {
         "subject_id": 16,
+        "code": "V020018",
         "name": "설계패턴",
         "keyword": ["디자인패턴", "JAVA"],
         "professor": ["한기준"],
@@ -144,6 +160,7 @@
     },
     {
         "subject_id": 17,
+        "code": "V022004",
         "name": "데이터베이스설계",
         "keyword": ["DB", "MySQL"],
         "professor": ["김영웅"],
@@ -152,6 +169,7 @@
     },
     {
         "subject_id": 18,
+        "code":"V020016",
         "name": "시스템프로그래밍",
         "keyword": ["운영체제", "리눅스"],
         "professor": ["김진환"],
@@ -161,6 +179,7 @@
     },
     {
         "subject_id": 19,
+        "code":"V020016",
         "name": "시스템프로그래밍",
         "keyword": ["운영체제", "리눅스"],
         "professor": ["장재영"],
@@ -169,7 +188,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 19,
+        "subject_id": 20,
+        "code":"V020016",
         "name": "시스템프로그래밍",
         "keyword": ["운영체제", "리눅스"],
         "professor": ["이찬수"],
@@ -178,7 +198,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 20,
+        "subject_id": 21,
+        "code":"V020017",
         "name": "네트워크프로그래밍",
         "keyword": ["소켓", "프로젝트"],
         "professor": ["정인환"],
@@ -187,7 +208,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 21,
+        "subject_id": 22,
+        "code":"V021003",
         "name": "모바일&스마트시스템",
         "keyword": ["라즈베리파이","프로젝트"],
         "professor": ["이재문"],
@@ -195,7 +217,8 @@
         "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}]
     },
     {
-        "subject_id": 22,
+        "subject_id": 23,
+        "code":"V021003",
         "name": "모바일&스마트시스템",
         "keyword": ["라즈베리파이","프로젝트"],
         "professor": ["황기태"],
@@ -203,7 +226,8 @@
         "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}]
     },
     {
-        "subject_id": 23,
+        "subject_id": 24,
+        "code":"V020009",
         "name": "선형대수",
         "keyword": ["행렬대수", "벡터공간"],
         "professor": ["권영미"],
@@ -212,7 +236,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 24,
+        "subject_id": 25,
+        "code":"V020011",
         "name": "오픈소스소프트웨어",
         "keyword": ["Git","AWS"],
         "professor": ["한기준"],
@@ -221,7 +246,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 25,
+        "subject_id": 26,
+        "code":"V020019",
         "name": "컴퓨터비전",
         "keyword": ["C++","OpenCV"],
         "professor": ["엄종석"],
@@ -230,7 +256,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 26,
+        "subject_id": 27,
+        "code":"CTE0001",
         "name": "컴퓨터프로그래밍",
         "keyword": ["C"],
         "professor": ["계희원"],
@@ -238,7 +265,8 @@
         "tracks" : [{"track":"모바일소프트웨어","code":"전공기초"},{"track":"빅데이터","code":"전공기초"}]
     },
     {
-        "subject_id": 27,
+        "subject_id": 28,
+        "code":"CTE0001",
         "name": "컴퓨터프로그래밍",
         "keyword": ["C"],
         "professor": ["이재문"],
@@ -246,7 +274,8 @@
         "tracks" : [{"track":"모바일소프트웨어","code":"전공기초"},{"track":"빅데이터","code":"전공기초"}]
     },
     {
-        "subject_id": 28,
+        "subject_id": 29,
+        "code":"V020004",
         "name": "프로그래밍랩",
         "keyword": ["C","프로젝트"],
         "professor": ["정인환"],
@@ -255,16 +284,8 @@
         {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 29,
-        "name": "프로그래밍랩",
-        "keyword": ["C"],
-        "professor": ["강희중"],
-        "grade": "1학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전공선택"}, {"track":"웹공학","code":"전공선택"},
-        {"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
-    },
-    {
         "subject_id": 30,
+        "code":"CTE0002",
         "name": "웹프로그래밍기초",
         "keyword": ["HTML","JavaScript"],
         "professor": ["이석기"],
@@ -273,14 +294,7 @@
     },
     {
         "subject_id": 31,
-        "name": "웹프로그래밍기초",
-        "keyword": ["HTML","JavaScript"],
-        "professor": ["안영아"],
-        "grade": "1학년",
-        "tracks" : [{"track":"웹공학","code":"전공기초"},{"track":"디지털콘텐츠 가상현실","code":"전공기초"}]
-    },
-    {
-        "subject_id": 32,
+        "code":"V024003",
         "name": "웹프로그래밍",
         "keyword": ["HTML","JavaScript"],
         "professor": ["김인희"],
@@ -288,7 +302,8 @@
         "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 33,
+        "subject_id": 32,
+        "code":"V024003",
         "name": "웹프로그래밍",
         "keyword": ["HTML","JavaScript"],
         "professor": ["김성동"],
@@ -296,7 +311,8 @@
         "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 34,
+        "subject_id": 33,
+        "code":"V024003",
         "name": "웹프로그래밍",
         "keyword": ["HTML","JavaScript"],
         "professor": ["심규현"],
@@ -304,7 +320,8 @@
         "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
     },
     {
-        "subject_id": 35,
+        "subject_id": 34,
+        "code":"V020031",
         "name": "클라우드컴퓨팅",
         "keyword": ["웹","AWS"],
         "professor": ["김성동"],
@@ -312,7 +329,8 @@
         "tracks" : [{"track":"웹공학","code":"전공선택"}]
     },
     {
-        "subject_id": 36,
+        "subject_id": 35,
+        "code":"V022006",
         "name": "빅데이터기초",
         "keyword": ["빅데이터", "데이터관리"],
         "professor": ["엄종석","장재영"],
@@ -320,7 +338,8 @@
         "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
     },
     {
-        "subject_id": 37,
+        "subject_id": 36,
+        "code":"V020030",
         "name": "인공지능",
         "keyword": ["인공지능", "기계학습"],
         "professor": ["강희중"],
@@ -328,7 +347,8 @@
         "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
     },
     {
-        "subject_id": 38,
+        "subject_id": 37,
+        "code":"V023003",
         "name": "게임그래픽&애니메이션",
         "keyword": ["3D MAX","그래픽스"],
         "professor": ["이향찬"],
