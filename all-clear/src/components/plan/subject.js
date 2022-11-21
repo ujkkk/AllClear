@@ -18,10 +18,7 @@ const Subject = ({ data , onLike= f=>f }) => {
             //     window.open(`/datailPlan/${data.subject_id}/${data.professor}`, "detail_plan","width=780, height=720");
             // }}>
             <div className="subject" onClick={()=>{onLike(data)}} >
-            
-                {/* // window.open(`/datailPlan/${data.subject_id}/${data.professor}`, "detail_plan","width=780, height=720");
-                // navigate(`/datailPlan/${data.subject_id}/${data.professor}`) */}
-            
+
                 <div className="subject-name">{data.name}</div>
                 <div className="subject-keywords">
                     {

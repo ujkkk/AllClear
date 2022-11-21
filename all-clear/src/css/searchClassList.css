@@ -1,8 +1,32 @@
 #search-class-warp {
     padding-left: 150px;
-
 }
 
 #search-class-warp h4 {
     padding-top: 40px;
+}
+
+#search-class-warp #search-class-component{
+    height:480px;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+
+#search-class-component::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤바의 너비 */
+}
+
+#search-class-component::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #217af4;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+}
+
+#search-class-component::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
 }

@@ -1,10 +1,35 @@
-#lick-class-warp {
+#like-class-warp {
     padding-left: 150px;
 
 }
 
-#lick-class-warp h4 {
+#like-class-warp h4 {
     padding-top: 40px;
+}
+
+#like-class-warp #like-class-component {
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#like-class-component::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤바의 너비 */
+}
+
+#like-class-component::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #217af4;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+}
+
+#like-class-component::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
 }
 
 .like-subject {
@@ -18,24 +43,30 @@
     cursor: pointer;
 }
 
+.preset-like-button {
+    display: inline-block;
+    position: relative;
+    left: 190px;
+    top: 0px
+}
+
 .like-subject .subject-name {
     display: inline-block;
     font-size: 18px;
     /* text-align: center; */
     margin-left: 17px;
     margin-top: 12px;
-    width: 220px;
 }
 
 .like-subject .subject-type {
     display: inline-block;
     font-size: 15px;
-    margin-left: 15px;
+    margin-left: -7px;
     margin-top: 3px;
 }
 
 .like-subject .subject-time {
     font-size: 15px;
-    margin-left: 15px;
+    margin-left: 16px;
     margin-top: 3px;
 }
