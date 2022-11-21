@@ -5,15 +5,12 @@
         "name": "객체지향언어2",
         "professor": ["황기태"],
         "class" :  [ 
-            {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
-            },
+          
             {
                 "type": "C",
                 "start_time" : "13:00","end_time" : "14:30",
                 "dayOfWeek":"화"
+
             },
             {
                 "type": "B",
@@ -25,7 +22,7 @@
 
 
     {
-        "subject_id": 2,
+        "subject_id": 6,
         "code": "V020008",
         "name": "데이터통신",
         "professor": ["황호영"],
@@ -58,7 +55,7 @@
         ]
    },
     {
-        "subject_id": 3,
+        "subject_id": 8,
         "code": "V020010",
         "name": "알고리즘",
         "professor": ["권영미"],
@@ -77,7 +74,7 @@
     },
 
     {
-        "subject_id": 4,
+        "subject_id": 12,
         "code": "V024005",
         "name": "웹프레임워크",
         "professor": ["박승현"],
@@ -95,7 +92,7 @@
         ]
   },
     {
-        "subject_id": 5,
+        "subject_id": 13,
         "code": "V023005",
         "name": "가상현실",
         "professor": ["김진모","조세홍"],
@@ -113,7 +110,7 @@
         ]
     },
     {
-        "subject_id": 6,
+        "subject_id": 14,
         "code": "V021006",
         "name": "고급모바일프로그래밍",
         "professor": ["허준영"],
@@ -131,7 +128,7 @@
         ]
     },
     {
-        "subject_id": 7,
+        "subject_id": 15,
         "code": "V020018",
         "name": "설계패턴",
         "professor": ["정인상"],
@@ -149,7 +146,7 @@
         ]
     },
     {
-        "subject_id": 8,
+        "subject_id": 16,
         "code": "V020018",
         "name": "설계패턴",
         "professor": ["한기준"],
@@ -167,7 +164,7 @@
         ]
       },
     {
-        "subject_id": 9,
+        "subject_id": 17,
         "code": "V022004",
         "name": "데이터베이스설계",
         "professor": ["김영웅"],
@@ -185,7 +182,7 @@
         ]
       },
     {
-        "subject_id": 10,
+        "subject_id": 19,
         "name": "시스템프로그래밍",
         "professor": ["장재영"],
         "class" :  [ 
