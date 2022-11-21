@@ -27,6 +27,7 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
     return (
         <div className="subjects-warp">
             <h4>03. 과목 선택</h4>
+            <div id="subject-container">
             {
                 grade.map((grade) => (
                     subjectsData.map((subject, idx) => {
@@ -53,13 +54,12 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
                                         <Subject key={idx} data={subject}  onLike={onLike} ></Subject>
                                     </>
                                 )
-                               
                             }
-                               
                         }
                     })
                 ))
             }
+            </div>
             <LikeBar changeLikeClasses={changeLikeClasses} subject_id={selectedId} name={selectdProfessor} classes={classes} />   
         </div>
     )
