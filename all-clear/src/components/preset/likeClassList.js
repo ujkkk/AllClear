@@ -28,7 +28,7 @@ const LikeClassList = ({likeSub, setPreset=f=>f, changeLikeClasses}) => {
             })))
 
     return (
-        <div id="lick-class-warp">
+        <div id="like-class-warp">
         <h4>02. 관심 과목</h4> 
         <div id="like-class-component">
         {newLikeSub.map((like, i)=><LikeClass key={i} likeSub={like} addClass={setPreset} likeType={true} onSelect={(e) =>toggleLike(e,i,like)}/>)}

@@ -128,7 +128,10 @@ export default function Page2() {
       <Banners />
       <div id="page-container">
         <h3>시간표 Preset</h3>
+        <div id="preset-alart" >
         <ToastContainer />
+        </div>
+        
 
         <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} x={250} y={173} width={180} height={25} />
         <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>

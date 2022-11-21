@@ -1,4 +1,4 @@
-.Toastify__toast {
+#preset-alart .Toastify__toast {
     font-size: 20px;
     transform: translateY(800px);
     width: 330px;
