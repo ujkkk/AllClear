@@ -7,20 +7,83 @@
         "class" :  [ 
           
             {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "17:00",
+                "dayOfWeek":"수"
+
+            },
+            {
                 "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
+                "start_time" : "13:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 2,
+        "code": "V020007",
+        "name": "객체지향언어2",
+        "professor": ["안영아"],
+        "class" :  [ 
+          
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"월"
+
+            }
+        ]
+    },
+    {
+        "subject_id": 3,
+        "code": "V020007",
+        "name": "객체지향언어2",
+        "professor": ["이찬수"],
+        "class" :  [ 
+          
+            {
+                "type": "9",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+
+            }
+        ]
+    },
+    {
+        "subject_id": 4,
+        "code": "V020007",
+        "name": "객체지향언어2",
+        "professor": ["김진환"],
+        "class" :  [ 
+          
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
                 "dayOfWeek":"화"
 
             },
             {
                 "type": "B",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
             }
         ]
     },
+    {
+        "subject_id": 5,
+        "code": "V020007",
+        "name": "객체지향언어2",
+        "professor": ["유상미"],
+        "class" :  [ 
+          
+            {
+                "type": "D",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
 
-
+            }
+        ]
+    },
     {
         "subject_id": 6,
         "code": "V020008",
@@ -29,31 +92,44 @@
         "class" :  [ 
             {
                 "type": "7",
-                "start_time" : "16:00","end_time" : "16:50",
+                "start_time" : "16:00","end_time" : "17:00",
                 "dayOfWeek":"금"
             },
             {
                 "type": "A",
-                "start_time" : "11:00","end_time" : "11:50",
+                "start_time" : "10:00","end_time" : "11:00",
                 "dayOfWeek":"금"
             },
             {
                 "type": "B",
-                "start_time" : "12:00","end_time" : "12:50",
+                "start_time" : "11:00","end_time" : "12:00",
                 "dayOfWeek":"금"
             },
             {
                 "type": "C",
-                "start_time" : "14:00","end_time" : "14:30",
+                "start_time" : "13:00","end_time" : "14:00",
                 "dayOfWeek":"금"
             },
             {
                 "type": "D",
-                "start_time" : "15:00","end_time" : "15:30",
+                "start_time" : "14:00","end_time" : "15:00",
                 "dayOfWeek":"금"
             }
         ]
    },
+   {
+    "subject_id": 7,
+    "code": "V020008",
+    "name": "데이터통신",
+    "professor": ["서성현"],
+    "class" :  [ 
+        {
+            "type": "8",
+            "start_time" : "16:00","end_time" : "17:00",
+            "dayOfWeek":"화"
+        }
+    ]
+    },
     {
         "subject_id": 8,
         "code": "V020010",
@@ -62,17 +138,60 @@
         "class" :  [ 
             {
                 "type": "A",
-                "start_time" : "10:00","end_time" : "10:50",
+                "start_time" : "10:00","end_time" : "11:00",
                 "dayOfWeek":"금"
             },
             {
                 "type": "B",
-                "start_time" : "11:00","end_time" : "11:50",
+                "start_time" : "11:00","end_time" : "12:00",
                 "dayOfWeek":"금"
             }
         ]
     },
-
+    {
+        "subject_id": 9,
+        "code": "V020010",
+        "name": "알고리즘",
+        "professor": ["김광섭"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 10,
+        "code": "V020010",
+        "name": "알고리즘",
+        "professor": ["강희중"],
+        "class" :  [ 
+            {
+                "type": "C",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "D",
+                "start_time" : "9:00","end_time" : "10:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 11,
+        "code": "V020010",
+        "name": "알고리즘",
+        "professor": ["유상미"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
     {
         "subject_id": 12,
         "code": "V024005",
@@ -80,17 +199,22 @@
         "professor": ["박승현"],
         "class" :  [ 
             {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
+                "type": "7",
+                "start_time" : "15:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             },
             {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"목"
             }
         ]
-  },
+    },
     {
         "subject_id": 13,
         "code": "V023005",
@@ -98,13 +222,18 @@
         "professor": ["김진모","조세홍"],
         "class" :  [ 
             {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
+                "type": "7",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
             },
             {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
+                "type": "8",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:00","end_time" : "12:00",
                 "dayOfWeek":"화"
             }
         ]
@@ -116,17 +245,23 @@
         "professor": ["허준영"],
         "class" :  [ 
             {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
+                "type": "7",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
             },
             {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
+                "type": "A",
+                "start_time" : "11:00","end_time" : "12:00",
                 "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "13:00",
+                "dayOfWeek":"수"
             }
         ]
     },
+
     {
         "subject_id": 15,
         "code": "V020018",
@@ -134,14 +269,19 @@
         "professor": ["정인상"],
         "class" :  [ 
             {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
+                "type": "7",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
             },
             {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
             }
         ]
     },
@@ -153,16 +293,16 @@
         "class" :  [ 
             {
                 "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
             },
             {
                 "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
             }
         ]
-      },
+    },
     {
         "subject_id": 17,
         "code": "V022004",
@@ -170,32 +310,367 @@
         "professor": ["김영웅"],
         "class" :  [ 
             {
-                "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
-                "dayOfWeek":"수"
+                "type": "7",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"화"
             },
             {
-                "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
-                "dayOfWeek":"화"
+                "type": "A",
+                "start_time" : "10:00","end_time" : "12:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
             }
         ]
       },
+      {
+        "subject_id": 18,
+        "code":"V020016",
+        "name": "시스템프로그래밍",
+        "professor": ["김진환"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
     {
         "subject_id": 19,
+        "code":"V020016",
         "name": "시스템프로그래밍",
         "professor": ["장재영"],
         "class" :  [ 
             {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "9",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+     },
+     {
+        "subject_id": 20,
+        "code":"V020016",
+        "name": "시스템프로그래밍",
+        "professor": ["이찬수"],
+        "class" :  [ 
+            {
                 "type": "8",
-                "start_time" : "14:00","end_time" : "16:30",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 21,
+        "code":"V020017",
+        "name": "네트워크프로그래밍",
+        "professor": ["정인환"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
                 "dayOfWeek":"수"
             },
             {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"목"
+            },
+            {
                 "type": "C",
-                "start_time" : "13:00","end_time" : "14:30",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+     },
+    {
+        "subject_id": 22,
+        "code":"V021003",
+        "name": "모바일&스마트시스템",
+        "professor": ["이재문"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:30","end_time" : "16:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "C",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+     },
+    {
+        "subject_id": 23,
+        "code":"V021003",
+        "name": "모바일&스마트시스템",
+        "professor": ["황기태"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "10:00","end_time" : "13:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 24,
+        "code":"V020009",
+        "name": "선형대수",
+        "professor": ["권영미"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "17:00","end_time" : "18:00",
                 "dayOfWeek":"화"
             }
         ]
-     }
+    },
+    {
+        "subject_id": 25,
+        "code":"V020011",
+        "name": "오픈소스소프트웨어",
+        "professor": ["한기준"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 26,
+        "code":"V020019",
+        "name": "컴퓨터비전",
+        "professor": ["엄종석"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 27,
+        "code":"CTE0001",
+        "name": "컴퓨터프로그래밍",
+        "professor": ["계희원"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 28,
+        "code":"CTE0001",
+        "name": "컴퓨터프로그래밍",
+        "professor": ["이재문"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 29,
+        "code":"V020004",
+        "name": "프로그래밍랩",
+        "professor": ["정인환"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 30,
+        "code":"CTE0002",
+        "name": "웹프로그래밍기초",
+        "professor": ["이석기"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:00","end_time" : "18:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:00","end_time" : "12:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "14:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 31,
+        "code":"V024003",
+        "name": "웹프로그래밍",
+        "professor": ["김인희"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 32,
+        "code":"V024003",
+        "name": "웹프로그래밍",
+        "professor": ["김성동"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 33,
+        "code":"V024003",
+        "name": "웹프로그래밍",
+        "professor": ["심규현"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 34,
+        "code":"V020031",
+        "name": "클라우드컴퓨팅",
+        "professor": ["김성동"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 35,
+        "code":"V022006",
+        "name": "빅데이터기초",
+        "professor": ["엄종석","장재영"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 36,
+        "code":"V020030",
+        "name": "인공지능",
+        "professor": ["강희중"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 37,
+        "code":"V023003",
+        "name": "게임그래픽&애니메이션",
+        "professor": ["이향찬"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "14:00","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    }
+   
 ]
