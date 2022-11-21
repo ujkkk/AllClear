@@ -8,8 +8,8 @@ import presetIcon from '../static/presetIcon.png'
 import gameIcon from '../static/gameIcon.png'
 import homeIcon from '../static/homeIcon.png'
 
-const Banners = () => (
-  <div id="banners">
+const Banners = ({height}) => (
+  <div id="banners"  style={{height:height}}>
     <img id="bugi-icon" src={bugiIcon} />
     <nav>
       <Link className="option" to="/page1"><img className="option-icon" src={planIcon} /><br/>교과목 검색</Link> <br />

@@ -10,20 +10,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../css/preset.css";
 
 export default function Page2() {
-  const { likeClasses, changeLikeClasses,preset, changePreset} = useOutletContext();
+  const { likeClasses, changeLikeClasses, preset, changePreset } = useOutletContext();
   const [selectPreset, setSelectPreset] = useState([...preset.preset1]);
   const [presetNum, setPresetNum] = useState(0);
 
   const notify = (text) => {
     toast.warn(text, {
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        progress: undefined,
-        theme: "light",
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+      theme: "light",
     });
   }
 
@@ -125,17 +125,15 @@ export default function Page2() {
 
   return (
     <>
-      <Banners />
+      <Banners height={"1600px"} />
       <div id="page-container">
         <h3>시간표 Preset</h3>
         <div id="preset-alart" >
-        <ToastContainer />
+          <ToastContainer />
         </div>
-        
-
         <Schedule presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} x={250} y={173} width={180} height={25} />
-        <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses}/>
-        <SearchClassList setPreset={presetAddClass}  changeLikeClasses={changeLikeClasses}/>
+        <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
+        <SearchClassList setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
       </div>
     </>
   );

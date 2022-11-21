@@ -1,27 +1,25 @@
-/*
-#page-container h3 {
-    transform: translateX(150px);
+#subject-container  {
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 30px;
 }
 
-#page-container table {
-    width: 1000px;
+#subject-container::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤바의 너비 */
 }
 
-#page-container table td,#page-container table th {
-    height: 70px;
-    text-align: center;
+#subject-container::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #7a7a7a;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
 }
 
-#page-container table td {
-    text-align: left;
+#subject-container::-webkit-scrollbar-track {
+    background: rgba(190, 190, 190, 0.1);
+    /*스크롤바 뒷 배경 색상*/
 }
-
-#page-container {
-    width: 1200px;
-    display: inline-block;
-    position : absolute;
-	transform: translateX(160px);
-    font-size: 16px;
-    margin-top: 30px;
-}
-*/

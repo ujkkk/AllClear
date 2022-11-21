@@ -11,6 +11,7 @@
     height: 130px;
     overflow-x: hidden;
     overflow-y: auto;
+    margin-bottom: 30px;
 }
 
 #like-class-component::-webkit-scrollbar {
@@ -21,14 +22,14 @@
 #like-class-component::-webkit-scrollbar-thumb {
     height: 30%;
     /* 스크롤바의 길이 */
-    background: #217af4;
+    background: #7a7a7a;
     /* 스크롤바의 색상 */
 
     border-radius: 10px;
 }
 
 #like-class-component::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);
+    background: rgba(190, 190, 190, 0.1);
     /*스크롤바 뒷 배경 색상*/
 }
 
