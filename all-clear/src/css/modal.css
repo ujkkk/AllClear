@@ -15,7 +15,7 @@
   position: absolute;
   width: 600px;
   height: 400px;
-  padding: 40px;
+  /* padding: 40px; */
   text-align: center;
   background-color: #B9D9FF;
   border: 5px solid #ffffff;
@@ -25,11 +25,17 @@
 
 #game-info-title{
     position: absolute;
-    top: 15px;
-    left:240px;
-    font-size: 32px;
+    top: 10px;
+    left:230px;
+    font-size: 35px;
     color: #000000;
 } 
+
+#info-icon{
+    top: 10px;
+    left:10px;
+    font-size: 40px;
+}
 
 #modalCloseBtn {
   position: absolute;
@@ -41,7 +47,40 @@
   background-color: transparent;
   font-size: 40px;
 }
+
+#modal-division {
+    position: absolute;
+    height:1px;
+    width:100%;
+    border-bottom: 5px solid #ffffff;
+    top: 72px;
+}
  
 #modalCloseBtn:hover {
   cursor: pointer;
+}
+
+.game-info-btn {
+    width:52px;
+    height:52px;
+    display:"inline-block";
+    border-radius: 10px;
+    background-color: #3975B5;
+    border: 3px solid white;
+    margin-left:30px;
+    margin-bottom:20px;
+    font-size:30px;
+}
+#game-slogan{
+    display:inline-block;
+    padding-left:20px;
+    padding-right:0px;
+    margin-top:85px;
+    font-size:30px;
+    background-color: #89B2EB;
+    /* background-color: #3975B5; */
+}
+
+#game-info-contents {
+    margin-top:10px;
 }
