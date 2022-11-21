@@ -10,6 +10,7 @@ import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 import { useOutletContext } from "react-router-dom";
 import GameSchedule from "./gameSchedule";
 import Schedule from "../preset/schedule";
+import ApplyClasses from "./applyClasses";
 
 
 // 수강신청게임 화면 
@@ -18,11 +19,11 @@ const GameScreen = () => {
 
     //const [gameData, setGameData] = useState(gameData)
     const navigate = useNavigate()
+    const { gameSetInfo }= useOutletContext();
     const { preset } = useOutletContext();
     
-    console.log(preset);
-    const { gameSetInfo, chageGameSetInfo }
-        = useOutletContext();
+    console.log(gameSetInfo);
+    
     return (
         <>
             <div style={{ height: "45px", marginTop: "60px", width: "1200px", marginLeft: "30px" }}>
@@ -100,8 +101,8 @@ const GameScreen = () => {
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
                                 <div style={{ width: "800px", height: "660px" }}>
-
-                                    {gameData.map((subject) => <SubjectInfo subject={subject} />)}
+                                    <ApplyClasses preset={preset}> selectedNum={gameSetInfo.preset}</ApplyClasses>
+                                    
 
                                 </div>
 

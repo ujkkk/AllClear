@@ -1,35 +1,37 @@
 import React, { useEffect } from "react";
 
-
+import "../../css/gameScreen.css";
+import subjectList from "../../data/subjectList.json"
 // 수강신청게임 장바구니 및 교과목 신청 목록
 const SubjectInfo=({subject})=>{
 
+    var subjectData = subjectList.filter((data) => data.subject_id == subject.subject_id)
    return(
     <div style={{ width:"800px", height:"130px", border: "1px solid black", fontFamily : "Nanum-Gothic"}}>
         <table>
             <tbody>
                 <tr>
                     <td style={{width : "390px"}}>
-                        {subject.code} {subject.name}
+                        {subjectData[0].code} {subjectData[0].name}
                     </td>
                     
                     <td style={{width : "25px"}}>
-                        {subject.class.map(elements => {return elements.type})} |
+                        {subject.type} |
                     </td>
                     <td style={{width : "45px"}}>
-                        {subject.class.map(elements => {return elements.major_type})} |
+                        {"전선"} |
                     </td>
                     <td style={{width : "55px"}}>
-                        {subject.class.map(elements => {return elements.credit})} |
+                        {"3학점"} |
                     </td>
                     <td style={{width : "45px"}}>
-                        {subject.class.map(elements => {return elements.dayAndNight})} |
+                        {"주간"} |
                     </td>
                     <td style={{width : "55px"}}> 
-                        {subject.class.map(elements => {return elements.year})} |
+                        {subjectData.map(elements => {return elements.grade})} |
                     </td>
                     <td style={{width : "60px"}}>
-                        {subject.professor} |
+                        {subjectData[0].professor.join(", ")}
                     </td>
 
                     <button style={{marginTop : "8px",marginLeft : "60px" ,backgroundColor : "#2AAA45",
