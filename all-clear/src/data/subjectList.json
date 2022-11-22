@@ -354,6 +354,268 @@
         "professor": ["이향찬"],
         "grade": "2학년",
         "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
+    },
+    {
+        "subject_id": 38,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["정유정"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 39,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["김양수"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 40,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["김선용"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 41,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["전종찬"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 42,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["신믿음"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 43,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["문혜경"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 44,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["이미향"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 45,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["유상미"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 46,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["임형모"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 47,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["남궁정"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 48,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["박선옥"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 49,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["이현정"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 50,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["나은미"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 51,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["정원채"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 52,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이재득"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 53,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이중진"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 54,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["신재흡"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 55,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이재득"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 56,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이태주"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 57,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["신영헌"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 58,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["이지영"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 59,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["이시원"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 60,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["김은경"],
+        "grade": "전체",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 61,
+        "code":"REQ0311",
+        "name": "영어커뮤니케이션 독해/작문 Ⅰ",
+        "keyword": ["독해","문법"],
+        "professor": ["현일선"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 62,
+        "code":"REQ0312",
+        "name": "영어커뮤니케이션 독해/작문 Ⅱ",
+        "keyword": ["독해","문법"],
+        "professor": ["이종은"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 63,
+        "code":"REQ0313",
+        "name": "영어커뮤니케이션 독해/작문 Ⅲ",
+        "keyword": ["독해","문법"],
+        "professor": ["염경순"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 64,
+        "code":"REQ0421",
+        "name": "영어커뮤니케이션 청취/회화 Ⅰ",
+        "keyword": ["독해","문법"],
+        "professor": ["메리"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 65,
+        "code":"REQ0422",
+        "name": "영어커뮤니케이션 청취/회화 Ⅱ",
+        "keyword": ["독해","문법"],
+        "professor": ["데릭"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 66,
+        "code":"REQ0423",
+        "name": "영어커뮤니케이션 청취/회화 Ⅲ",
+        "keyword": ["독해","문법"],
+        "professor": ["그레고리"],
+        "grade": "1학년",
+        "tracks" : [{"track":"필수교양","code":"전체"}]
     }
-   
+    
+
 ]

@@ -671,6 +671,522 @@
                 "dayOfWeek":"수"
             }
         ]
+    },
+    {
+        "subject_id": 38,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["정유정"],
+        "class" :  [ 
+            {
+                "type": "1",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "B",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "F",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "I",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 39,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["김양수"],
+        "class" :  [ 
+            {
+                "type": "2",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "K",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 40,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["김선용"],
+        "class" :  [ 
+            {
+                "type": "5",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 41,
+        "code":"REQ0025",
+        "name": "디자인씽킹",
+        "keyword": ["상상력","공감"],
+        "professor": ["전종찬"],
+        "class" :  [ 
+            {
+                "type": "6",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 42,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["신믿음"],
+        "class" :  [ 
+            {
+                "type": "4",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "D",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "I",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 43,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["문혜경"],
+        "class" :  [ 
+            {
+                "type": "5",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 44,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["이미향"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "C",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 45,
+        "code":"REQ0018",
+        "name": "문제해결을 위한 코딩 첫걸음",
+        "keyword": ["파이썬"],
+        "professor": ["유상미"],
+        "class" :  [ 
+            {
+                "type": "H",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 46,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["임형모"],
+        "class" :  [ 
+            {
+                "type": "1",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "C",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "G",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "J",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 47,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["남궁정"],
+        "class" :  [ 
+            {
+                "type": "4",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "L",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 48,
+        "code":"REQ0022",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["박선옥"],
+        "class" :  [ 
+            {
+                "type": "D",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "H",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 49,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["이현정"],
+        "class" :  [ 
+            {
+                "type": "3",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "K",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 50,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["나은미"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "H",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 51,
+        "code":"REQ0023",
+        "name": "사고와 표현(발표와 토론)",
+        "keyword": ["발표","토론"],
+        "professor": ["정원채"],
+        "class" :  [ 
+            {
+                "type": "C",
+                "start_time" : "9:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "M",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 52,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이재득"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 53,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이중진"],
+        "class" :  [ 
+            {
+                "type": "B",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 54,
+        "code":"GEN0654",
+        "name": "사회봉사Ⅰ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["신재흡"],
+        "class" :  [ 
+            {
+                "type": "E",
+                "start_time" : "9:00","end_time" : "10:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 55,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이재득"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 56,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["이태주"],
+        "class" :  [ 
+            {
+                "type": "B",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 57,
+        "code":"GEN0673",
+        "name": "사회봉사Ⅱ",
+        "keyword": ["봉사활동","포트폴리오"],
+        "professor": ["신영헌"],
+        "class" :  [ 
+            {
+                "type": "C",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 58,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["이지영"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 59,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["이시원"],
+        "class" :  [ 
+            {
+                "type": "8",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 60,
+        "code":"CCA0005",
+        "name": "삶과 꿈",
+        "keyword": ["심리학","미래와 꿈"],
+        "professor": ["김은경"],
+        "class" :  [ 
+            {
+                "type": "B",
+                "start_time" : "13:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 61,
+        "code":"REQ0311",
+        "name": "영어커뮤니케이션 독해/작문 Ⅰ",
+        "keyword": ["독해","문법"],
+        "professor": ["현일선"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "B",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 62,
+        "code":"REQ0312",
+        "name": "영어커뮤니케이션 독해/작문 Ⅱ",
+        "keyword": ["독해","문법"],
+        "professor": ["이종은"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "E",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 63,
+        "code":"REQ0313",
+        "name": "영어커뮤니케이션 독해/작문 Ⅲ",
+        "keyword": ["독해","문법"],
+        "professor": ["염경순"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "B",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 64,
+        "code":"REQ0421",
+        "name": "영어커뮤니케이션 청취/회화 Ⅰ",
+        "keyword": ["독해","문법"],
+        "professor": ["메리"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "10:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 65,
+        "code":"REQ0422",
+        "name": "영어커뮤니케이션 청취/회화 Ⅱ",
+        "keyword": ["독해","문법"],
+        "professor": ["데릭"],
+        "class" :  [ 
+            {
+                "type": "B",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "K",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 66,
+        "code":"REQ0423",
+        "name": "영어커뮤니케이션 청취/회화 Ⅲ",
+        "keyword": ["독해","문법"],
+        "professor": ["그레고리"],
+        "class" :  [ 
+            {
+                "type": "C",
+                "start_time" : "9:00","end_time" : "10:30",
+                "dayOfWeek":"월"
+            }
+        ]
     }
    
 ]
