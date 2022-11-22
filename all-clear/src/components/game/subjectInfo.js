@@ -11,27 +11,15 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f }) => {
                     <tr>
                         <td style={{ width: "390px" }}>
                             {`[V023005]`} {/*{subject.code} */} {subjectsData.name}
-                            
+
                         </td>
 
-                        <td style={{ width: "25px" }}>
-                            {classData.type} |
+                        <td style={{ width: "285px" }}>
+                            {classData.type} | {"전선"} | {"3학점"} | {"주간"} | {subjectsData.grade} | {subjectsData.professor.join(", ")}
                         </td>
-                        <td style={{ width: "45px" }}>
-                            {/*subject.class.map(elements => { return elements.major_type })*/ `전선`} |
-                        </td>
-                        <td style={{ width: "55px" }}>
-                            {/*subject.class.map(elements => { return elements.credit })*/ `3학점`} |
-                        </td>
-                        <td style={{ width: "45px" }}>
-                            {/*subject.class.map(elements => { return elements.dayAndNight })*/ `주간`} |
-                        </td>
-                        <td style={{ width: "55px" }}>
-                            {/*subject.class.map(elements => { return elements.year })*/ subjectsData.grade} |
-                        </td>
-                        <td style={{ width: "60px" }}>
-                            {subjectsData.professor.join(", ")} |
-                        </td>
+
+
+
 
                         <button onClick={() => addClass({
                             subject_id: subjectsData.subject_id, type: classData.type, name: subjectsData.name,
@@ -42,11 +30,46 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f }) => {
                         }}>
                             신청
                         </button>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" style={{ marginLeft: "20px", float: "left", width: "300px", textAlign: "center" }}>
+                <tbody>
+                    <tr>
+                        <td style={{ width: "50px" }}> 타과1</td>
+                        <td style={{ width: "50px" }}> 타과2</td>
+                        <td style={{ width: "50px" }}> 타과3</td>
+                        <td style={{ width: "50px" }}> 타과4</td>
+                        <td style={{ width: "50px" }}> 편입</td>
+                        <td style={{ width: "50px" }}> 자과</td>
 
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style={{ float: "left", width: "95px" }}>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style={{ width: "155px", fontSize: "13px", color: "#1CC8E8" }}>
+                <tbody>
+                    <tr>
+                        <td>수업 장소</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
     );
 };
 export default SubjectInfo;

@@ -61,8 +61,8 @@
 }
 
 #schedule table td {
-    display: inline-block;
-    width: 180px;
+    /* display: inline-block; */
+    width: 100px;
     height: 50px;
     border: 1px solid rgba(128, 128, 128, 0.334);   
     line-height: 50px;
