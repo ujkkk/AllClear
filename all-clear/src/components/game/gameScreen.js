@@ -16,6 +16,16 @@ import Timer from "./timer";
 // 수강신청게임 화면 
 const GameScreen = () => {
 
+    const navigate = useNavigate()
+    const { preset } = useOutletContext();
+    const { gameSetInfo, chageGameSetInfo } = useOutletContext();
+    const [sec, setSec] = useState(gameSetInfo.runTime);
+    //console.log(gameSetInfo)
+
+    const changeSec = (time)=>{setSec(time)}
+        
+    
+
     const [gameSchedule, setGameSchedule] = useState([]);
 
     const notify = (text) => {
@@ -62,6 +72,9 @@ const GameScreen = () => {
                 return
 
             }
+            // if(sec <= 0){
+
+            // }
         })
         if (overlap === false) {
             setGameSchedule([...gameSchedule, addClass]);
@@ -73,12 +86,10 @@ const GameScreen = () => {
     }
 
     //const [gameData, setGameData] = useState(gameData)
-    const navigate = useNavigate()
-    const { preset } = useOutletContext();
-
+   
     console.log(preset);
-    const { gameSetInfo, chageGameSetInfo }
-        = useOutletContext();
+  
+
 
     return (
         <>
@@ -88,9 +99,9 @@ const GameScreen = () => {
                         <img src={sugangimg} />
                     </td>
                 </table>
-                <table border="2" style={{ width: "100px", float: "left" }}>
+                <table  style={{ width: "100px",height:"30px", float: "left" }}>
                     <td>
-                        <Timer></Timer>
+                        <Timer sec={sec} changeSec= {changeSec}></Timer>
                         
                     </td>
                 </table>
@@ -157,9 +168,8 @@ const GameScreen = () => {
                     <table style={{ width: "800px" }}>
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
-
                                 <div style={{ width: "800px", height: "860px" }}>
-                                    <ApplyClasses preset={preset} addClass={scheduleAddClass}> selectedNum={gameSetInfo.preset}</ApplyClasses>
+                                    <ApplyClasses preset={preset} addClass={scheduleAddClass} gameSetInfo={gameSetInfo} sec={sec}>  </ApplyClasses>
                                 </div>
 
 
