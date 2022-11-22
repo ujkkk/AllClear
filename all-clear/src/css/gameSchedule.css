@@ -1,5 +1,6 @@
 #game-schedule{
     font-family: "Nanum-Gothic" ;
+    position : relative;
 }
 
 #game-schedule h4 {

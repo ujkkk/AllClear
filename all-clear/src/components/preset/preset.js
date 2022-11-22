@@ -21,7 +21,7 @@ const Preset = ({ presetClass, deleteClass = f => f, setPresetNum}) => {
             {optionContent.map((data, i) => (
                 <TableLabel key={2-i} color={2-i === option ? true : false} index={2-i} content={data} marginValue={marginValue[i]} onSelect={optionChange} />
             ))}   
-            <Schedule presetClass={presetClass} deleteClass={deleteClass} deleteOption={true} x={250} y={176} width={180} height={25} tdNum={5} trNum={12} /> 
+            <Schedule presetClass={presetClass} deleteClass={deleteClass} deleteOption={true} x={101} y={50} width={180} height={25} tdNum={5} trNum={12} /> 
         </div>
     )
 }

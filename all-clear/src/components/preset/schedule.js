@@ -11,28 +11,20 @@ const Schedule = ({ presetClass, deleteClass = f => f, deleteOption, x, y, width
     const getTime = (presetTime) => {
         let time = presetTime.split(":")
 
-        if(Number(time[0])===12){
+        if (Number(time[0]) === 12) {
             return `오후 ${presetTime}`;
         }
-        else if(Number(time[0])>12){
+        else if (Number(time[0]) > 12) {
             return `오후 ${Number(time[0]) - 12}:${time[1]}`
         }
-        else{
+        else {
             return `오전 ${presetTime}`;
         }
     }
 
     return (
         <>
-            <table>
-                <tr id="week">
-                    {(tdNum == 5) ? <><td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td></> : <><td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td></>}
-                </tr>
-                {[...Array(trNum)].map((e, i) => {
-                    return ((i + 9 > 12) ? <ScheduleRow key={i} clock={`오후 ${i+9-12}`} tdNum={tdNum} /> : <ScheduleRow key={i} clock={`오전 ${i+9}`} tdNum={tdNum} />)
-                }
-                )}
-            </table>
+        <table>
             {
                 presetClass.map((preset, i) => {
 
@@ -46,7 +38,7 @@ const Schedule = ({ presetClass, deleteClass = f => f, deleteOption, x, y, width
                             Number(start_time[1]) - Number(end_time[1])) / 30)) * height
 
 
-                            console.log("@@@@@@@@@@@ "+newHeight);
+                    console.log("@@@@@@@@@@@ " + newHeight);
 
                     let customColor = colorList[i % colorList.length]
 
@@ -79,6 +71,15 @@ const Schedule = ({ presetClass, deleteClass = f => f, deleteOption, x, y, width
 
                 })
             }
+            
+                <tr id="week">
+                    {(tdNum == 5) ? <><td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td></> : <><td></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td></>}
+                </tr>
+                {[...Array(trNum)].map((e, i) => {
+                    return ((i + 9 > 12) ? <ScheduleRow key={i} clock={`오후 ${i + 9 - 12}`} tdNum={tdNum} /> : <ScheduleRow key={i} clock={`오전 ${i + 9}`} tdNum={tdNum} />)
+                }
+                )}
+            </table>
         </>
     )
 }

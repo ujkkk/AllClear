@@ -4,6 +4,7 @@
     width: 180px;
     background-color:cadetblue;
     position: absolute;
+    
 }
 
 .preset-subject .subject-name {
@@ -48,10 +49,17 @@
     margin-bottom: 20px;
 }
 
+#schedule {
+   
+}
+
 #schedule table {
     width: 1002px;
     transform: translateX(150px);
     font-size: 16px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.334);
+    border-radius: 20px 20px 20px 20px;
 }
 
 #schedule table tr td:first-child {
@@ -75,14 +83,18 @@
 
 #schedule #week td:first-child {
     border-radius: 20px 0px 0px 0px;
+    border-style: none;
 }
 
 #schedule #week td:last-child {
     border-radius: 0px 20px 0px 0px;
+    border-style: solid;
 }
 
 #schedule table tr:last-child > td:first-child {
     border-radius: 0px 0px 0px 20px;
+    
+    
 }
 
 #schedule table tr:last-child > td:last-child {

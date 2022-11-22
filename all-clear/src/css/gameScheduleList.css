@@ -1,0 +1,39 @@
+.schedule-list {
+    padding-left: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.schedule-list .code {
+    display: inline-block;
+    width: 550px;
+}
+.schedule-list .info {
+    display: inline-block;
+    width: 500px;
+}
+
+.schedule-list .track {
+    display: inline-block;
+    font-weight:normal ;
+    width: 130px;
+    text-align: center;
+    background-color: #2AAA45;
+    border: none;
+    height: 29px;
+    color: white;
+    border-radius: 5px;
+}
+
+.schedule-list .cancel-btn{
+    display: inline-block;
+    width: 70px;
+    background-color: #CA2140;
+    border: none;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}

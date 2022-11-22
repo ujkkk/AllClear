@@ -1,6 +1,5 @@
 import React from "react";
 import SubjectInfo from "./subjectInfo"
-import ScheduleRow from "../preset/scheduleRow";
 import classDivisionData from "../../data/classDivision.json";
 import subjectsData from "../../data/subjectList.json";
 const ApplyClasses = ({ preset, selectedNum, gameSetInfo, addClass = f => f , sec}) => {

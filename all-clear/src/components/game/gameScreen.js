@@ -11,7 +11,9 @@ import Schedule from "../preset/schedule";
 import { ToastContainer, toast } from 'react-toastify';
 import ApplyClasses from "./applyClasses";
 import Timer from "./timer";
-
+import ApplyImmediately from "./applyImmediately";
+import GameScheduleList from "./gameScheduleList";
+import classDivisionData from "../../data/classDivision.json";
 
 // 수강신청게임 화면 
 const GameScreen = () => {
@@ -22,9 +24,7 @@ const GameScreen = () => {
     const [sec, setSec] = useState(gameSetInfo.runTime);
     //console.log(gameSetInfo)
 
-    const changeSec = (time)=>{setSec(time)}
-        
-    
+    const changeSec = (time) => { setSec(time) }
 
     const [gameSchedule, setGameSchedule] = useState([]);
 
@@ -41,6 +41,26 @@ const GameScreen = () => {
         });
     }
 
+    const alertAddClass1 = (addClass) => {
+        var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
+        if (delConfirm) {
+            scheduleAddClass(addClass)
+        }
+    }
+
+    const alertAddClass2 = (addClass) => {
+        var delConfirm = window.confirm(`직접 입력 과목(${addClass.code})을 수강 신청하시겠습니까?`);
+        if (delConfirm) {
+            scheduleAddClass(addClass)
+        }
+    }
+
+    const alartDeleteClass = (deleteClass) => {
+        var delConfirm = window.confirm(`${deleteClass.name}(${deleteClass.code})을 수강 취소하시겠습니까?`);
+        if (delConfirm) {
+            DeleteClass(deleteClass.subject_id, deleteClass.type)
+        }
+    }
 
     const checkPresetTime = (check1, check2) => {
         let startTime1 = check1.start_time.replace(":", "")
@@ -61,13 +81,15 @@ const GameScreen = () => {
         gameSchedule.map((pre) => {
             if (pre.name == addClass.name) {
                 overlap = true
-                notify(" 프레셋에 존재합니다")
+                //notify(" 프레셋에 존재합니다")
+                window.confirm("이미 신청된 강좌입니다")
                 //alert("해당 과목이 preset에 존재합니다")
                 return
             }
             else if (pre.dayOfWeek === addClass.dayOfWeek && !checkPresetTime(pre, addClass)) {
                 overlap = true
-                notify("겹치는 시간이 존재합니다")
+                //notify("겹치는 시간이 존재합니다")
+                window.confirm("해당 시간에 다른 강좌가 존재합니다")
                 //alert("해당 과목 시간에 과목이 preset에 존재합니다")
                 return
 
@@ -85,10 +107,19 @@ const GameScreen = () => {
         console.log(gameSchedule);
     }
 
+    const DeleteClass = (subject_id, type) => {
+
+        setGameSchedule(gameSchedule.filter((sub) => {
+            //console.log(`${preset.subject_id} !== ${subject_id} ||| ${preset.type} !== ${type}`)
+            return (sub.subject_id !== subject_id || sub.subject_id === subject_id && sub.type !== type)
+        }))
+    }
+
+
     //const [gameData, setGameData] = useState(gameData)
-   
+
     console.log(preset);
-  
+
 
 
     return (
@@ -99,10 +130,10 @@ const GameScreen = () => {
                         <img src={sugangimg} />
                     </td>
                 </table>
-                <table  style={{ width: "100px",height:"30px", float: "left" }}>
+                <table style={{ width: "100px", height: "30px", float: "left" }}>
                     <td>
-                        <Timer sec={sec} changeSec= {changeSec}></Timer>
-                        
+                        <Timer sec={sec} changeSec={changeSec}></Timer>
+
                     </td>
                 </table>
                 <table style={{ float: "right", width: "200px" }}>
@@ -169,10 +200,8 @@ const GameScreen = () => {
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
                                 <div style={{ width: "800px", height: "860px" }}>
-                                    <ApplyClasses preset={preset} addClass={scheduleAddClass} gameSetInfo={gameSetInfo} sec={sec}>  </ApplyClasses>
+                                    <ApplyClasses preset={preset} addClass={alertAddClass1} gameSetInfo={gameSetInfo} sec={sec}>  </ApplyClasses>
                                 </div>
-
-
                             </td>
                         </tbody>
                     </table>
@@ -186,11 +215,7 @@ const GameScreen = () => {
                                     <span style={{ color: "#85CFF0", fontSize: "8px" }}>■ </span>2022-2 수강신청 신청내역
                                 </td>
                                 <td>
-                                    <input type={"type"} className={"input-code"} size={"6"} placeholder={"과목코드"} style={{ textAlign: "center", fontSize: "18px", padding: "6px", textAlign: "left", width:"200px" }} />
-                                    <input type={"type"} className={"input-class"} size={"6"} placeholder={"분반"} style={{ fontSize: "18px", padding: "6px",  textAlign: "left", width:"200px"  }} />
-                                    <button id="btncss" type={"button"} className={"search"} style={{marginLeft:"5px"}}>
-                                        <span>바로신청</span>
-                                    </button>
+                                    <ApplyImmediately addClass={alertAddClass2} />
                                 </td>
                             </tr>
                         </tbody>
@@ -209,7 +234,7 @@ const GameScreen = () => {
                     </table>
                     <table style={{ width: "1300px", backgroundColor: "white", fontFamily: "Nanum Gothic" }}>
                         <td style={{ width: "1300px" }}>
-                            신청한 과목 list
+                            <GameScheduleList gameSchedule={gameSchedule} checkdeleteClass={alartDeleteClass} />
                         </td>
                     </table>
                     <table border="1" style={{ width: "1300px", backgroundColor: "white", height: "60px", fontFamily: "Nanum Gothic" }}>
@@ -228,9 +253,8 @@ const GameScreen = () => {
 
                             <tr>
                                 <div id="game-schedule" style={{ fontFamily: "Nanum-Gothic" }}>
-                                    <Schedule presetClass={gameSchedule} deleteOption={false} x={955} y={213} width={190} height={25} tdNum={6} trNum={15} />
+                                    <Schedule presetClass={gameSchedule} deleteOption={false} x={70} y={29} width={190} height={25} tdNum={6} trNum={15} />
                                 </div>
-
                             </tr>
                         </tbody>
                     </table>

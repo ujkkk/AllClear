@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../../css/gameScreen.css";
-import subjectList from "../../data/subjectList.json"
+
 
 
 // // 수강신청게임 장바구니 및 교과목 신청 목록
@@ -36,7 +36,7 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, 
                 <tbody>
                     <tr>
                         <td style={{ width: "390px" }}>
-                            {`[V023005]`} {/*{subject.code} */} {subjectsData.name}
+                            {subjectsData.code} {/*{subject.code} */} {subjectsData.name}
 
 
                         </td>
@@ -49,7 +49,8 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, 
 
 
                         <button onClick={() => addClass({
-                            subject_id: subjectsData.subject_id, type: classData.type, name: subjectsData.name,
+                            subject_id: subjectsData.subject_id, type: classData.type, name: subjectsData.name, 
+                            professor: subjectsData.professor,code: subjectsData.code,
                             dayOfWeek: classData.dayOfWeek, start_time: classData.start_time, end_time: classData.end_time
                         })} style={{
                             marginTop: "8px", marginLeft: "60px", backgroundColor: "#2AAA45",
