@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import classDivisionData from "../../data/classDivision.json";
-import subjectsData from "../../data/subjectList.json";
 import gameData from "../../data/game.json";
 import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +10,7 @@ import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 import { useOutletContext } from "react-router-dom";
 import Schedule from "../preset/schedule";
 import { ToastContainer, toast } from 'react-toastify';
+import ApplyClasses from "./applyClasses";
 
 
 // 수강신청게임 화면 
@@ -80,6 +79,7 @@ const GameScreen = () => {
     console.log(preset);
     const { gameSetInfo, chageGameSetInfo }
         = useOutletContext();
+
     return (
         <>
             <div style={{ height: "45px", marginTop: "60px", width: "1200px", marginLeft: "30px" }}>
@@ -156,21 +156,9 @@ const GameScreen = () => {
                     <table style={{ width: "800px" }}>
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
+
                                 <div style={{ width: "800px", height: "860px" }}>
-
-                                    {subjectsData.map((sub, idx) => (
-                                        classDivisionData.map((classSub) => {
-                                            if (classSub.subject_id === sub.subject_id) {
-                                                return classSub.class.map((data, i) => (
-                                                    <SubjectInfo key={String(idx) + String(i)} classData={data} subjectsData={sub} addClass={scheduleAddClass} />
-                                                ))
-                                            }
-
-                                        })
-                                    ))
-                                    }
-
-
+                                    <ApplyClasses preset={preset} addClass={scheduleAddClass}> selectedNum={gameSetInfo.preset}</ApplyClasses>
                                 </div>
 
 
