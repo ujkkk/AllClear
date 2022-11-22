@@ -63,8 +63,11 @@
     font-size: 18px;
     /* text-align: center; */
     margin-left: 15px;
-    width: 220px;
+    width: 180px;
     margin-top: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .keyword {
