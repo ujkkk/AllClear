@@ -11,6 +11,7 @@ import { useOutletContext } from "react-router-dom";
 import GameSchedule from "./gameSchedule";
 import Schedule from "../preset/schedule";
 import ApplyClasses from "./applyClasses";
+import Timer from "./timer";
 
 
 // 수강신청게임 화면 
@@ -34,7 +35,8 @@ const GameScreen = () => {
                 </table>
                 <table border="2" style={{ width: "100px", float: "left" }}>
                     <td>
-                        time =
+                        <Timer></Timer>
+                        
                     </td>
                 </table>
                 <table style={{ float: "right", width: "200px" }}>

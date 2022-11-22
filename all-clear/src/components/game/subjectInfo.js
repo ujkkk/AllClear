@@ -38,7 +38,6 @@ const SubjectInfo=({subject})=>{
                      border : "none", height: "33px", color:"white", borderRadius:"5px"}}>
                         신청
                     </button>
-
                 </tr>
             </tbody>
         </table>

@@ -5,8 +5,6 @@ import ScheduleRow from "../preset/scheduleRow";
 
 const ApplyClasses = ({preset, selectedNum}) => {
 
-    
-
     //preset은 잘 받아 오는데 selectedNUm이 안된다.
     console.log("selectedNum : "+  selectedNum)
     var selectedPreset = []
