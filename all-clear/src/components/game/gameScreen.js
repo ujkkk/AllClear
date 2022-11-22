@@ -16,6 +16,15 @@ import Timer from "./timer";
 // 수강신청게임 화면 
 const GameScreen = () => {
 
+    const navigate = useNavigate()
+    const { preset } = useOutletContext();
+    const { gameSetInfo, chageGameSetInfo } = useOutletContext();
+    const [sec, setSec] = useState(gameSetInfo.runTime);
+    //console.log(gameSetInfo)
+
+    const changeSec = (time)=>{setSec(time)}
+        
+    
 
     const [gameSchedule, setGameSchedule] = useState([]);
 
@@ -63,6 +72,9 @@ const GameScreen = () => {
                 return
 
             }
+            // if(sec <= 0){
+
+            // }
         })
         if (overlap === false) {
             setGameSchedule([...gameSchedule, addClass]);
@@ -74,16 +86,7 @@ const GameScreen = () => {
     }
 
     //const [gameData, setGameData] = useState(gameData)
-    const navigate = useNavigate()
-    const { preset } = useOutletContext();
-    const { gameSetInfo, chageGameSetInfo } = useOutletContext();
-    const [sec, setSec] = useState(gameSetInfo.runTime);
-    //console.log(gameSetInfo)
-
-    const changeSec = (time)=>{setSec(time)}
-        
-    
-
+   
     console.log(preset);
   
 

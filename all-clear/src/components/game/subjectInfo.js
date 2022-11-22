@@ -29,7 +29,7 @@ import subjectList from "../../data/subjectList.json"
 const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, sec}) => {
      var maxNum = 40;
      var data = sec*(maxNum)/gameSetInfo.runTime
-     var subjectData = subjectList.filter((data) => data.subject_id == subject.subject_id)
+     //var subjectData = subjectList.filter((data) => data.subject_id == subject.subject_id)
     return (
         <div style={{ width: "800px", height: "130px", border: "1px solid black", fontFamily: "Nanum-Gothic" }}>
             <table>
@@ -77,11 +77,11 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, 
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
+                        <td>{Math.round(data)}</td>
                     </tr>
                 </tbody>
             </table>
-            <table style={{ float: "left", width: "95px" }}>
+            {/* <table style={{ float: "left", width: "95px" }}>
                 <tbody>
                     <tr>
                         <td></td>
@@ -95,8 +95,8 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, 
                     </tr>
                 </tbody>
             </table>
-        </div>
-                </tr>
+       
+               
                 <tr>
                     <td>0</td>
                     <td>0</td>
@@ -107,7 +107,7 @@ const SubjectInfo = ({ classData, subjectsData, addClass = f => f ,gameSetInfo, 
                                 
                 </tr>
             </tbody>
-        </table>
+        </table> */}
         <table style={{float : "left", width : "95px"}}>
             <tbody>
                 <tr>
