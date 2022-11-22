@@ -45,6 +45,9 @@ const Schedule = ({ presetClass, deleteClass = f => f, deleteOption, x, y, width
                         (((Number(end_time[1]) > Number(start_time[1])) ? Number(end_time[1]) - Number(start_time[1]) :
                             Number(start_time[1]) - Number(end_time[1])) / 30)) * height
 
+
+                            console.log("@@@@@@@@@@@ "+newHeight);
+
                     let customColor = colorList[i % colorList.length]
 
                     let newX = 0
