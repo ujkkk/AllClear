@@ -3,11 +3,12 @@ import SubjectInfo from "./subjectInfo"
 import ScheduleRow from "../preset/scheduleRow";
 
 
-const ApplyClasses = ({preset, selectedNum}) => {
+const ApplyClasses = ({preset, gameSetInfo, sec}) => {
 
     //preset은 잘 받아 오는데 selectedNUm이 안된다.
-    console.log("selectedNum : "+  selectedNum)
-    var selectedPreset = []
+   // console.log("selectedNum : "+  selectedNum)
+   var selectedPreset = []
+    var selectedNum = gameSetInfo.preset
     if(selectedNum ==0)
         selectedPreset= preset.preset1;
     else if(selectedNum ==1)   
@@ -16,10 +17,9 @@ const ApplyClasses = ({preset, selectedNum}) => {
         selectedPreset= preset.preset2;
     else 
         selectedPreset= preset.preset1;
-    console.log(selectedPreset)
     return (
        <>
-       {selectedPreset.map((subject) => <SubjectInfo subject={subject} />)}
+       {selectedPreset.map((subject) => <SubjectInfo subject={subject} gameSetInfo={gameSetInfo} sec={sec}/>)}
        </>
     
 )}

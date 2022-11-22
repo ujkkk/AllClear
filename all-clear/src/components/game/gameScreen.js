@@ -16,14 +16,18 @@ import Timer from "./timer";
 // 수강신청게임 화면 
 const GameScreen = () => {
 
-
+    
     //const [gameData, setGameData] = useState(gameData)
     const navigate = useNavigate()
     const { gameSetInfo }= useOutletContext();
     const { preset } = useOutletContext();
+    const [sec, setSec] = useState(gameSetInfo.runTime);
+    //console.log(gameSetInfo)
+
+    const changeSec = (time)=>{setSec(time)}
+        
     
-    console.log(gameSetInfo);
-    
+
     return (
         <>
             <div style={{ height: "45px", marginTop: "60px", width: "1200px", marginLeft: "30px" }}>
@@ -32,9 +36,9 @@ const GameScreen = () => {
                         <img src={sugangimg} />
                     </td>
                 </table>
-                <table border="2" style={{ width: "100px", float: "left" }}>
+                <table  style={{ width: "100px",height:"30px", float: "left" }}>
                     <td>
-                        <Timer></Timer>
+                        <Timer sec={sec} changeSec= {changeSec}></Timer>
                         
                     </td>
                 </table>
@@ -102,7 +106,7 @@ const GameScreen = () => {
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
                                 <div style={{ width: "800px", height: "660px" }}>
-                                    <ApplyClasses preset={preset}> selectedNum={gameSetInfo.preset}</ApplyClasses>
+                                    <ApplyClasses preset={preset} gameSetInfo={gameSetInfo} sec={sec}></ApplyClasses>
                                     
 
                                 </div>

@@ -2,9 +2,16 @@ import React, { useEffect } from "react";
 
 import "../../css/gameScreen.css";
 import subjectList from "../../data/subjectList.json"
-// 수강신청게임 장바구니 및 교과목 신청 목록
-const SubjectInfo=({subject})=>{
 
+const padNumber = (num, length) => {
+    return String(num).padStart(length, '0');
+  };
+
+// 수강신청게임 장바구니 및 교과목 신청 목록
+const SubjectInfo=({subject, gameSetInfo, sec})=>{
+
+    var maxNum = 40;
+    var data = sec*(maxNum)/gameSetInfo.runTime
     var subjectData = subjectList.filter((data) => data.subject_id == subject.subject_id)
    return(
     <div style={{ width:"800px", height:"130px", border: "1px solid black", fontFamily : "Nanum-Gothic"}}>
@@ -45,7 +52,7 @@ const SubjectInfo=({subject})=>{
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td>{Math.round(data)}</td>
                                 
                 </tr>
             </tbody>
