@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import classDivisionData from "../../data/classDivision.json";
+import subjectsData from "../../data/subjectList.json";
 import gameData from "../../data/game.json";
 import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
@@ -8,18 +10,73 @@ import SubjectInfo from "./subjectInfo";
 import "../../css/gameSchedule.css"
 import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 import { useOutletContext } from "react-router-dom";
-import GameSchedule from "./gameSchedule";
 import Schedule from "../preset/schedule";
+import { ToastContainer, toast } from 'react-toastify';
 
 
 // 수강신청게임 화면 
 const GameScreen = () => {
 
+    const [gameSchedule, setGameSchedule] = useState([]);
+
+    const notify = (text) => {
+        toast.warn(text, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "light",
+        });
+    }
+
+
+    const checkPresetTime = (check1, check2) => {
+        let startTime1 = check1.start_time.replace(":", "")
+        let endTime1 = check1.end_time.replace(":", "")
+
+        let startTime2 = check2.start_time.replace(":", "")
+        let endTime2 = check2.end_time.replace(":", "")
+
+        if (startTime1 >= endTime2 || endTime1 <= startTime2)
+            return true
+        else
+            return false
+    }
+
+    const scheduleAddClass = (addClass) => {
+        let overlap = false
+
+        gameSchedule.map((pre) => {
+            if (pre.name == addClass.name) {
+                overlap = true
+                notify(" 프레셋에 존재합니다")
+                //alert("해당 과목이 preset에 존재합니다")
+                return
+            }
+            else if (pre.dayOfWeek === addClass.dayOfWeek && !checkPresetTime(pre, addClass)) {
+                overlap = true
+                notify("겹치는 시간이 존재합니다")
+                //alert("해당 과목 시간에 과목이 preset에 존재합니다")
+                return
+
+            }
+        })
+        if (overlap === false) {
+            setGameSchedule([...gameSchedule, addClass]);
+        }
+        overlap = false
+
+        console.log(addClass);
+        console.log(gameSchedule);
+    }
 
     //const [gameData, setGameData] = useState(gameData)
     const navigate = useNavigate()
     const { preset } = useOutletContext();
-    
+
     console.log(preset);
     const { gameSetInfo, chageGameSetInfo }
         = useOutletContext();
@@ -99,9 +156,20 @@ const GameScreen = () => {
                     <table style={{ width: "800px" }}>
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
-                                <div style={{ width: "800px", height: "660px" }}>
+                                <div style={{ width: "800px", height: "860px" }}>
 
-                                    {gameData.map((subject) => <SubjectInfo subject={subject} />)}
+                                    {subjectsData.map((sub, idx) => (
+                                        classDivisionData.map((classSub) => {
+                                            if (classSub.subject_id === sub.subject_id) {
+                                                return classSub.class.map((data, i) => (
+                                                    <SubjectInfo key={String(idx) + String(i)} classData={data} subjectsData={sub} addClass={scheduleAddClass} />
+                                                ))
+                                            }
+
+                                        })
+                                    ))
+                                    }
+
 
                                 </div>
 
@@ -119,9 +187,9 @@ const GameScreen = () => {
                                     <span style={{ color: "#85CFF0", fontSize: "8px" }}>■ </span>2022-2 수강신청 신청내역
                                 </td>
                                 <td>
-                                    <input type={"type"} className={"input-code"} size={"6"} placeholder={"과목코드"} style={{ textAlign: "center", fontSize: "18px", padding: "6px" }} />
-                                    <input type={"type"} className={"input-class"} size={"6"} placeholder={"분반"} style={{ fontSize: "18px", padding: "6px" }} />
-                                    <button id="btncss" type={"button"} className={"search"}>
+                                    <input type={"type"} className={"input-code"} size={"6"} placeholder={"과목코드"} style={{ textAlign: "center", fontSize: "18px", padding: "6px", textAlign: "left", width:"200px" }} />
+                                    <input type={"type"} className={"input-class"} size={"6"} placeholder={"분반"} style={{ fontSize: "18px", padding: "6px",  textAlign: "left", width:"200px"  }} />
+                                    <button id="btncss" type={"button"} className={"search"} style={{marginLeft:"5px"}}>
                                         <span>바로신청</span>
                                     </button>
                                 </td>
@@ -150,7 +218,7 @@ const GameScreen = () => {
                             해당 자료가 존재하지 않습니다.
                         </td>
                     </table>
-                    <table style={{  width: "1300px", height: "50" }}>
+                    <table style={{ width: "1300px", height: "50" }}>
                         <thead>
                             <tr>
                                 <th style={{ width: "55px" }}></th>
@@ -161,7 +229,7 @@ const GameScreen = () => {
 
                             <tr>
                                 <div id="game-schedule" style={{ fontFamily: "Nanum-Gothic" }}>
-                                <Schedule presetClass={preset.preset1} deleteOption={false} x={925} y={213} width={190} height={25} tdNum={6} trNum={15}/>
+                                    <Schedule presetClass={gameSchedule} deleteOption={false} x={955} y={213} width={190} height={25} tdNum={6} trNum={15} />
                                 </div>
 
                             </tr>
@@ -170,7 +238,9 @@ const GameScreen = () => {
                 </div>
             </div>
 
-
+            <div id="game-schedule-alart" >
+                <ToastContainer />
+            </div>
 
         </>
     )
