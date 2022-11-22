@@ -4,7 +4,6 @@ import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
 import sugangimg from "../../static/sugang.png"
 import SubjectInfo from "./subjectInfo";
-
 import "../../css/gameSchedule.css"
 import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 import { useOutletContext } from "react-router-dom";
