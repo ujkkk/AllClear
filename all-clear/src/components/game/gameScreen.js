@@ -42,16 +42,22 @@ const GameScreen = () => {
     }
 
     const alertAddClass1 = (addClass) => {
-        var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
-        if (delConfirm) {
-            scheduleAddClass(addClass)
+        if (sec > 0) {
+            console.log("########## sec "+sec)
+            var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
+            if (delConfirm) {
+                scheduleAddClass(addClass)
+            }
         }
     }
 
     const alertAddClass2 = (addClass) => {
-        var delConfirm = window.confirm(`직접 입력 과목(${addClass.code})을 수강 신청하시겠습니까?`);
-        if (delConfirm) {
-            scheduleAddClass(addClass)
+        if (sec > 0) {
+            console.log("########## sec "+sec)
+            var delConfirm = window.confirm(`직접 입력 과목(${addClass.code})을 수강 신청하시겠습니까?`);
+            if (delConfirm) {
+                scheduleAddClass(addClass)
+            }
         }
     }
 
