@@ -19,6 +19,11 @@ const MainPage = () => {
   },[])
 
   return (
+    <>
+    {/* 배경 깜밖임 제거를 위해 만든 div태그 -> 메모리에 미리 이미지를 로딩하여 적재하는 방법 사용 */}
+    <div style= {{ backgroundImage: `url(${imgUrls[0]})`,width:"0%",height:"0%"}}></div>
+    <div style= {{backgroundImage: `url(${imgUrls[1]})`,width:"0%",height:"0%"}}></div>
+    <div style= {{backgroundImage: `url(${imgUrls[2]})`,width:"0%",height:"0%"}}></div>
    <div id="main-page-wrap" style = {{ backgroundImage: `url(${imgUrls[activeIndex%3]})`,width : "100%", height:"100%"}}>
         {/* backgroundImage: `url(${imgUrl})` */}
         {/*,backgroundColor:activeIndex%2==0? "red":"blue",  */}
@@ -39,6 +44,7 @@ const MainPage = () => {
             </nav> 
         </div>
    </div>
+   </>
   );
 };
 
