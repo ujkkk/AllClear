@@ -1,0 +1,55 @@
+#main-page-wrap{
+    color:white;
+    /* background: url(../static/gameTitleBg.png) no-repeat center center fixed; */
+    background-size: cover;
+    text-align: center;
+    padding-top:140px;
+}
+
+
+@keyframes bird {
+  0%   {left:0px; top:0px;background-image: url(http://www.meriqueen-woolmark.com/03_doolyit_image/bird01.jpg);}      
+  100%  {left:0px; top:0px;background-image: url(http://www.meriqueen-woolmark.com/03_doolyit_image/bird03.jpg);}
+}
+ 
+
+#main-page-wrap a{
+    color:white;
+    font-size:25px;
+    margin-right:10px
+}
+#main-page-contents{
+    width:100%;
+    text-align: center;
+    /* background-color: red; */
+    /* margin-top: 100px; */
+}
+
+#main-page-slogan{
+    font-size: 28px;
+    margin-bottom:7px;
+    
+}
+#main-page-logo{
+    font-size: 85px;
+}
+#main-page-info{
+    font-size:18px;
+    line-height: 35px;
+    margin: 0 auto;
+    width:800px;
+    height:300px;
+    padding:20px 30px 20px 30px;
+}
+
+#main-page-nav {
+    margin-top:30px;
+}
+
+.main-page-division{
+    /* display:inline-block; */
+    width:800px;
+    margin: 0 auto;
+    border: 1px solid white;
+    height:1px;
+}

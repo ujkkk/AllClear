@@ -7,6 +7,15 @@
     padding-top:4%;
 }
 
+#home-btn{
+    color:white;
+    margin-top:25px;
+    display:inline;
+    margin-right:80px;
+    position:flex;
+    float:right;
+}
+
 #setting-contents-section {
     width:800px;
     margin: 0 auto;

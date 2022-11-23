@@ -2,15 +2,19 @@ import { Link } from "react-router-dom";
 import React from "react";
 import Carousel, { CarouselItem } from "./components/mainpage/carousel";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "./App.css"
+import MainPage from "./components/mainpage/mainPage";
+import testImge from "./static/mainPage4.png"
 export default function App() {
   return (
     <div className="App">
-      <Carousel>
+     
+      <MainPage></MainPage>
+      {/* <Carousel>
         <CarouselItem>Item 1</CarouselItem>
         <CarouselItem>Item 2</CarouselItem>
         <CarouselItem>Item 3</CarouselItem>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

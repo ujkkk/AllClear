@@ -17,7 +17,7 @@ function closeModal() {
                 <p id="game-slogan">누구보다 빠르게 <span style={{color:"#FBDF07"}}>"All-Clear" </span></p>
                 <div id="modal-division"></div>
                 <div id="game-info-contents">
-                <div class="game-info-btn">1</div>
+                <p class="game-info-btn">1</p>
                 <div class="game-info-btn">2</div>
                 <div class="game-info-btn">3</div>
                 </div>

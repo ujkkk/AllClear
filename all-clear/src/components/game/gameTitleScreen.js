@@ -6,6 +6,8 @@ import gameTitleBGM from "../../static/gameTitleBgm.mp3";
 import gameStartBGM from "../../static/gameStartBgm.mp3";
 
 import {BsBellFill} from "react-icons/bs" 
+import {AiFillHome} from "react-icons/ai"
+import {TfiBackRight} from "react-icons/tfi"
 import bugi from '../../static/bugiIcon2.png';
 
 import { ToastContainer, toast } from 'react-toastify'; //Alert library
@@ -97,6 +99,8 @@ const GameTitleScreen =({title}) =>{
         },[gameSetInfo])
 
     return (
+        <>
+        <p id="home-btn" onClick = {()=>navigate("/")}><AiFillHome size="42"></AiFillHome></p>
         <div class="game-title-screen-wrap">
             <section id = "setting-contents-section">
                 <header>
@@ -138,6 +142,7 @@ const GameTitleScreen =({title}) =>{
                 <ToastContainer />
             </section>
         </div>
+        </>
     )
 }
 
