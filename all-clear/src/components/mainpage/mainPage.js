@@ -19,6 +19,10 @@ const MainPage = () => {
   },[])
 
   return (
+    <>
+    <div style= {{ backgroundImage: `url(${imgUrls[0]})`,width:"0%",height:"0%"}}></div>
+    <div style= {{backgroundImage: `url(${imgUrls[1]})`,width:"0%",height:"0%"}}></div>
+    <div style= {{backgroundImage: `url(${imgUrls[2]})`,width:"0%",height:"0%"}}></div>
    <div id="main-page-wrap" style = {{ backgroundImage: `url(${imgUrls[activeIndex%3]})`,width : "100%", height:"100%"}}>
         {/* backgroundImage: `url(${imgUrl})` */}
         {/*,backgroundColor:activeIndex%2==0? "red":"blue",  */}
@@ -39,6 +43,7 @@ const MainPage = () => {
             </nav> 
         </div>
    </div>
+   </>
   );
 };
 
