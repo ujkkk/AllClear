@@ -134,7 +134,7 @@ export default function Page2() {
         </div>
         <Preset presetClass={selectPreset} deleteClass={presetDeleteClass} setPresetNum={setPresetNum} />
         <LikeClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
-        <SearchClassList setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
+        <SearchClassList likeSub={likeClasses} setPreset={presetAddClass} changeLikeClasses={changeLikeClasses} />
       </div>
     </>
   );

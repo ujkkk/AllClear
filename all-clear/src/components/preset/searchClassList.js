@@ -7,7 +7,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import LikeClass from "./likeClass";
 
 //03. 과목검색 component
-const SearchClassList = ({ setPreset = f => f ,changeLikeClasses}) => {
+const SearchClassList = ({ likeSub, setPreset = f => f ,changeLikeClasses}) => {
         var index = 0
         //subject.name.includes(search.trim())
         const [className, setClassName] = useState("");
@@ -17,6 +17,17 @@ const SearchClassList = ({ setPreset = f => f ,changeLikeClasses}) => {
                 setClassName(text);
         }
         const [likes, setLikes] = useState(classData.map(aClass => Array.from({length : 10}, ()=>false)));
+        classData.map((aClass, i) => {
+                likeSub.map(likeSubject => {
+                        //console.log(likeSubject)
+                        if(aClass.subject_id == likeSubject.subject_id){
+                                
+                                aClass.class.map((p, j) => p.type === likeSubject.type? likes[i][j] = true: false)
+                        }
+                        return
+                })
+                return
+        })
         console.log(likes)
 
 

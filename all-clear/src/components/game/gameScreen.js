@@ -24,7 +24,12 @@ const GameScreen = () => {
     const [sec, setSec] = useState(gameSetInfo.runTime);
     //console.log(gameSetInfo)
 
-    const changeSec = (time) => { setSec(time) }
+    const changeSec = (time) => { 
+        if(time <=0){
+            setSec(0)
+        }
+        else setSec(time) 
+    }
 
     const [gameSchedule, setGameSchedule] = useState([]);
 
@@ -40,10 +45,15 @@ const GameScreen = () => {
             theme: "light",
         });
     }
-
+    useEffect(() => {
+        changeSec(sec)
+    }, [sec])
     const alertAddClass1 = (addClass) => {
+        var preTime = new Date()
         var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
         if (delConfirm) {
+            var changeTime = new Date() - preTime;
+            setSec(sec-changeTime)
             scheduleAddClass(addClass)
         }
     }
