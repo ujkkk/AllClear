@@ -761,6 +761,132 @@
         "professor": ["지준"],
         "grade": "전체",
         "tracks" : [{"track":"융합교양","code":"전체"}]
+    },
+    {
+        "subject_id": 81,
+        "code":"GEN0638",
+        "name": "대학수학Ⅱ",
+        "keyword": ["미적분학","벡터"],
+        "professor": ["민경진"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 82,
+        "code":"GEN0639",
+        "name": "일반물리학 및 실험Ⅱ",
+        "keyword": ["물리법칙","실험"],
+        "professor": ["황성태"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 83,
+        "code":"GEN0640",
+        "name": "일반생물",
+        "keyword": ["유전","세포"],
+        "professor": ["최재희"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 84,
+        "code":"GEN0641",
+        "name": "일반화학",
+        "keyword": ["원소","화학식"],
+        "professor": ["주창업"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 85,
+        "code":"GEN0642",
+        "name": "전산수학",
+        "keyword": ["MATLAB","문제풀이"],
+        "professor": ["조이상"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 86,
+        "code":"GEN0636",
+        "name": "중금 일본어",
+        "keyword": ["문법","글쓰기"],
+        "professor": ["도이미호"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 87,
+        "code":"GEN0637",
+        "name": "중급 중국어",
+        "keyword": ["듣기","말하기"],
+        "professor": ["박우"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반교양","code":"전체"}]
+    },
+    {
+        "subject_id": 88,
+        "code":"GEN0843",
+        "name": "디자인 제품화 창업실습",
+        "keyword": ["제품 디자인","마케팅"],
+        "professor": ["정욱환"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 89,
+        "code":"GEN0899",
+        "name": "메타버스와 SW프로젝트",
+        "keyword": ["메타버스","XR"],
+        "professor": ["신상기"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 90,
+        "code":"GEN0896",
+        "name": "새싹 메타버스 스타트업",
+        "keyword": ["XR","아이템 기획"],
+        "professor": ["신상기"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 91,
+        "code":"GEN0897",
+        "name": "새싹 스마트패션 스타트업",
+        "keyword": ["패션","비즈니스 모델"],
+        "professor": ["정욱환"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 92,
+        "code":"GEN0895",
+        "name": "새싹 플랫폼 스타트업",
+        "keyword": ["앱 개발","UX/UI"],
+        "professor": ["노광현","홍성재"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 93,
+        "code":"GEN0872",
+        "name": "스타트업 아이템 사업화",
+        "keyword": ["창업","아이템 사업화"],
+        "professor": ["홍성재"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 94,
+        "code":"GEN0806",
+        "name": "엔터테인먼트산업과 벤처투자",
+        "keyword": ["시장 이해","산업 생태계"],
+        "professor": ["김동하"],
+        "grade": "전체",
+        "tracks" : [{"track":"일반선택","code":"전체"}]
     }
 
 ]
