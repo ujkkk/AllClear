@@ -604,7 +604,7 @@
         "subject_id": 64,
         "code":"REQ0421",
         "name": "영어커뮤니케이션 청취/회화 Ⅰ",
-        "keyword": ["독해","문법"],
+        "keyword": ["말하기","듣기"],
         "professor": ["메리"],
         "grade": "1학년",
         "tracks" : [{"track":"필수교양","code":"전체"}]
@@ -613,7 +613,7 @@
         "subject_id": 65,
         "code":"REQ0422",
         "name": "영어커뮤니케이션 청취/회화 Ⅱ",
-        "keyword": ["독해","문법"],
+        "keyword": ["말하기","듣기"],
         "professor": ["데릭"],
         "grade": "1학년",
         "tracks" : [{"track":"필수교양","code":"전체"}]
@@ -622,7 +622,7 @@
         "subject_id": 66,
         "code":"REQ0423",
         "name": "영어커뮤니케이션 청취/회화 Ⅲ",
-        "keyword": ["독해","문법"],
+        "keyword": ["말하기","듣기"],
         "professor": ["그레고리"],
         "grade": "1학년",
         "tracks" : [{"track":"필수교양","code":"전체"}]
@@ -887,6 +887,176 @@
         "professor": ["김동하"],
         "grade": "전체",
         "tracks" : [{"track":"일반선택","code":"전체"}]
+    },
+    {
+        "subject_id": 95,
+        "code":"V030031",
+        "name": "객체지향언어",
+        "keyword": ["JAVA","프로젝트"],
+        "professor": ["구동영"],
+        "grade": "2학년",
+        "tracks" : [{"track":"전자","code":"전공선택"},{"track":"정보시스템","code":"전공선택"}]
+    },
+    {
+        "subject_id": 96,
+        "code":"V030045",
+        "name": "고급디지털회로설계",
+        "keyword": ["HDL","AMBA"],
+        "professor": ["김준민"],
+        "grade": "4학년",
+        "tracks" : [{"track":"전자","code":"전공선택"},{"track":"정보시스템","code":"전공선택"}]
+    },
+    {
+        "subject_id": 97,
+        "code":"V030036",
+        "name": "그래픽정보처리",
+        "keyword": ["Canvas","WebGL"],
+        "professor": ["이기원"],
+        "grade": "3학년",
+        "tracks" : [{"track":"전자","code":"전공선택"},{"track":"정보시스템","code":"전공선택"}]
+    },
+    {
+        "subject_id": 98,
+        "code":"V030022",
+        "name": "논리회로실험",
+        "keyword": ["VHDL","프로젝트"],
+        "professor": ["이기원"],
+        "grade": "2학년",
+        "tracks" : [{"track":"전자","code":"전공선택"},{"track":"정보시스템","code":"전공선택"}]
+    },
+    {
+        "subject_id": 99,
+        "code":"CTE0003",
+        "name": "전자공학의 기초",
+        "keyword": ["전자회로","논리회로"],
+        "professor": ["장영모"],
+        "grade": "1학년",
+        "tracks" : [{"track":"전자","code":"전공기초"}]
+    },
+    {
+        "subject_id": 100,
+        "code":"V031004",
+        "name": "전자회로",
+        "keyword": ["동작원리","회로분석"],
+        "professor": ["이종복"],
+        "grade": "2학년",
+        "tracks" : [{"track":"전자","code":"전공필수"},{"track":"정보시스템","code":"일반선택"}]
+    },
+    {
+        "subject_id": 101,
+        "code":"V031007",
+        "name": "통신공학",
+        "keyword": ["신호표현","전송기술"],
+        "professor": ["정영모"],
+        "grade": "3학년",
+        "tracks" : [{"track":"전자","code":"전공필수"},{"track":"정보시스템","code":"일반선택"}]
+    },
+    {
+        "subject_id": 102,
+        "code":"CTE0004",
+        "name": "정보공학개론",
+        "keyword": ["컴퓨터 개론","선형대수"],
+        "professor": ["정영모"],
+        "grade": "1학년",
+        "tracks" : [{"track":"정보시스템","code":"전공기초"}]
+    },
+    {
+        "subject_id": 103,
+        "code":"V032009",
+        "name": "자료구조",
+        "keyword": ["C","자료구조"],
+        "professor": ["방갑산"],
+        "grade": "2학년",
+        "tracks" : [{"track":"정보시스템","code":"전공필수"},{"track":"전자","code":"일반선택"}]
+    },
+    {
+        "subject_id": 104,
+        "code":"V030042",
+        "name": "CAD1",
+        "keyword": ["CAD","모델링"],
+        "professor": ["우윤환"],
+        "grade": "2학년",
+        "tracks" : [{"track":"기계설계","code":"전공선택"},{"track":"기계자동화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 105,
+        "code":"V030015",
+        "name": "기계실험 및 측정",
+        "keyword": ["보고서","실험"],
+        "professor": ["최재봉"],
+        "grade": "3학년",
+        "tracks" : [{"track":"기계설계","code":"전공선택"},{"track":"기계자동화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 106,
+        "code":"V030018",
+        "name": "에너지공학",
+        "keyword": ["에너지","효율계산"],
+        "professor": ["주창업"],
+        "grade": "4학년",
+        "tracks" : [{"track":"기계설계","code":"전공선택"},{"track":"기계자동화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 107,
+        "code":"V033003",
+        "name": "재료역학2",
+        "keyword": ["응력","처짐예측"],
+        "professor": ["한정수"],
+        "grade": "2학년",
+        "tracks" : [{"track":"기계설계","code":"전공필수"},{"track":"기계자동화","code":"일반선택"}]
+    },
+    {
+        "subject_id": 108,
+        "code":"V033006",
+        "name": "기계제작법",
+        "keyword": ["공작법","제작방법"],
+        "professor": ["윤주일"],
+        "grade": "3학년",
+        "tracks" : [{"track":"기계설계","code":"전공필수"},{"track":"기계자동화","code":"일반선택"}]
+    },
+    {
+        "subject_id": 109,
+        "code":"CTE0005",
+        "name": "창의적 기계설계",
+        "keyword": ["설계정의","보고서"],
+        "professor": ["윤재건"],
+        "grade": "1학년",
+        "tracks" : [{"track":"기계설계","code":"전공기초"}]
+    },
+    {
+        "subject_id": 110,
+        "code":"V030009",
+        "name": "열역학1",
+        "keyword": ["열역학"],
+        "professor": ["윤주일"],
+        "grade": "2학년",
+        "tracks" : [{"track":"기계자동화","code":"전공선택"},{"track":"기계설계","code":"일반선택"}]
+    },
+    {
+        "subject_id": 110,
+        "code":"V034005",
+        "name": "진동학",
+        "keyword": ["진동","동흡진기"],
+        "professor": ["강상욱"],
+        "grade": "3학년",
+        "tracks" : [{"track":"기계자동화","code":"전공필수"},{"track":"기계설계","code":"일반선택"}]
+    },
+    {
+        "subject_id": 111,
+        "code":"CTE0006",
+        "name": "기계공학기초",
+        "keyword": ["역학","벡터"],
+        "professor": ["조이상"],
+        "grade": "1학년",
+        "tracks" : [{"track":"기계자동화","code":"전공기초"}]
+    },
+    {
+        "subject_id": 112,
+        "code":"CTE0025",
+        "name": "시스템 반도체의 기초",
+        "keyword": ["반도체","전자회로"],
+        "professor": ["김준민"],
+        "grade": "1학년",
+        "tracks" : [{"track":"시스템반도체","code":"전공기초"}]
     }
-
 ]

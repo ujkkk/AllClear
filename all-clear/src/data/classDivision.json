@@ -676,7 +676,6 @@
         "subject_id": 38,
         "code":"REQ0025",
         "name": "디자인씽킹",
-        "keyword": ["상상력","공감"],
         "professor": ["정유정"],
         "class" :  [ 
             {
@@ -705,7 +704,6 @@
         "subject_id": 39,
         "code":"REQ0025",
         "name": "디자인씽킹",
-        "keyword": ["상상력","공감"],
         "professor": ["김양수"],
         "class" :  [ 
             {
@@ -724,7 +722,6 @@
         "subject_id": 40,
         "code":"REQ0025",
         "name": "디자인씽킹",
-        "keyword": ["상상력","공감"],
         "professor": ["김선용"],
         "class" :  [ 
             {
@@ -738,7 +735,6 @@
         "subject_id": 41,
         "code":"REQ0025",
         "name": "디자인씽킹",
-        "keyword": ["상상력","공감"],
         "professor": ["전종찬"],
         "class" :  [ 
             {
@@ -757,7 +753,6 @@
         "subject_id": 42,
         "code":"REQ0018",
         "name": "문제해결을 위한 코딩 첫걸음",
-        "keyword": ["파이썬"],
         "professor": ["신믿음"],
         "class" :  [ 
             {
@@ -781,7 +776,6 @@
         "subject_id": 43,
         "code":"REQ0018",
         "name": "문제해결을 위한 코딩 첫걸음",
-        "keyword": ["파이썬"],
         "professor": ["문혜경"],
         "class" :  [ 
             {
@@ -795,7 +789,6 @@
         "subject_id": 44,
         "code":"REQ0018",
         "name": "문제해결을 위한 코딩 첫걸음",
-        "keyword": ["파이썬"],
         "professor": ["이미향"],
         "class" :  [ 
             {
@@ -814,7 +807,6 @@
         "subject_id": 45,
         "code":"REQ0018",
         "name": "문제해결을 위한 코딩 첫걸음",
-        "keyword": ["파이썬"],
         "professor": ["유상미"],
         "class" :  [ 
             {
@@ -828,7 +820,6 @@
         "subject_id": 46,
         "code":"REQ0022",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["임형모"],
         "class" :  [ 
             {
@@ -857,7 +848,6 @@
         "subject_id": 47,
         "code":"REQ0022",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["남궁정"],
         "class" :  [ 
             {
@@ -876,7 +866,6 @@
         "subject_id": 48,
         "code":"REQ0022",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["박선옥"],
         "class" :  [ 
             {
@@ -895,7 +884,6 @@
         "subject_id": 49,
         "code":"REQ0023",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["이현정"],
         "class" :  [ 
             {
@@ -914,7 +902,6 @@
         "subject_id": 50,
         "code":"REQ0023",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["나은미"],
         "class" :  [ 
             {
@@ -933,7 +920,6 @@
         "subject_id": 51,
         "code":"REQ0023",
         "name": "사고와 표현(발표와 토론)",
-        "keyword": ["발표","토론"],
         "professor": ["정원채"],
         "class" :  [ 
             {
@@ -952,7 +938,6 @@
         "subject_id": 52,
         "code":"GEN0654",
         "name": "사회봉사Ⅰ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["이재득"],
         "class" :  [ 
             {
@@ -966,7 +951,6 @@
         "subject_id": 53,
         "code":"GEN0654",
         "name": "사회봉사Ⅰ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["이중진"],
         "class" :  [ 
             {
@@ -980,7 +964,6 @@
         "subject_id": 54,
         "code":"GEN0654",
         "name": "사회봉사Ⅰ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["신재흡"],
         "class" :  [ 
             {
@@ -994,7 +977,6 @@
         "subject_id": 55,
         "code":"GEN0673",
         "name": "사회봉사Ⅱ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["이재득"],
         "class" :  [ 
             {
@@ -1008,7 +990,6 @@
         "subject_id": 56,
         "code":"GEN0673",
         "name": "사회봉사Ⅱ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["이태주"],
         "class" :  [ 
             {
@@ -1022,7 +1003,6 @@
         "subject_id": 57,
         "code":"GEN0673",
         "name": "사회봉사Ⅱ",
-        "keyword": ["봉사활동","포트폴리오"],
         "professor": ["신영헌"],
         "class" :  [ 
             {
@@ -1036,7 +1016,6 @@
         "subject_id": 58,
         "code":"CCA0005",
         "name": "삶과 꿈",
-        "keyword": ["심리학","미래와 꿈"],
         "professor": ["이지영"],
         "class" :  [ 
             {
@@ -1050,7 +1029,6 @@
         "subject_id": 59,
         "code":"CCA0005",
         "name": "삶과 꿈",
-        "keyword": ["심리학","미래와 꿈"],
         "professor": ["이시원"],
         "class" :  [ 
             {
@@ -1069,7 +1047,6 @@
         "subject_id": 60,
         "code":"CCA0005",
         "name": "삶과 꿈",
-        "keyword": ["심리학","미래와 꿈"],
         "professor": ["김은경"],
         "class" :  [ 
             {
@@ -1083,7 +1060,6 @@
         "subject_id": 61,
         "code":"REQ0311",
         "name": "영어커뮤니케이션 독해/작문 Ⅰ",
-        "keyword": ["독해","문법"],
         "professor": ["현일선"],
         "class" :  [ 
             {
@@ -1102,7 +1078,6 @@
         "subject_id": 62,
         "code":"REQ0312",
         "name": "영어커뮤니케이션 독해/작문 Ⅱ",
-        "keyword": ["독해","문법"],
         "professor": ["강지현"],
         "class" :  [ 
             {
@@ -1126,7 +1101,6 @@
         "subject_id": 63,
         "code":"REQ0313",
         "name": "영어커뮤니케이션 독해/작문 Ⅲ",
-        "keyword": ["독해","문법"],
         "professor": ["박선아"],
         "class" :  [ 
             {
@@ -1140,7 +1114,6 @@
         "subject_id": 64,
         "code":"REQ0421",
         "name": "영어커뮤니케이션 청취/회화 Ⅰ",
-        "keyword": ["독해","문법"],
         "professor": ["메리"],
         "class" :  [ 
             {
@@ -1159,7 +1132,6 @@
         "subject_id": 65,
         "code":"REQ0422",
         "name": "영어커뮤니케이션 청취/회화 Ⅱ",
-        "keyword": ["독해","문법"],
         "professor": ["데릭"],
         "class" :  [ 
             {
@@ -1178,7 +1150,6 @@
         "subject_id": 66,
         "code":"REQ0423",
         "name": "영어커뮤니케이션 청취/회화 Ⅲ",
-        "keyword": ["독해","문법"],
         "professor": ["그레고리"],
         "class" :  [ 
             {
@@ -1192,7 +1163,6 @@
         "subject_id": 67,
         "code":"GEN0658",
         "name": "K-댄스",
-        "keyword": ["안무","실기"],
         "professor": ["최보미"],
         "class" :  [ 
             {
@@ -1206,7 +1176,6 @@
         "subject_id": 68,
         "code":"GEN0669",
         "name": "영상정보의 이해",
-        "keyword": ["다큐멘터리","영상제작"],
         "professor": ["안건형"],
         "class" :  [ 
             {
@@ -1220,7 +1189,6 @@
         "subject_id": 68,
         "code":"GEN0667",
         "name": "성찰적 삶을 위한 그림일기",
-        "keyword": ["내면 이해","심리학"],
         "professor": ["정현이"],
         "class" :  [ 
             {
@@ -1234,7 +1202,6 @@
         "subject_id": 69,
         "code":"GEN0751",
         "name": "훈민정음과 문자의 세계",
-        "keyword": ["훈민정음","세계문자"],
         "professor": ["이상혁"],
         "class" :  [ 
             {
@@ -1253,7 +1220,6 @@
         "subject_id": 70,
         "code":"GEN0742",
         "name": "인물로 본 역사",
-        "keyword": ["서양사","역사 해석"],
         "professor": ["박효근"],
         "class" :  [ 
             {
@@ -1267,7 +1233,6 @@
         "subject_id": 71,
         "code":"GEN0747",
         "name": "종교 오디세이",
-        "keyword": ["3대 종교","종교 특징"],
         "professor": ["손영광"],
         "class" :  [ 
             {
@@ -1281,7 +1246,6 @@
         "subject_id": 72,
         "code":"GEN0762",
         "name": "대중매체탐구",
-        "keyword": ["매체","리포트"],
         "professor": ["남지아"],
         "class" :  [ 
             {
@@ -1295,7 +1259,6 @@
         "subject_id": 73,
         "code":"GEN0756",
         "name": "사랑과 가족",
-        "keyword": ["결혼","사랑"],
         "professor": ["김경미"],
         "class" :  [ 
             {
@@ -1309,7 +1272,6 @@
         "subject_id": 74,
         "code":"GEN0849",
         "name": "생활 속의 법",
-        "keyword": ["민주주의","법학"],
         "professor": ["한명진"],
         "class" :  [ 
             {
@@ -1323,7 +1285,6 @@
         "subject_id": 75,
         "code":"GEN0867",
         "name": "생활속 수학의 발견",
-        "keyword": ["공학 수학","대학 수학"],
         "professor": ["민경진"],
         "class" :  [ 
             {
@@ -1337,7 +1298,6 @@
         "subject_id": 76,
         "code":"GEN0777",
         "name": "인류문명과 지구환경",
-        "keyword": ["산업혁명","환경보호"],
         "professor": ["정예모"],
         "class" :  [ 
             {
@@ -1351,7 +1311,6 @@
         "subject_id": 77,
         "code":"GEN0780",
         "name": "자연계의 숨은 물리 법칙",
-        "keyword": ["자연현상","과학기술"],
         "professor": ["윤정현"],
         "class" :  [ 
             {
@@ -1365,7 +1324,6 @@
         "subject_id": 78,
         "code":"GEN0728",
         "name": "4차 산업혁명과 스마트팩토리",
-        "keyword": ["스마트팩토리","재조업"],
         "professor": ["홍정완"],
         "class" :  [ 
             {
@@ -1379,7 +1337,6 @@
         "subject_id": 79,
         "code":"GEN0725",
         "name": "VR/AR의 이해",
-        "keyword": ["가상현실","메타버스"],
         "professor": ["이지은"],
         "class" :  [ 
             {
@@ -1393,7 +1350,6 @@
         "subject_id": 80,
         "code":"GEN0727",
         "name": "생활속의 인공지능",
-        "keyword": ["인공지능","기계학습"],
         "professor": ["지준"],
         "class" :  [ 
             {
@@ -1407,7 +1363,6 @@
         "subject_id": 81,
         "code":"GEN0638",
         "name": "대학수학Ⅱ",
-        "keyword": ["미적분학","벡터"],
         "professor": ["민경진"],
         "class" :  [ 
             {
@@ -1426,7 +1381,6 @@
         "subject_id": 82,
         "code":"GEN0639",
         "name": "일반물리학 및 실험Ⅱ",
-        "keyword": ["물리법칙","실험"],
         "professor": ["황성태"],
         "class" :  [ 
             {
@@ -1450,7 +1404,6 @@
         "subject_id": 83,
         "code":"GEN0640",
         "name": "일반생물",
-        "keyword": ["유전","세포"],
         "professor": ["최재희"],
         "class" :  [ 
             {
@@ -1464,7 +1417,6 @@
         "subject_id": 84,
         "code":"GEN0641",
         "name": "일반화학",
-        "keyword": ["원소","화학식"],
         "professor": ["주창업"],
         "class" :  [ 
             {
@@ -1478,7 +1430,6 @@
         "subject_id": 85,
         "code":"GEN0642",
         "name": "전산수학",
-        "keyword": ["MATLAB","문제풀이"],
         "professor": ["조이상"],
         "class" :  [ 
             {
@@ -1492,7 +1443,6 @@
         "subject_id": 86,
         "code":"GEN0636",
         "name": "중금 일본어",
-        "keyword": ["문법","글쓰기"],
         "professor": ["도이미호"],
         "class" :  [ 
             {
@@ -1506,7 +1456,6 @@
         "subject_id": 87,
         "code":"GEN0637",
         "name": "중급 중국어",
-        "keyword": ["듣기","말하기"],
         "professor": ["박우"],
         "class" :  [ 
             {
@@ -1520,7 +1469,6 @@
         "subject_id": 88,
         "code":"GEN0843",
         "name": "디자인 제품화 창업실습",
-        "keyword": ["제품 디자인","마케팅"],
         "professor": ["정욱환"],
         "class" :  [ 
             {
@@ -1534,7 +1482,6 @@
         "subject_id": 89,
         "code":"GEN0899",
         "name": "메타버스와 SW프로젝트",
-        "keyword": ["메타버스","XR"],
         "professor": ["신상기"],
         "class" :  [ 
             {
@@ -1548,7 +1495,6 @@
         "subject_id": 90,
         "code":"GEN0896",
         "name": "새싹 메타버스 스타트업",
-        "keyword": ["XR","아이템 기획"],
         "professor": ["신상기"],
         "class" :  [ 
             {
@@ -1562,7 +1508,6 @@
         "subject_id": 91,
         "code":"GEN0897",
         "name": "새싹 스마트패션 스타트업",
-        "keyword": ["패션","비즈니스 모델"],
         "professor": ["정욱환"],
         "class" :  [ 
             {
@@ -1576,7 +1521,6 @@
         "subject_id": 92,
         "code":"GEN0895",
         "name": "새싹 플랫폼 스타트업",
-        "keyword": ["앱 개발","UX/UI"],
         "professor": ["노광현","홍성재"],
         "class" :  [ 
             {
@@ -1590,7 +1534,6 @@
         "subject_id": 93,
         "code":"GEN0872",
         "name": "스타트업 아이템 사업화",
-        "keyword": ["창업","아이템 사업화"],
         "professor": ["홍성재"],
         "class" :  [ 
             {
@@ -1604,7 +1547,6 @@
         "subject_id": 94,
         "code":"GEN0806",
         "name": "엔터테인먼트산업과 벤처투자",
-        "keyword": ["시장 이해","산업 생태계"],
         "professor": ["김동하"],
         "class" :  [ 
             {
@@ -1614,5 +1556,6 @@
             }
         ]
     }
+    
    
 ]
