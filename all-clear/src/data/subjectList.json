@@ -1262,4 +1262,137 @@
         "grade": "2학년",
         "tracks" : [{"track":"컨설팅","code":"전공필수"}]
     }
+
+    
+    ,
+    {
+        "subject_id": 134,
+        "code":"P011009",
+        "name": "Basic EnglishⅡ",
+        "keyword": ["영어","심화"],
+        "professor": ["투릴라자"],
+        "grade": "2학년",
+        "tracks" : [{"track":"영미문학문화","code":"전공필수"}]
+    },
+    {
+        "subject_id": 135,
+        "code":"P011019",
+        "name": "미국문화와 미디어",
+        "keyword": ["미디어","미국"],
+        "professor": ["서영웅"],
+        "grade": "3학년",
+        "tracks" : [{"track":"영미문학문화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 136,
+        "code":"P011020",
+        "name": "셰익스피어",
+        "keyword": ["문학","서양"],
+        "professor": ["이병은"],
+        "grade": "2학년",
+        "tracks" : [{"track":"영미문학문화","code":"전공필수"}]
+    },
+    {
+        "subject_id": 137,
+        "code":"P011021",
+        "name": "영화로 읽는 영미문화",
+        "keyword": ["영화","문화"],
+        "professor": ["황정현"],
+        "grade": "1학년",
+        "tracks" : [{"track":"영미문학문화","code":"전공기초"}]
+    },
+    {
+        "subject_id": 138,
+        "code":"P011022",
+        "name": "외국어 습득의 이해",
+        "keyword": ["기술관리","기술창업"],
+        "professor": ["심선항"],
+        "grade": "1학년",
+        "tracks" : [{"track":"한국어교육","code":"전공기초"}]
+    },
+    {
+        "subject_id": 139,
+        "code":"P011023",
+        "name": "한국어 교재 연구",
+        "keyword": ["기술관리","기술창업"],
+        "professor": ["김윤주"],
+        "grade": "1학년",
+        "tracks" : [{"track":"한국어교육","code":"전공필수"}]
+    },
+
+
+
+    {
+        "subject_id": 140,
+        "code":"R010023",
+        "name": "국제무역보험론",
+        "keyword": ["국제무역","보험"],
+        "professor": ["김정렬"],
+        "grade": "1학년",
+        "tracks" : [{"track":"국제무역","code":"전공기초"}]
+    },
+    {
+        "subject_id": 141,
+        "code":"R010024",
+        "name": "국제 통상 정책론",
+        "keyword": ["통상","정책"],
+        "professor": ["김두인"],
+        "grade": "1학년",
+        "tracks" : [{"track":"국제무역","code":"전공기초"}]
+    },
+    {
+        "subject_id": 142,
+        "code":"R010025",
+        "name": "글로벌 시대",
+        "keyword": ["글로벌","기술창업"],
+        "professor": ["권혁제"],
+        "grade": "1학년",
+        "tracks" : [{"track":"국제무역","code":"전공기초"}]
+    },
+    {
+        "subject_id": 143,
+        "code":"R010026",
+        "name": "금융파생상품론",
+        "keyword": ["파생","상품론"],
+        "professor": ["조이현"],
+        "grade": "2학년",
+        "tracks" : [{"track":"부동산","code":"전공필수"}]
+    },
+    {
+        "subject_id": 144,
+        "code":"R010027",
+        "name": "무역 영어",
+        "keyword": ["영어","무역"],
+        "professor": ["노제묵"],
+        "grade": "2학년",
+        "tracks" : [{"track":"국제무역","code":"전공선택"}]
+    },
+    {
+        "subject_id": 145,
+        "code":"R010028",
+        "name": "무역 시장 컨설팅",
+        "keyword": ["기술관리","기술창업"],
+        "professor": ["홍우현"],
+        "grade": "2학년",
+        "tracks" : [{"track":"부동산","code":"전공필수"}]
+    },
+    {
+        "subject_id": 146,
+        "code":"R010029",
+        "name": "기술경영 컨설팅",
+        "keyword": ["경영","컨설팅"],
+        "professor": ["이찬우"],
+        "grade": "3학년",
+        "tracks" : [{"track":"국제무역","code":"전공선택"}]
+    },
+    {
+        "subject_id": 147,
+        "code":"R010010",
+        "name": "계량경제학",
+        "keyword": ["계랑","정책"],
+        "professor": ["이내찬"],
+        "grade": "3학년",
+        "tracks" : [{"track":"부동산","code":"전공선택"}]
+    }
+
 ]
