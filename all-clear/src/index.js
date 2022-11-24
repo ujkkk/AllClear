@@ -32,6 +32,7 @@ render(
         <Route path="standBy" element={<StandBy />} style={{display: 'inline-block'}}/>
         <Route path="datailPlan/:id/:professor" element={<DetailPlan id={1}/>} />
         <Route path="gamePage" element={<GamePage/>}/>
+        <Route path="*" element={<App/>}/>
       </Route>
     </Routes>
   </BrowserRouter>,
