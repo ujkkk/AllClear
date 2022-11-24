@@ -1103,15 +1103,20 @@
         "code":"REQ0312",
         "name": "영어커뮤니케이션 독해/작문 Ⅱ",
         "keyword": ["독해","문법"],
-        "professor": ["이종은"],
+        "professor": ["강지현"],
         "class" :  [ 
             {
-                "type": "A",
+                "type": "7",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
                 "start_time" : "10:30","end_time" : "12:00",
                 "dayOfWeek":"수"
             },
             {
-                "type": "E",
+                "type": "D",
                 "start_time" : "15:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -1122,15 +1127,10 @@
         "code":"REQ0313",
         "name": "영어커뮤니케이션 독해/작문 Ⅲ",
         "keyword": ["독해","문법"],
-        "professor": ["염경순"],
+        "professor": ["박선아"],
         "class" :  [ 
             {
-                "type": "A",
-                "start_time" : "10:30","end_time" : "12:00",
-                "dayOfWeek":"수"
-            },
-            {
-                "type": "B",
+                "type": "C",
                 "start_time" : "15:00","end_time" : "16:30",
                 "dayOfWeek":"수"
             }
@@ -1185,6 +1185,221 @@
                 "type": "C",
                 "start_time" : "9:00","end_time" : "10:30",
                 "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 67,
+        "code":"GEN0658",
+        "name": "K-댄스",
+        "keyword": ["안무","실기"],
+        "professor": ["최보미"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 68,
+        "code":"GEN0669",
+        "name": "영상정보의 이해",
+        "keyword": ["다큐멘터리","영상제작"],
+        "professor": ["안건형"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 68,
+        "code":"GEN0667",
+        "name": "성찰적 삶을 위한 그림일기",
+        "keyword": ["내면 이해","심리학"],
+        "professor": ["정현이"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 69,
+        "code":"GEN0751",
+        "name": "훈민정음과 문자의 세계",
+        "keyword": ["훈민정음","세계문자"],
+        "professor": ["이상혁"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 70,
+        "code":"GEN0742",
+        "name": "인물로 본 역사",
+        "keyword": ["서양사","역사 해석"],
+        "professor": ["박효근"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 71,
+        "code":"GEN0747",
+        "name": "종교 오디세이",
+        "keyword": ["3대 종교","종교 특징"],
+        "professor": ["손영광"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 72,
+        "code":"GEN0762",
+        "name": "대중매체탐구",
+        "keyword": ["매체","리포트"],
+        "professor": ["남지아"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "15:00","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 73,
+        "code":"GEN0756",
+        "name": "사랑과 가족",
+        "keyword": ["결혼","사랑"],
+        "professor": ["김경미"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "18:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 74,
+        "code":"GEN0849",
+        "name": "생활 속의 법",
+        "keyword": ["민주주의","법학"],
+        "professor": ["한명진"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 75,
+        "code":"GEN0867",
+        "name": "생활속 수학의 발견",
+        "keyword": ["공학 수학","대학 수학"],
+        "professor": ["민경진"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 76,
+        "code":"GEN0777",
+        "name": "인류문명과 지구환경",
+        "keyword": ["산업혁명","환경보호"],
+        "professor": ["정예모"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 77,
+        "code":"GEN0780",
+        "name": "자연계의 숨은 물리 법칙",
+        "keyword": ["자연현상","과학기술"],
+        "professor": ["윤정현"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 78,
+        "code":"GEN0728",
+        "name": "4차 산업혁명과 스마트팩토리",
+        "keyword": ["스마트팩토리","재조업"],
+        "professor": ["홍정완"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 79,
+        "code":"GEN0725",
+        "name": "VR/AR의 이해",
+        "keyword": ["가상현실","메타버스"],
+        "professor": ["이지은"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 80,
+        "code":"GEN0727",
+        "name": "생활속의 인공지능",
+        "keyword": ["인공지능","기계학습"],
+        "professor": ["지준"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
             }
         ]
     }

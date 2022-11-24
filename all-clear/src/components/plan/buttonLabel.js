@@ -11,9 +11,10 @@ const ButtonLabel=({color,index,item, content,changeItem,onSelect})=>{
         }
    },[onSelect])
    return(
-    <label key={index} style={{border:"2px solid "+styleColor}}>{
-            <div key={index} onClick={()=>{onSelect(index);changeItem(item);}}>{content}</div>
-    }</label>
+    <label key={index} style={{border:"2px solid "+styleColor}} 
+                onClick={()=>{onSelect(index);changeItem(item);}}>
+            {content}
+    </label>
     );
 }
 export default ButtonLabel;

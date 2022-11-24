@@ -118,7 +118,8 @@
         "keyword": ["리액트", "프로젝트"],
         "professor": ["박승현"],
         "grade": "3학년",
-        "tracks" : [{"track":"웹공학","code":"전공필수"}]
+        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"모바일소프트웨어","code":"일반선택"},
+        {"track":"디지털콘텐츠 가상현실","code":"일반선택"},{"track":"빅데이터","code":"일반선택"}]
     },
     {
         "subject_id": 13,
@@ -127,7 +128,8 @@
         "keyword": ["유니티", "프로젝트"],
         "professor": ["김진모", "조세홍"],
         "grade": "3학년",
-        "tracks" : [{"track":"디지털콘텐츠 가상현실","code":"전공필수"}, {"track":"모바일소프트웨어","code":"전공선택"},{"track":"웹공학","code":"전공선택"}]
+        "tracks" : [{"track":"디지털콘텐츠 가상현실","code":"전공필수"}, {"track":"모바일소프트웨어","code":"전공선택"},
+                    {"track":"웹공학","code":"전공선택"},{"track":"빅데이터","code":"일반선택"}]
     },
     {
         "subject_id": 14,
@@ -136,7 +138,8 @@
         "keyword": ["안드로이드", "프로젝트"],
         "professor": ["허준영"],
         "grade": "3학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"},{"track":"웹공학","code":"일반선택"},
+        {"track":"디지털콘텐츠 가상현실","code":"일반선택"},{"track":"빅데이터","code":"일반선택"}]
     },
     {
         "subject_id": 15,
@@ -165,7 +168,8 @@
         "keyword": ["DB", "MySQL"],
         "professor": ["김영웅"],
         "grade": "3학년",
-        "tracks" : [{"track":"빅데이터","code":"전공필수"}]
+        "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"모바일소프트웨어","code":"일반선택"}, 
+                    {"track":"웹공학","code":"일반선택"},{"track":"디지털콘텐츠 가상현실","code":"일반선택"}]
     },
     {
         "subject_id": 18,
@@ -214,7 +218,8 @@
         "keyword": ["라즈베리파이","프로젝트"],
         "professor": ["이재문"],
         "grade": "2학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"},{"track":"웹공학","code":"일반선택"},
+        {"track":"디지털콘텐츠 가상현실","code":"일반선택"},{"track":"빅데이터","code":"일반선택"}]
     },
     {
         "subject_id": 23,
@@ -223,7 +228,8 @@
         "keyword": ["라즈베리파이","프로젝트"],
         "professor": ["황기태"],
         "grade": "2학년",
-        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"}]
+        "tracks" : [{"track":"모바일소프트웨어","code":"전공필수"},{"track":"웹공학","code":"일반선택"},
+        {"track":"디지털콘텐츠 가상현실","code":"일반선택"},{"track":"빅데이터","code":"일반선택"}]
     },
     {
         "subject_id": 24,
@@ -299,7 +305,8 @@
         "keyword": ["HTML","JavaScript"],
         "professor": ["김인희"],
         "grade": "2학년",
-        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
+        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},
+                    {"track":"빅데이터","code":"전공선택"},{"track":"모바일소프트웨어","code":"일반선택"}]
     },
     {
         "subject_id": 32,
@@ -308,7 +315,8 @@
         "keyword": ["HTML","JavaScript"],
         "professor": ["김성동"],
         "grade": "2학년",
-        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
+        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},
+                    {"track":"빅데이터","code":"전공선택"},{"track":"모바일소프트웨어","code":"일반선택"}]
     },
     {
         "subject_id": 33,
@@ -317,7 +325,8 @@
         "keyword": ["HTML","JavaScript"],
         "professor": ["심규현"],
         "grade": "2학년",
-        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},{"track":"빅데이터","code":"전공선택"}]
+        "tracks" : [{"track":"웹공학","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},
+                    {"track":"빅데이터","code":"전공선택"},{"track":"모바일소프트웨어","code":"일반선택"}]
     },
     {
         "subject_id": 34,
@@ -335,7 +344,8 @@
         "keyword": ["빅데이터", "데이터관리"],
         "professor": ["엄종석","장재영"],
         "grade": "2학년",
-        "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
+        "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"},
+                    {"track":"모바일소프트웨어","code":"일반선택"},{"track":"웹공학","code":"일반선택"}]
     },
     {
         "subject_id": 36,
@@ -344,7 +354,7 @@
         "keyword": ["인공지능", "기계학습"],
         "professor": ["강희중"],
         "grade": "4학년",
-        "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
+        "tracks" : [{"track":"빅데이터","code":"전공선택"}]
     },
     {
         "subject_id": 37,
@@ -353,7 +363,8 @@
         "keyword": ["3D MAX","그래픽스"],
         "professor": ["이향찬"],
         "grade": "2학년",
-        "tracks" : [{"track":"빅데이터","code":"전공필수"},{"track":"디지털콘텐츠 가상현실","code":"전공선택"}]
+        "tracks" : [{"track":"빅데이터","code":"일반선택"},{"track":"디지털콘텐츠 가상현실","code":"전공필수"},
+                    {"track":"모바일소프트웨어","code":"일반선택"},{"track":"웹공학","code":"일반선택"}]
     },
     {
         "subject_id": 38,
@@ -615,7 +626,141 @@
         "professor": ["그레고리"],
         "grade": "1학년",
         "tracks" : [{"track":"필수교양","code":"전체"}]
+    },
+    {
+        "subject_id": 67,
+        "code":"GEN0658",
+        "name": "K-댄스",
+        "keyword": ["안무","실기"],
+        "professor": ["최보미"],
+        "grade": "전체",
+        "tracks" : [{"track":"예술과 체육","code":"전체"}]
+    },
+    {
+        "subject_id": 68,
+        "code":"GEN0669",
+        "name": "영상정보의 이해",
+        "keyword": ["다큐멘터리","영상제작"],
+        "professor": ["안건형"],
+        "grade": "전체",
+        "tracks" : [{"track":"예술과 체육","code":"전체"}]
+    },
+    {
+        "subject_id": 68,
+        "code":"GEN0667",
+        "name": "성찰적 삶을 위한 그림일기",
+        "keyword": ["내면 이해","심리학"],
+        "professor": ["정현아"],
+        "grade": "전체",
+        "tracks" : [{"track":"예술과 체육","code":"전체"}]
+    },
+    {
+        "subject_id": 69,
+        "code":"GEN0751",
+        "name": "훈민정음과 문자의 세계",
+        "keyword": ["훈민정음","세계문자"],
+        "professor": ["이상혁"],
+        "grade": "전체",
+        "tracks" : [{"track":"인문학","code":"전체"}]
+    },
+    {
+        "subject_id": 70,
+        "code":"GEN0742",
+        "name": "인물로 본 역사",
+        "keyword": ["서양사","역사 해석"],
+        "professor": ["박효근"],
+        "grade": "전체",
+        "tracks" : [{"track":"인문학","code":"전체"}]
+    },
+    {
+        "subject_id": 71,
+        "code":"GEN0747",
+        "name": "종교 오디세이",
+        "keyword": ["3대 종교","종교 특징"],
+        "professor": ["손영광"],
+        "grade": "전체",
+        "tracks" : [{"track":"인문학","code":"전체"}]
+    },
+    {
+        "subject_id": 72,
+        "code":"GEN0762",
+        "name": "대중매체탐구",
+        "keyword": ["매체","리포트"],
+        "professor": ["남지아"],
+        "grade": "전체",
+        "tracks" : [{"track":"사회과학","code":"전체"}]
+    },
+    {
+        "subject_id": 73,
+        "code":"GEN0756",
+        "name": "사랑과 가족",
+        "keyword": ["결혼","사랑"],
+        "professor": ["김경미"],
+        "grade": "전체",
+        "tracks" : [{"track":"사회과학","code":"전체"}]
+    },
+    {
+        "subject_id": 74,
+        "code":"GEN0849",
+        "name": "생활 속의 법",
+        "keyword": ["민주주의","법학"],
+        "professor": ["한명진"],
+        "grade": "전체",
+        "tracks" : [{"track":"사회과학","code":"전체"}]
+    },
+    {
+        "subject_id": 75,
+        "code":"GEN0867",
+        "name": "생활속 수학의 발견",
+        "keyword": ["공학 수학","대학 수학"],
+        "professor": ["민경진"],
+        "grade": "전체",
+        "tracks" : [{"track":"자연과학 및 정보기술","code":"전체"}]
+    },
+    {
+        "subject_id": 76,
+        "code":"GEN0777",
+        "name": "인류문명과 지구환경",
+        "keyword": ["산업혁명","환경보호"],
+        "professor": ["정예모"],
+        "grade": "전체",
+        "tracks" : [{"track":"자연과학 및 정보기술","code":"전체"}]
+    },
+    {
+        "subject_id": 77,
+        "code":"GEN0780",
+        "name": "자연계의 숨은 물리 법칙",
+        "keyword": ["자연현상","과학기술"],
+        "professor": ["윤정현"],
+        "grade": "전체",
+        "tracks" : [{"track":"자연과학 및 정보기술","code":"전체"}]
+    },
+    {
+        "subject_id": 78,
+        "code":"GEN0728",
+        "name": "4차 산업혁명과 스마트팩토리",
+        "keyword": ["스마트팩토리","재조업"],
+        "professor": ["홍정완"],
+        "grade": "전체",
+        "tracks" : [{"track":"융합교양","code":"전체"}]
+    },
+    {
+        "subject_id": 79,
+        "code":"GEN0725",
+        "name": "VR/AR의 이해",
+        "keyword": ["가상현실","메타버스"],
+        "professor": ["이지은"],
+        "grade": "전체",
+        "tracks" : [{"track":"융합교양","code":"전체"}]
+    },
+    {
+        "subject_id": 80,
+        "code":"GEN0727",
+        "name": "생활속의 인공지능",
+        "keyword": ["인공지능","기계학습"],
+        "professor": ["지준"],
+        "grade": "전체",
+        "tracks" : [{"track":"융합교양","code":"전체"}]
     }
-    
 
 ]
