@@ -1827,6 +1827,284 @@
                 "dayOfWeek":"목"
             }
         ]
+    },
+    {
+        "subject_id": 113,
+        "code":"V040008",
+        "name": "C++",
+        "professor": ["오희석"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "B",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 114,
+        "code":"V040016",
+        "name": "패턴인식개론",
+        "professor": ["지준"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 115,
+        "code":"V041003",
+        "name": "오픈소스로보틱스",
+        "professor": ["노병국"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 116,
+        "code":"V041010",
+        "name": "딥러닝입문",
+        "professor": ["조혜경"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 117,
+        "code":"Y030001",
+        "name": "Python for AI",
+        "professor": ["정성훈"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 118,
+        "code":"V042010",
+        "name": "임베디드시스템",
+        "professor": ["김명선"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 119,
+        "code":"V042011",
+        "name": "IoT클라우드 플랫폼",
+        "professor": ["이관우"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 120,
+        "code":"V040030",
+        "name": "IT융합공학 취창업세미나",
+        "professor": ["서화정","김명선"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 121,
+        "code":"CTE0009",
+        "name": "인터넷윤리와 보안개론",
+        "professor": ["최원석"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 122,
+        "code":"V043003",
+        "name": "암호학과 보안이론",
+        "professor": ["서화정"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:00","end_time" : "17:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 123,
+        "code":"V043005",
+        "name": "시스템보안",
+        "professor": ["서화정"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 124,
+        "code":"V040006",
+        "name": "JAVA프로그래밍",
+        "professor": ["이관우"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 125,
+        "code":"V054004",
+        "name": "경영과학",
+        "professor": ["문혜진"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 126,
+        "code":"V050048",
+        "name": "공학경제개론",
+        "professor": ["유해건"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 127,
+        "code":"V054001",
+        "name": "공학확률과 통계",
+        "professor": ["위남숙"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 128,
+        "code":"V052010",
+        "name": "스마트제조",
+        "professor": ["유재건"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 129,
+        "code":"V051010",
+        "name": "안전보건관리",
+        "professor": ["박지영"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 130,
+        "code":"V052009",
+        "name": "생산경영Ⅱ",
+        "professor": ["홍정완"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 131,
+        "code":"V052008",
+        "name": "생산물류 캡스톤디자인",
+        "professor": ["아재득"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 132,
+        "code":"CTE0023",
+        "name": "작업경영",
+        "professor": ["문혜진"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 133,
+        "code":"V053013",
+        "name": "기술경영 컨설팅",
+        "professor": ["박인채"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
     }
     
    
