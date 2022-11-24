@@ -1246,11 +1246,12 @@
     {
         "subject_id": 132,
         "code":"CTE0023",
-        "name": "작업경영",
+        "name": "직업경영",
         "keyword": ["직업분석","직무이해"],
         "professor": ["문혜진"],
         "grade": "1학년",
-        "tracks" : [{"track":"컨설팅","code":"전공기초"}]
+        "tracks" : [{"track":"컨설팅","code":"전공기초"},{"track":"시스템경영공학","code":"전공기초"},
+                    {"track":"생산물류시스템","code":"전공기초"},{"track":"산업공학","code":"전공기초"}]
     },
     {
         "subject_id": 133,
