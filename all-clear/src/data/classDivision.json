@@ -1555,6 +1555,278 @@
                 "dayOfWeek":"화"
             }
         ]
+    },
+    {
+        "subject_id": 95,
+        "code":"V030031",
+        "name": "객체지향언어",
+        "professor": ["구동영"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "14:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 96,
+        "code":"V030045",
+        "name": "고급디지털회로설계",
+        "professor": ["김준민"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 97,
+        "code":"V030036",
+        "name": "그래픽정보처리",
+        "professor": ["이기원"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 98,
+        "code":"V030022",
+        "name": "논리회로실험",
+        "professor": ["이기원"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 99,
+        "code":"CTE0003",
+        "name": "전자공학의 기초",
+        "professor": ["장영모"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 100,
+        "code":"V031004",
+        "name": "전자회로",
+        "professor": ["이종복"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 101,
+        "code":"V031007",
+        "name": "통신공학",
+        "professor": ["정영모"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 102,
+        "code":"CTE0004",
+        "name": "정보공학개론",
+        "professor": ["정영모"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 103,
+        "code":"V032009",
+        "name": "자료구조",
+        "professor": ["방갑산"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:00","end_time" : "11:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "11:30","end_time" : "12:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 104,
+        "code":"V030042",
+        "name": "CAD1",
+        "professor": ["우윤환"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 105,
+        "code":"V030015",
+        "name": "기계실험 및 측정",
+        "professor": ["최재봉"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"수"
+            },
+            {
+                "type": "B",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 106,
+        "code":"V030018",
+        "name": "에너지공학",
+        "professor": ["주창업"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 107,
+        "code":"V033003",
+        "name": "재료역학2",
+        "professor": ["한정수"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 108,
+        "code":"V033006",
+        "name": "기계제작법",
+        "professor": ["윤주일"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 109,
+        "code":"CTE0005",
+        "name": "창의적 기계설계",
+        "professor": ["윤재건"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 110,
+        "code":"V030009",
+        "name": "열역학1",
+        "professor": ["윤주일"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 110,
+        "code":"V034005",
+        "name": "진동학",
+        "professor": ["강상욱"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "17:00","end_time" : "18:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 111,
+        "code":"CTE0006",
+        "name": "기계공학기초",
+        "professor": ["조이상"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 112,
+        "code":"CTE0025",
+        "name": "시스템 반도체의 기초",
+        "professor": ["김준민"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
     }
     
    
