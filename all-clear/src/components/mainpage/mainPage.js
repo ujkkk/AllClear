@@ -32,9 +32,10 @@ const MainPage = () => {
             <p id="main-page-logo">“  All-Clear  ”</p>
             <div class="main-page-division"></div>
             <div id="main-page-info">
-            All-Clear 는 ' 한성대학교 학생들의 완벽한 수강신청 '을 목적으로하는 서비스입니다. 한성대학교 종합정보시스템의 교과목 및 수업 계획서
-            조회 페이지를 리뉴얼 하여 보다 편리하게 전공 선택 및 전공 필수 과목을 확인하고, 시간표 프리셋 기능을 통해 다양한 경우의 수를 
-            고려한 시간표를 계획해볼 수 있습니다.  adsfqewfefqweadgwgwadcfaws efwqfrdDSfasfadsfew~.
+            All-Clear 는 ' 한성대학교 학생들의 완벽한 수강신청 준비를 위한 웹 서비스입니다. 
+            기존의 종합정보시스템의 교과목 및 수업 계획서 페이지를 재구성 하여, 정돈 된 
+            교과목 조회 페이지와 수업 계획서를 제공하고 시간표 프리셋 기능을 이용하여 대체 할 수 있는 과목들을 미리 제작 해 볼 수 있습니다. 
+            또한 수강신청연습을 통하여 실제 수강신청과 비슷한 환경에서 연습을 할 수도 있습니다.
             </div>
             <div class="main-page-division"></div>
             <nav id ="main-page-nav">
