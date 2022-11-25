@@ -14,9 +14,9 @@
 .modalBody {
   position: absolute;
   width: 600px;
-  height: 400px;
+  height: 520px;
   /* padding: 40px; */
-  text-align: center;
+  /* text-align: center; */
   background-color: #B9D9FF;
   border: 5px solid #ffffff;
   border-radius: 20px;
@@ -74,13 +74,31 @@
 #game-slogan{
     display:inline-block;
     padding-left:20px;
-    padding-right:0px;
-    margin-top:85px;
+    padding-right:20px;
+    margin-top:90px;
     font-size:30px;
     background-color: #89B2EB;
-    /* background-color: #3975B5; */
+    margin-bottom: 25px;
 }
 
-#game-info-contents {
-    margin-top:10px;
+.info-content {
+  margin-left: 16px;
+  font-size:18px;
+  width:560px;
+  text-align: left;
+  color:black;
+}
+
+.info-list{
+  margin-bottom:25px;
+}
+
+.info-list>span {
+  font-size: 20px;
+  text-align: left;
+  display:inline-block;
+  background-color: #3975B5;
+  width:560px;
+  margin-bottom: 7px;
+
 }

@@ -116,7 +116,7 @@ const GameTitleScreen =({title}) =>{
                             <TableRowRating hiddenRow = {hiddenRow} setHiddenRow = {setHiddenRow} setGameSettingInfo = {editGameSetInfo}/>
                         </tbody>
                     </table>    
-                     <img src = {bugi}  width = {"8%"} style = {{marginTop:"250px",marginRight:"54px",transform:"scale(3.5)"}}></img>         
+                     <img src = {bugi} width = {"8%"} style = {{marginTop:"250px",marginRight:"54px",transform:"scale(3.5)"}}></img>         
                 </section>
                 {modalOpen && <Modal closeModal={() => setModalOpen(!modalOpen)}></Modal>}
                 <nav id = "game-title-screen-nav">
@@ -135,7 +135,7 @@ const GameTitleScreen =({title}) =>{
                     }
                     else {
                         notify() // 이름 입력하라는 경고창
-                        //console.log("왜자꾸 null이 되는 거야..:  "+gameTitleAudio == null)
+                    
                     }
                 }}>게임 시작</button>
                 </nav>
