@@ -1369,12 +1369,12 @@
     },
     {
         "subject_id": 145,
-        "code":"R010028",
-        "name": "무역 시장 컨설팅",
-        "keyword": ["기술관리","기술창업"],
-        "professor": ["홍우현"],
-        "grade": "2학년",
-        "tracks" : [{"track":"부동산","code":"전공필수"}]
+        "code":"CTS0015",
+        "name": "스마트도시와 교통",
+        "keyword": ["됴시","교통"],
+        "professor": ["조재우"],
+        "grade": "1학년",
+        "tracks" : [{"track":"스마트도시 교통계획","code":"전공필수"}]
     },
     {
         "subject_id": 146,
@@ -1583,11 +1583,33 @@
         "professor": ["이찬우"],
         "grade": "2학년",
         "tracks" : [{"track":"기업 경제분석","code":"전공선택"},{"track":"금융 데이터분석","code":"전공필수"}]
+    },
+    {
+        "subject_id": 167,
+        "code":"R010103",
+        "name": "행정법Ⅱ",
+        "keyword": ["행정","행정법"],
+        "professor": ["한명진"],
+        "grade": "2학년",
+        "tracks" : [{"track":"법&정책","code":"전공선택"},{"track":"공공행정","code":"전공선택"}]
+    },
+    {
+        "subject_id": 168,
+        "code":"CTS0009",
+        "name": "경영학의 이해",
+        "keyword": ["경영","이해"],
+        "professor": ["임지은"],
+        "grade": "1학년",
+        "tracks" : [{"track":"기업경영","code":"전공기초"}]
+    },
+    {
+        "subject_id": 169,
+        "code":"R010016",
+        "name": "금융기관론",
+        "keyword": ["금융","기관"],
+        "professor": ["임지은"],
+        "grade": "3학년",
+        "tracks" : [{"track":"기업경영","code":"전공선택"},{"track":"벤처경영","code":"전공선택"},
+        {"track":"회계 재무경영","code":"전공선택"}]
     }
-
-
-
-
-
-
 ]
