@@ -1327,43 +1327,43 @@
         "code":"R010023",
         "name": "국제무역보험론",
         "keyword": ["국제무역","보험"],
-        "professor": ["김정렬"],
-        "grade": "1학년",
-        "tracks" : [{"track":"국제무역","code":"전공기초"}]
+        "professor": ["이진철"],
+        "grade": "3학년",
+        "tracks" : [{"track":"국제무역","code":"전공선택"},{"track":"글로벌비즈니스","code":"전공선택"}]
     },
     {
         "subject_id": 141,
-        "code":"R010024",
-        "name": "국제 통상 정책론",
+        "code":"R010075",
+        "name": "국제통상정책론",
         "keyword": ["통상","정책"],
-        "professor": ["김두인"],
-        "grade": "1학년",
-        "tracks" : [{"track":"국제무역","code":"전공기초"}]
+        "professor": ["김상조"],
+        "grade": "4학년",
+        "tracks" : [{"track":"국제무역","code":"전공선택"}]
     },
     {
         "subject_id": 142,
         "code":"R010025",
-        "name": "글로벌 시대",
+        "name": "글로벌시대의 국제통상",
         "keyword": ["글로벌","기술창업"],
-        "professor": ["권혁제"],
+        "professor": ["김상조"],
         "grade": "1학년",
         "tracks" : [{"track":"국제무역","code":"전공기초"}]
     },
     {
         "subject_id": 143,
-        "code":"R010026",
+        "code":"R010029",
         "name": "금융파생상품론",
         "keyword": ["파생","상품론"],
-        "professor": ["조이현"],
-        "grade": "2학년",
-        "tracks" : [{"track":"부동산","code":"전공필수"}]
+        "professor": ["김도완"],
+        "grade": "4학년",
+        "tracks" : [{"track":"국제무역","code":"전공선택"},{"track":"글로벌비즈니스","code":"전공선택"}]
     },
     {
         "subject_id": 144,
-        "code":"R010027",
+        "code":"R010076",
         "name": "무역 영어",
         "keyword": ["영어","무역"],
-        "professor": ["노제묵"],
+        "professor": ["최원석"],
         "grade": "2학년",
         "tracks" : [{"track":"국제무역","code":"전공선택"}]
     },
@@ -1378,21 +1378,216 @@
     },
     {
         "subject_id": 146,
-        "code":"R010029",
-        "name": "기술경영 컨설팅",
-        "keyword": ["경영","컨설팅"],
-        "professor": ["이찬우"],
-        "grade": "3학년",
-        "tracks" : [{"track":"국제무역","code":"전공선택"}]
+        "code":"CTS0007",
+        "name": "부동산학의 이해",
+        "keyword": ["부동산","이해"],
+        "professor": ["이용만"],
+        "grade": "1학년",
+        "tracks" : [{"track":"부동산","code":"전공기초"}]
     },
     {
         "subject_id": 147,
-        "code":"R010010",
-        "name": "계량경제학",
-        "keyword": ["계랑","정책"],
-        "professor": ["이내찬"],
+        "code":"R017009",
+        "name": "부동산투자금융론",
+        "keyword": ["투자","금융"],
+        "professor": ["이용만"],
         "grade": "3학년",
-        "tracks" : [{"track":"부동산","code":"전공선택"}]
+        "tracks" : [{"track":"부동산","code":"전공필수"}]
+    },
+
+    {
+        "subject_id": 148,
+        "code":"T021003",
+        "name": "감성포토 광고영상",
+        "keyword": ["광고","영상제작"],
+        "professor": ["명광주"],
+        "grade": "2학년",
+        "tracks" : [{"track":"동양화","code":"전공선택"},{"track":"서양화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 149,
+        "code":"CTH0013",
+        "name": "동양화 기초회화",
+        "keyword": ["재료","작품이해"],
+        "professor": ["김선태"],
+        "grade": "1학년",
+        "tracks" : [{"track":"동양화","code":"전공기초"}]
+    },
+    {
+        "subject_id": 150,
+        "code":"P020016",
+        "name": "미술비평",
+        "keyword": ["묘사","분석"],
+        "professor": ["윤준혁"],
+        "grade": "3학년",
+        "tracks" : [{"track":"동양화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 151,
+        "code":"P021004",
+        "name": "진채기법Ⅰ",
+        "keyword": ["재료관리","기법"],
+        "professor": ["김선태"],
+        "grade": "2학년",
+        "tracks" : [{"track":"동양화","code":"전공필수"},{"track":"서양화","code":"전공선택"}]
+    },
+    {
+        "subject_id": 152,
+        "code":"CTH0014",
+        "name": "서양화 기초회화",
+        "keyword": ["재료","작품이해"],
+        "professor": ["김진옥"],
+        "grade": "1학년",
+        "tracks" : [{"track":"동양화","code":"전공기초"}]
+    },
+    {
+        "subject_id": 153,
+        "code":"P022006",
+        "name": "조형연구Ⅰ",
+        "keyword": ["조형","공감"],
+        "professor": ["이인현"],
+        "grade": "2학년",
+        "tracks" : [{"track":"동양화","code":"전공선택"},{"track":"서양화","code":"전공필수"}]
+    },
+
+    {
+        "subject_id": 154,
+        "code":"P020036",
+        "name": "동작분석",
+        "keyword": ["동작","움직임"],
+        "professor": ["박영애"],
+        "grade": "3학년",
+        "tracks" : [{"track":"한국무용","code":"전공선택"},{"track":"현대무용","code":"전공선택"}]
+    },
+    
+    {
+        "subject_id": 155,
+        "code":"P020025",
+        "name": "레파토리실습1",
+        "keyword": ["무용","안무"],
+        "professor": ["정석순","서라벌"],
+        "grade": "2학년",
+        "tracks" : [{"track":"한국무용","code":"전공선택"},{"track":"현대무용","code":"전공선택"},
+                    {"track":"발레","code":"전공선택"}]
+    },
+    {
+        "subject_id": 156,
+        "code":"CTH0010",
+        "name": "무용기본실기",
+        "keyword": ["무용","안무"],
+        "professor": ["정석순","정유정"],
+        "grade": "1학년",
+        "tracks" : [{"track":"한국무용","code":"전공기초"},{"track":"현대무용","code":"전공기초"},
+                    {"track":"발레","code":"전공선택"}]
+    },
+    {
+        "subject_id": 157,
+        "code":"P023004",
+        "name": "한국무용2-1",
+        "keyword": ["훈련","안무"],
+        "professor": ["정유정"],
+        "grade": "2학년",
+        "tracks" : [{"track":"한국무용","code":"전공필수"}]
+    },
+    {
+        "subject_id": 158,
+        "code":"P024004",
+        "name": "현대무용2-1",
+        "keyword": ["훈련","안무"],
+        "professor": ["정석순"],
+        "grade": "2학년",
+        "tracks" : [{"track":"현대무용","code":"전공필수"}]
+    },
+    {
+        "subject_id": 158,
+        "code":"P024004",
+        "name": "발레2-1",
+        "keyword": ["훈련","안무"],
+        "professor": ["박재홍","서라벌"],
+        "grade": "2학년",
+        "tracks" : [{"track":"발레","code":"전공필수"}]
+    },
+
+    {
+        "subject_id": 159,
+        "code":"CTH0011",
+        "name": "다문화사회의 현재와 미래",
+        "keyword": ["세계화","다문화"],
+        "professor": ["오정은"],
+        "grade": "1학년",
+        "tracks" : [{"track":"이민 다문화","code":"전공기초"}]
+    },
+    
+    {
+        "subject_id": 160,
+        "code":"P026009",
+        "name": "이민정책론",
+        "keyword": ["세계화","이민"],
+        "professor": ["오정은"],
+        "grade": "2학년",
+        "tracks" : [{"track":"이민 다문화","code":"전공필수"}]
+    },
+
+    {
+        "subject_id": 161,
+        "code":"CTH0024",
+        "name": "영어학 활용법",
+        "keyword": ["영어","표현"],
+        "professor": ["강상구","박종언"],
+        "grade": "1학년",
+        "tracks" : [{"track":"영미언어정보","code":"전공기초"}]
+    },
+    {
+        "subject_id": 162,
+        "code":"P014004",
+        "name": "미디어와 문화콘텐츠",
+        "keyword": ["미디어","문화"],
+        "professor": ["김기홍"],
+        "grade": "2학년",
+        "tracks" : [{"track":"문학문화콘텐츠","code":"전공필수"}]
+    },
+    {
+        "subject_id": 163,
+        "code":"P015004",
+        "name": "근대서양,이성과자유를향한여정",
+        "keyword": ["르네상스","자유"],
+        "professor": ["윤용선"],
+        "grade": "3학년",
+        "tracks" : [{"track":"글로컬역사","code":"전공필수"}]
+    },
+
+    {
+        "subject_id": 164,
+        "code":"P010108",
+        "name": "중국고대문명의 탄생",
+        "keyword": ["중국","문화유산"],
+        "professor": ["박근철"],
+        "grade": "2학년",
+        "tracks" : [{"track":"글로컬역사","code":"전공선택"},{"track":"역사문화콘텐츠","code":"전공선택"}]
+    },
+
+    {
+        "subject_id": 165,
+        "code":"P010062",
+        "name": "정보시스템론",
+        "keyword": ["디지털","도서관"],
+        "professor": ["박희진"],
+        "grade": "3학년",
+        "tracks" : [{"track":"도서관정보문화","code":"전공선택"},{"track":"디지털인문정보학","code":"전공선택"}]
+    },
+    {
+        "subject_id": 166,
+        "code":"R014001",
+        "name": "금융통계학",
+        "keyword": ["금융","통계"],
+        "professor": ["이찬우"],
+        "grade": "2학년",
+        "tracks" : [{"track":"기업 경제분석","code":"전공선택"},{"track":"금융 데이터분석","code":"전공필수"}]
     }
+
+
+
+
+
 
 ]
