@@ -1668,12 +1668,12 @@
     },
     {
         "subject_id": 176,
-        "code":"CTA0012",
-        "name": "게임그래픽기초",
-        "keyword": ["게임","그래픽"],
-        "professor": ["전완식"],
-        "grade": "1학년",
-        "tracks" : [{"track":"게임그래픽디자인","code":"전공기초"}]
+        "code":"T024004",
+        "name": "패키지디자인스트럭쳐",
+        "keyword": ["조형","아이디어"],
+        "professor": ["전신종"],
+        "grade": "2학년",
+        "tracks" : [{"track":"게임그래픽디자인","code":"전공선택"}]
     },
 
     {
