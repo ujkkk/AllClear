@@ -364,7 +364,7 @@
         "professor": ["이향찬"],
         "grade": "2학년",
         "tracks" : [{"track":"빅데이터","code":"일반선택"},{"track":"디지털콘텐츠 가상현실","code":"전공필수"},
-                    {"track":"모바일소프트웨어","code":"일반선택"},{"track":"웹공학","code":"일반선택"}]
+                    {"track":"모바일소프트웨어","code":"일반선택"},{"track":"웹공학","code":"일반선택"},{"track":"영상 애니메이션디자인","code":"전공선택"}]
     },
     {
         "subject_id": 38,
@@ -1261,10 +1261,7 @@
         "professor": ["박인채"],
         "grade": "2학년",
         "tracks" : [{"track":"컨설팅","code":"전공필수"}]
-    }
-
-    
-    ,
+    },
     {
         "subject_id": 134,
         "code":"P011009",
@@ -1272,7 +1269,7 @@
         "keyword": ["영어","심화"],
         "professor": ["투릴라자"],
         "grade": "2학년",
-        "tracks" : [{"track":"영미문학문화","code":"전공필수"}]
+        "tracks" : [{"track":"영미문학문화","code":"전공필수"},{"track":"영미언어정보","code":"전공기초"}]
     },
     {
         "subject_id": 135,
@@ -1365,7 +1362,7 @@
         "keyword": ["영어","무역"],
         "professor": ["최원석"],
         "grade": "2학년",
-        "tracks" : [{"track":"국제무역","code":"전공선택"}]
+        "tracks" : [{"track":"국제무역","code":"전공선택"},{"track":"영미언어정보","code":"전공기초"}]
     },
     {
         "subject_id": 145,
@@ -1374,7 +1371,7 @@
         "keyword": ["됴시","교통"],
         "professor": ["조재우"],
         "grade": "1학년",
-        "tracks" : [{"track":"스마트도시 교통계획","code":"전공필수"}]
+        "tracks" : [{"track":"스마트도시 교통계획","code":"전공"}]
     },
     {
         "subject_id": 146,
@@ -1397,11 +1394,11 @@
 
     {
         "subject_id": 148,
-        "code":"T021003",
-        "name": "감성포토 광고영상",
-        "keyword": ["광고","영상제작"],
-        "professor": ["명광주"],
-        "grade": "2학년",
+        "code":"P022002",
+        "name": "기초드로잉",
+        "keyword": ["표현","제작"],
+        "professor": ["허은영"],
+        "grade": "1학년",
         "tracks" : [{"track":"동양화","code":"전공선택"},{"track":"서양화","code":"전공선택"}]
     },
     {
@@ -1415,17 +1412,17 @@
     },
     {
         "subject_id": 150,
-        "code":"P020016",
-        "name": "미술비평",
-        "keyword": ["묘사","분석"],
-        "professor": ["윤준혁"],
-        "grade": "3학년",
-        "tracks" : [{"track":"동양화","code":"전공선택"}]
+        "code":"P021002",
+        "name": "기초필묵",
+        "keyword": ["기초","표현"],
+        "professor": ["한동호"],
+        "grade": "1학년",
+        "tracks" : [{"track":"동양화","code":"전공필수"}]
     },
     {
         "subject_id": 151,
-        "code":"P021004",
-        "name": "진채기법Ⅰ",
+        "code":"P020015",
+        "name": "진채기법Ⅱ",
         "keyword": ["재료관리","기법"],
         "professor": ["김선태"],
         "grade": "2학년",
@@ -1442,8 +1439,8 @@
     },
     {
         "subject_id": 153,
-        "code":"P022006",
-        "name": "조형연구Ⅰ",
+        "code":"P020013",
+        "name": "조형연구Ⅱ",
         "keyword": ["조형","공감"],
         "professor": ["이인현"],
         "grade": "2학년",
@@ -1452,9 +1449,9 @@
 
     {
         "subject_id": 154,
-        "code":"P020036",
-        "name": "동작분석",
-        "keyword": ["동작","움직임"],
+        "code":"P020082",
+        "name": "무용공연 트렌드",
+        "keyword": ["무용","트랜드"],
         "professor": ["박영애"],
         "grade": "3학년",
         "tracks" : [{"track":"한국무용","code":"전공선택"},{"track":"현대무용","code":"전공선택"}]
@@ -1462,8 +1459,8 @@
     
     {
         "subject_id": 155,
-        "code":"P020025",
-        "name": "레파토리실습1",
+        "code":"P020029",
+        "name": "레파토리실습2",
         "keyword": ["무용","안무"],
         "professor": ["정석순","서라벌"],
         "grade": "2학년",
@@ -1482,8 +1479,8 @@
     },
     {
         "subject_id": 157,
-        "code":"P023004",
-        "name": "한국무용2-1",
+        "code":"P023005",
+        "name": "한국무용2-2",
         "keyword": ["훈련","안무"],
         "professor": ["정유정"],
         "grade": "2학년",
@@ -1491,8 +1488,8 @@
     },
     {
         "subject_id": 158,
-        "code":"P024004",
-        "name": "현대무용2-1",
+        "code":"P024005",
+        "name": "현대무용2-2",
         "keyword": ["훈련","안무"],
         "professor": ["정석순"],
         "grade": "2학년",
@@ -1500,8 +1497,8 @@
     },
     {
         "subject_id": 158,
-        "code":"P024004",
-        "name": "발레2-1",
+        "code":"P025005",
+        "name": "발레2-2",
         "keyword": ["훈련","안무"],
         "professor": ["박재홍","서라벌"],
         "grade": "2학년",
@@ -1611,5 +1608,90 @@
         "grade": "3학년",
         "tracks" : [{"track":"기업경영","code":"전공선택"},{"track":"벤처경영","code":"전공선택"},
         {"track":"회계 재무경영","code":"전공선택"}]
+    },
+
+    {
+        "subject_id": 170,
+        "code":"T010010",
+        "name": "드레이핑",
+        "keyword": ["3D","기성복"],
+        "professor": ["홍성애"],
+        "grade": "2학년",
+        "tracks" : [{"track":"패션디자인","code":"전공선택"}]
+    },
+    
+    {
+        "subject_id": 171,
+        "code":"T011007",
+        "name": "패션리테일링",
+        "keyword": ["패션","산업"],
+        "professor": ["채진미"],
+        "grade": "3학년",
+        "tracks" : [{"track":"패션마케팅","code":"전공필수"}]
+    },
+    {
+        "subject_id": 172,
+        "code":"CTA0003",
+        "name": "패션 문화 콘텐츠",
+        "keyword": ["문화","콘텐츠"],
+        "professor": ["김희정"],
+        "grade": "1학년",
+        "tracks" : [{"track":"패션크리에이티브디렉션","code":"전공기초"}]
+    },
+    {
+        "subject_id": 173,
+        "code":"T023010",
+        "name": "UX·UI디자인 기초",
+        "keyword": ["UI","UX"],
+        "professor": ["송영섭"],
+        "grade": "2학년",
+        "tracks" : [{"track":"뉴미디어광고 커뮤니케이션디자인","code":"전공선택"},{"track":"제품 서비스디자인","code":"전공선택"},
+        {"track":"브랜드 패키지디자인","code":"전공선택"},{"track":"VMD 전시디자인","code":"전공선택"}]
+    },
+    {
+        "subject_id": 174,
+        "code":"T020041",
+        "name": "디자인심리학",
+        "keyword": ["디자인","심리"],
+        "professor": ["지상현"],
+        "grade": "2학년",
+        "tracks" : [{"track":"제품 서비스디자인","code":"전공선택"},{"track":"브랜드 패키지디자인","code":"전공선택"}]
+    },
+    {
+        "subject_id": 175,
+        "code":"CTA0008",
+        "name": "인테리어디자인과 코디네이션",
+        "keyword": ["실내","디자인"],
+        "professor": ["이주형"],
+        "grade": "1학년",
+        "tracks" : [{"track":"인테리어디자인","code":"전공기초"}]
+    },
+    {
+        "subject_id": 176,
+        "code":"CTA0012",
+        "name": "게임그래픽기초",
+        "keyword": ["게임","그래픽"],
+        "professor": ["전완식"],
+        "grade": "1학년",
+        "tracks" : [{"track":"게임그래픽디자인","code":"전공기초"}]
+    },
+
+    {
+        "subject_id": 177,
+        "code":"T030104",
+        "name": "기초메이크업",
+        "keyword": ["기초","화장법"],
+        "professor": ["이정민"],
+        "grade": "2학년",
+        "tracks" : [{"track":"뷰티디자인매니지먼트","code":"전공필수"}]
+    },
+    {
+        "subject_id": 178,
+        "code":"T030109",
+        "name": "뷰티상품기획",
+        "keyword": ["기획","상품"],
+        "professor": ["이효영"],
+        "grade": "3학년",
+        "tracks" : [{"track":"뷰티디자인매니지먼트","code":"전공선택"}]
     }
 ]

@@ -2105,6 +2105,672 @@
                 "dayOfWeek":"월"
             }
         ]
+    },
+    {
+        "subject_id": 134,
+        "code":"P011009",
+        "name": "Basic EnglishⅡ",
+        "professor": ["투릴라자"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "11:30","end_time" : "13:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 135,
+        "code":"P011019",
+        "name": "미국문화와 미디어",
+        "professor": ["서영웅"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 136,
+        "code":"P011020",
+        "name": "셰익스피어",
+        "professor": ["이병은"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 137,
+        "code":"P011021",
+        "name": "영화로 읽는 영미문화",
+        "professor": ["황정현"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 138,
+        "code":"P011022",
+        "name": "외국어 습득의 이해",
+        "professor": ["심선항"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 139,
+        "code":"P011023",
+        "name": "한국어 교재 연구",
+        "professor": ["김윤주"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "17:30","end_time" : "18:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+
+
+
+    {
+        "subject_id": 140,
+        "code":"R010023",
+        "name": "국제무역보험론",
+        "professor": ["이진철"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "17:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 141,
+        "code":"R010075",
+        "name": "국제통상정책론",
+        "professor": ["김상조"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 142,
+        "code":"R010025",
+        "name": "글로벌시대의 국제통상",
+        "professor": ["김상조"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 143,
+        "code":"R010029",
+        "name": "금융파생상품론",
+        "professor": ["김도완"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 144,
+        "code":"R010076",
+        "name": "무역 영어",
+        "professor": ["최원석"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:30","end_time" : "16:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "18:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 145,
+        "code":"CTS0015",
+        "name": "스마트도시와 교통",
+        "professor": ["조재우"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 146,
+        "code":"CTS0007",
+        "name": "부동산학의 이해",
+        "professor": ["이용만"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 147,
+        "code":"R017009",
+        "name": "부동산투자금융론",
+        "professor": ["이용만"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 148,
+        "code":"P022002",
+        "name": "기초드로잉",
+        "professor": ["허은영"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 149,
+        "code":"CTH0013",
+        "name": "동양화 기초회화",
+        "professor": ["김선태"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "13:30",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 150,
+        "code":"P021002",
+        "name": "기초필묵",
+        "professor": ["한동호"],
+        "grade": "1학년",
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 151,
+        "code":"P020015",
+        "name": "진채기법Ⅱ",
+        "professor": ["김선태"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 152,
+        "code":"CTH0014",
+        "name": "서양화 기초회화",
+        "professor": ["김진옥"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 154,
+        "code":"P020082",
+        "name": "무용공연 트렌드",
+        "professor": ["박영애"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    
+    {
+        "subject_id": 155,
+        "code":"P020029",
+        "name": "레파토리실습2",
+        "professor": ["정석순","서라벌"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 156,
+        "code":"CTH0010",
+        "name": "무용기본실기",
+        "professor": ["정석순","정유정"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 157,
+        "code":"P023005",
+        "name": "한국무용2-2",
+        "professor": ["정유정"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 158,
+        "code":"P024005",
+        "name": "현대무용2-2",
+        "professor": ["정석순"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 158,
+        "code":"P025005",
+        "name": "발레2-2",
+        "professor": ["박재홍","서라벌"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 159,
+        "code":"CTH0011",
+        "name": "다문화사회의 현재와 미래",
+        "professor": ["오정은"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    
+    {
+        "subject_id": 160,
+        "code":"P026009",
+        "name": "이민정책론",
+        "professor": ["오정은"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 161,
+        "code":"CTH0024",
+        "name": "영어학 활용법",
+        "professor": ["강상구","박종언"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 162,
+        "code":"P014004",
+        "name": "미디어와 문화콘텐츠",
+        "professor": ["김기홍"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+    {
+        "subject_id": 163,
+        "code":"P015004",
+        "name": "근대서양,이성과자유를향한여정",
+        "professor": ["윤용선"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "14:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 164,
+        "code":"P010108",
+        "name": "중국고대문명의 탄생",
+        "professor": ["박근철"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "13:30","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 165,
+        "code":"P010062",
+        "name": "정보시스템론",
+        "professor": ["박희진"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 166,
+        "code":"R014001",
+        "name": "금융통계학",
+        "professor": ["이찬우"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "9:00","end_time" : "12:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    {
+        "subject_id": 167,
+        "code":"R010103",
+        "name": "행정법Ⅱ",
+        "professor": ["한명진"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "16:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 168,
+        "code":"CTS0009",
+        "name": "경영학의 이해",
+        "professor": ["임지은"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "8",
+                "start_time" : "16:30","end_time" : "18:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 169,
+        "code":"R010016",
+        "name": "금융기관론",
+        "professor": ["임지은"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "14:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "A",
+                "start_time" : "11:00","end_time" : "12:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 170,
+        "code":"T010010",
+        "name": "드레이핑",
+        "professor": ["홍성애"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "11:00","end_time" : "13:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "8",
+                "start_time" : "14:00","end_time" : "16:00",
+                "dayOfWeek":"금"
+            },
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "17:00",
+                "dayOfWeek":"화"
+            }
+        ]
+    },
+    
+    {
+        "subject_id": 171,
+        "code":"T011007",
+        "name": "패션리테일링",
+        "professor": ["채진미"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "16:00","end_time" : "17:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 172,
+        "code":"CTA0003",
+        "name": "패션 문화 콘텐츠",
+        "professor": ["김희정"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 173,
+        "code":"T023010",
+        "name": "UX·UI디자인 기초",
+        "professor": ["송영섭"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "13:30",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 174,
+        "code":"T020041",
+        "name": "디자인심리학",
+        "professor": ["지상현"],
+        "grade": "2학년",
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"목"
+            },
+            {
+                "type": "C",
+                "start_time" : "13:00","end_time" : "16:00",
+                "dayOfWeek":"금"
+            }
+        ]
+    },
+    {
+        "subject_id": 175,
+        "code":"CTA0008",
+        "name": "인테리어디자인과 코디네이션",
+        "professor": ["이주형"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "10:30","end_time" : "12:00",
+                "dayOfWeek":"월"
+            },
+            {
+                "type": "B",
+                "start_time" : "12:00","end_time" : "14:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+    {
+        "subject_id": 176,
+        "code":"T024004",
+        "name": "패키지디자인스트럭쳐",
+        "professor": ["전완식"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "B",
+                "start_time" : "15:00","end_time" : "18:00",
+                "dayOfWeek":"목"
+            }
+        ]
+    },
+
+    {
+        "subject_id": 177,
+        "code":"T030104",
+        "name": "기초메이크업",
+        "professor": ["이정민"],
+        "class" :  [ 
+            {
+                "type": "7",
+                "start_time" : "13:00","end_time" : "16:00",
+                "dayOfWeek":"화"
+            },
+            {
+                "type": "A",
+                "start_time" : "15:00","end_time" : "18:00",
+                "dayOfWeek":"월"
+            }
+        ]
+    },
+    {
+        "subject_id": 178,
+        "code":"T030109",
+        "name": "뷰티상품기획",
+        "professor": ["이효영"],
+        "class" :  [ 
+            {
+                "type": "A",
+                "start_time" : "12:00","end_time" : "15:00",
+                "dayOfWeek":"수"
+            }
+        ]
     }
     
    
