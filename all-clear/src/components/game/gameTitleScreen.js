@@ -49,39 +49,27 @@ const GameTitleScreen =({title}) =>{
 
     let timeOutId = null;
     let isClicked = false;
-    let gameTitleAudio  = new Audio(gameTitleBGM) // 게임 창 들어가면 나오는 브금
+
     let gameStartAudio = new Audio(gameStartBGM) // 게임 시작 버튼 눌렀을 때 시작되는 브금
     
     useEffect( // 처음 랜더링 된 후 한 번만(마운트) 호출됨
         () => {
-            if (gameTitleAudio == null){
-                gameTitleAudio  = new Audio(gameTitleBGM)
-                
-            }
+            
             if (gameStartAudio == null){
                 gameStartAudio = new Audio(gameStartBGM)
             }
-            gameTitleAudio.play()
+     
          
             return () => { // clean up : 화면이 사라지면 BGM 종료
                 console.log("clean up 함수 호출")
 
-                    //clearTimeout(timeOutId)
-                    if (gameTitleAudio != null){
-                       
-                        gameTitleAudio.pause()
-                        //gameTitleAudio = null
-                    }
                     if(gameStartAudio != null){
 
                         clearTimeout(timeOutId)
                         gameStartAudio.pause()
                         gameStartAudio = null
                     }
-                    //gameStartAudio.pause()
-                    //gameStartAudio = null
-                    
-                    //isClicked = false;
+                  
                 
                 changeGameSetInfo({ // gameSetting 초기화
                     useCart:false,
@@ -122,12 +110,9 @@ const GameTitleScreen =({title}) =>{
                 <nav id = "game-title-screen-nav">
                     <button onClick={() => setModalOpen(!modalOpen)}>게임 설명</button>
                 <button onClick ={()=>{ 
-
-                   gameTitleAudio.pause();
                    
                    if (gameSetInfo.name != ""){
                      
-                        //gameTitleAudio = null;
                         console.log("useCart => "+gameSetInfo["useCart"]);
                         
                         gameStartAudio.play();
