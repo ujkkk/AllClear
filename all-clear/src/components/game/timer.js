@@ -3,13 +3,15 @@ import { useState, useEffect,useRef} from "react";
 
 const Timer = ({sec, changeSec}) =>{
 
-    console.log(sec)
   // 타이머를 초단위로 변환한 initialTime과 setInterval을 저장할 interval ref
   const initialTime = useRef(sec);
+  // setInterval 이나 setTimeout과 같은 함수는 clear 시켜주지 않으면 메모리를 많이 소모하기 때문에 
+  // useRef로 선언하여 clear 할 수 있도록 한다
+  //또한 useEffect를 쓰면 리렌더링하면서 값을 초기화 시켜 변경한 값이 유지가 안되기 때문에 useRef를 쓴다
   const interval = useRef(null);
 
-//   const [sec, setSec] = useState(2.4);
 
+//0.1초마다 sec 값을 0.1초 줄여준다
   useEffect(() => {
         interval.current = setInterval(() => {
         initialTime.current -= 0.1;
