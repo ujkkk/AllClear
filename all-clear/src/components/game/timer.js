@@ -24,13 +24,12 @@ const Timer = ({sec, changeSec}) =>{
   // initialTime을 검사해서 0이 되면 interval을 멈춘다.
   useEffect(() => {
     if ( sec <= 0) {
-        changeSec(0)
       clearInterval(interval.current);
     }
   }, [sec]);
     return (
         <>
-           <span style={{fontSize:"30px", color:"red"}}>{sec}</span>
+           <h2 style={{color:"red" }}>{sec}</h2>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import gameData from "../../data/game.json";
+import {AiFillHome} from "react-icons/ai"
 import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
 import sugangimg from "../../static/sugang.png"
@@ -13,7 +13,7 @@ import ApplyClasses from "./applyClasses";
 import Timer from "./timer";
 import ApplyImmediately from "./applyImmediately";
 import GameScheduleList from "./gameScheduleList";
-import classDivisionData from "../../data/classDivision.json";
+
 
 // 수강신청게임 화면 
 const GameScreen = () => {
@@ -26,7 +26,7 @@ const GameScreen = () => {
 
     const changeSec = (time) => { 
         if(time <=0){
-            setSec(0)
+            setSec("Time Over")
         }
         else setSec(time) 
     }
@@ -141,25 +141,26 @@ const GameScreen = () => {
 
     return (
         <>
+            <p onClick = {()=>navigate("/")} style={{float: "right" ,marginRight:"300px"}}><AiFillHome size="42" color="black" marginTop="1px"></AiFillHome></p>
             <div style={{ height: "45px", marginTop: "60px", width: "1200px", marginLeft: "30px" }}>
                 <table style={{ width: "820px", float: "left" }}>
                     <td style={{ width: "820px" }}>
                         <img src={sugangimg} />
                     </td>
                 </table>
-                <table style={{ width: "100px", height: "30px", float: "left" }}>
-                    <td>
+                <table style={{ width: "200px", height: "30px", float: "left" }}>
+                    <td >
                         <Timer sec={sec} changeSec={changeSec}></Timer>
 
                     </td>
                 </table>
-                <table style={{ float: "right", width: "200px" }}>
+                {/* <table style={{ float: "right", width: "200px" }}>
                     <button onClick={() => {
                         navigate("/page3")
                     }}>
                         홈으로
                     </button>
-                </table>
+                </table> */}
             </div>
             <hr></hr>
 
