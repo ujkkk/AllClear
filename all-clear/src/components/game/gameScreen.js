@@ -22,7 +22,8 @@ const GameScreen = () => {
     const { preset } = useOutletContext();
     const { gameSetInfo, chageGameSetInfo } = useOutletContext();
     const [sec, setSec] = useState(gameSetInfo.runTime);
-    //console.log(gameSetInfo)
+    
+    console.log(gameSetInfo)
 
     const changeSec = (time) => { 
         if(time <=0){
@@ -218,7 +219,7 @@ const GameScreen = () => {
                         <tbody>
                             <td style={{ overflow: "scroll", overflowX: "hidden", width: "800px", height: "660px" }}>
                                 <div style={{ width: "800px", height: "860px" }}>
-                                    <ApplyClasses preset={preset} addClass={alertAddClass1} gameSetInfo={gameSetInfo} sec={sec}>  </ApplyClasses>
+                                    <ApplyClasses preset={preset} selectedNum={gameSetInfo.preset} addClass={alertAddClass1} gameSetInfo={gameSetInfo} sec={sec}>  </ApplyClasses>
                                 </div>
                             </td>
                         </tbody>
