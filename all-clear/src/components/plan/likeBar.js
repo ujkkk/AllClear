@@ -1,11 +1,19 @@
 import React, { useEffect, useReducer, useState } from "react";
 import ClassComponent from "./classComponent";
 
-const LikeBar=({changeLikeClasses, subject_id=0, name="", classes=[]})=>{
+const LikeBar=({changeLikeClasses, subject_id=0, name="", likeSub, classes=[]})=>{
     
 
     const [likes, setLikes] = useState(Array.from({length : 10}, ()=>false));
     
+    //기존 프리셋에 담아놓은 과목은 미리 하트 표시
+    likeSub.map((likeSubject,i) => {
+        //console.log(likeSubject)
+        if(subject_id == likeSubject.subject_id){           
+            classes.map((aClass, j) =>aClass.type === likeSubject.type? likes[j] = true: false)
+        }
+        return
+    })
     //다른 과목을 클릭하면 LikeBar 초기화
     useEffect(()=>{
         setLikes(Array.from({length : 10}, ()=>false))

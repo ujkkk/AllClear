@@ -60,7 +60,7 @@ const SubjectList = ({tracks, grade, codes, search,likeClasses,changeLikeClasses
                 ))
             }
             </div>
-            <LikeBar changeLikeClasses={changeLikeClasses} subject_id={selectedId} name={selectdProfessor} classes={classes} />   
+            <LikeBar changeLikeClasses={changeLikeClasses} subject_id={selectedId} name={selectdProfessor} likeSub={likeClasses} classes={classes} />   
         </div>
     )
 }
