@@ -69,14 +69,13 @@ const GameTitleScreen =({title}) =>{
                         gameStartAudio.pause()
                         gameStartAudio = null
                     }
-                  
                 
-                changeGameSetInfo({ // gameSetting 초기화
-                    useCart:false,
-                    preset:0,
-                    runTime:2.4,
-                    name:""
-                })
+                // changeGameSetInfo({ // gameSetting 초기화
+                //     useCart:false,
+                //     preset:0,
+                //     runTime:2.4,
+                //     name:""
+                // })
             }
         },[] );
 
