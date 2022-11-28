@@ -23,8 +23,6 @@ const GameScreen = () => {
     const { gameSetInfo, chageGameSetInfo } = useOutletContext();
     const [sec, setSec] = useState(gameSetInfo.runTime);
     
-    console.log(gameSetInfo)
-
     const changeSec = (time) => { 
         if(time <=0){
             setSec("Time Over")
@@ -53,11 +51,12 @@ const GameScreen = () => {
 
         if (sec > 0) {
             console.log("########## sec "+sec)
-            var preTime = new Date()
+            var preTime = new Date().getTime()
             var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
             if (delConfirm) {
-                var changeTime = new Date() - preTime;
-                setSec(sec-changeTime*1000)
+                var changeTime = new Date().getTime() - preTime;
+                console.log((changeTime/1000))
+                changeSec(sec-(changeTime/1000))
                 scheduleAddClass(addClass)
             }
         }

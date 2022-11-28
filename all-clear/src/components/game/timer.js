@@ -15,7 +15,9 @@ const Timer = ({sec, changeSec}) =>{
   useEffect(() => {
         interval.current = setInterval(() => {
         initialTime.current -= 0.1;
-        changeSec((initialTime.current % 60).toFixed(1));
+        sec -= 0.1;
+        //sec -= 0.1;
+        changeSec((sec % 60).toFixed(1));
         }, 100)
         return () => clearInterval(interval.current);
     }, []);
