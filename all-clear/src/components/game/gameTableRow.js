@@ -24,7 +24,7 @@ const GameTableRow = ({id, title, hiddenRow, setHiddenRow, setGameSetInfo}) =>{
              </>
         }
         if (index == 2){
-            return <td><DropdownList defaultValue={defaultOption} data={options} style = {{textAlign:"center"}} onChange = {(value)=>setGameSetInfo({runTime:value})}></DropdownList></td>     
+            return <td><DropdownList defaultValue={defaultOption} data={options} style = {{textAlign:"center"}} onChange = {(value)=>setGameSetInfo({runTime:value.split(" ")[0]})}></DropdownList></td>     
         }
         if (index == 3){
             return <td><input onChange={(e)=>{setGameSetInfo({name:e.target.value})}} type ="text" style={{textAlign:"center",borderRadius:"10px",width:"350px"}}></input></td>     
