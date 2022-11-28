@@ -4,7 +4,7 @@ import PresetRowElement from "./presetRowElement";
 import "react-widgets/styles.css";
 import DropdownList from "react-widgets/DropdownList";
 import "../../css/dropDownBtn.css";
-const options = ['2.4 초','2.7 초','3 초']
+const options = ['2.4 초','5 초','10 초']
 
 
 const defaultOption = options[0];
