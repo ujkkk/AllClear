@@ -3,9 +3,7 @@ import {AiFillHome} from "react-icons/ai"
 import "../../css/gameScreen.css";
 import { useNavigate } from "react-router-dom";
 import sugangimg from "../../static/sugang.png"
-import SubjectInfo from "./subjectInfo";
 import "../../css/gameSchedule.css"
-import GameTableRow from "./gameTableRow"; // 타이머 쓰려고 가져옴
 import { useOutletContext } from "react-router-dom";
 import Schedule from "../preset/schedule";
 import { ToastContainer, toast } from 'react-toastify';
@@ -50,13 +48,9 @@ const GameScreen = () => {
     const alertAddClass1 = (addClass) => {
 
         if (sec > 0) {
-            console.log("########## sec "+sec)
             var preTime = new Date().getTime()
             var delConfirm = window.confirm(`${addClass.name}(${addClass.code})을 수강 신청하시겠습니까?`);
             if (delConfirm) {
-                var changeTime = new Date().getTime() - preTime;
-                console.log((changeTime/1000))
-                changeSec(sec-(changeTime/1000))
                 scheduleAddClass(addClass)
             }
         }
@@ -64,7 +58,6 @@ const GameScreen = () => {
 
     const alertAddClass2 = (addClass) => {
         if (sec > 0) {
-            console.log("########## sec "+sec)
             var delConfirm = window.confirm(`직접 입력 과목(${addClass.code})을 수강 신청하시겠습니까?`);
             if (delConfirm) {
                 scheduleAddClass(addClass)
@@ -111,17 +104,11 @@ const GameScreen = () => {
                 return
 
             }
-            // if(sec <= 0){
-
-            // }
         })
         if (overlap === false) {
             setGameSchedule([...gameSchedule, addClass]);
         }
         overlap = false
-
-        console.log(addClass);
-        console.log(gameSchedule);
     }
 
     const DeleteClass = (subject_id, type) => {
@@ -131,12 +118,6 @@ const GameScreen = () => {
             return (sub.subject_id !== subject_id || sub.subject_id === subject_id && sub.type !== type)
         }))
     }
-
-
-    //const [gameData, setGameData] = useState(gameData)
-
-    console.log(preset);
-
 
 
     return (

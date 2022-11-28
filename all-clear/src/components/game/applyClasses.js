@@ -13,6 +13,8 @@ const ApplyClasses = ({ preset, selectedNum, gameSetInfo, addClass = f => f , se
         selectedPreset = preset.preset1;
     else if (selectedNum == 2)
         selectedPreset = preset.preset2;
+    else if (selectedNum == 3)
+        selectedPreset = preset.preset3;
 
     return (
         <>
